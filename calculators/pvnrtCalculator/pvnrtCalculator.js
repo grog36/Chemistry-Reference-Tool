@@ -1,5 +1,5 @@
-//Gregory Ecklund
-//March 2022
+// Gregory Ecklund
+// March 2022
 
 //VARS
 let solutionVariable = "Pressure"

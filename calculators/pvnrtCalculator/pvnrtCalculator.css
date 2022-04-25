@@ -1,8 +1,13 @@
+/* Gregory Ecklund */
+/* March 2022 */
+
+/* BACKGROUND & FONT */
 body {
     background-color:khaki;
     font-size: 40px;
 }
 
+/* TABLE */
 .tableElement {
     border-width: 1px;
     border-style: solid;
@@ -15,7 +20,6 @@ body {
 table {
     border-spacing: 0px;
 }
-
 #conversionTable {
     margin-top: 50px;
 }
