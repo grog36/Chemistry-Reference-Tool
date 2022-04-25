@@ -1,0 +1,80 @@
+<!-- Gregory Ecklund -->
+<!-- March 2022 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Choice</title>
+    <script src = "multipleChoice.js" defer></script>
+    <link href = "multipleChoice.css" rel = "stylesheet">
+</head>
+<body>
+    <!-- BACK BUTTONS -->
+    <a href = "../../periodicTable.html"><img class = 'backButtons' src = "../../logo.png" title = "Back to Periodic Table"></a>
+    <a href = "../quizzes.html"><img class = 'backButtons' src = "../quizzes.png" title = "Back to Quiz List"></a>
+    
+    <!-- GIVE UP BUTTON -->
+    <div class = "giveUp">
+        <button id = "giveUpButton" onclick = youLose()>Give Up?</button>
+    </div>
+
+    <!-- START BUTTON -->
+    <div class = "startButton">
+		<button id = "startButton" class = "startButton" onclick = start()>START!</button>
+	</div>
+
+    <!-- TIMER -->
+    <div class = "timer">
+        <div class = "minutes">
+        <label id = "minutesLabel">Minutes: </label><p id = "minutes">0</p>
+        </div>
+        <div class = "seconds">
+        <label id = "secondsLabel">Seconds: </label><p class = "seconds" id = "seconds">0</p>
+        </div>
+    </div>
+
+    <!-- OPTIONS -->
+    <div class = "options">
+        <select id = "gamemode">
+            <option>Select Name Given Symbol</option>
+            <option>Select Name Given Mass</option>
+            <option>Select Name Given Number</option>
+            <option>Select Name Given ElectronConfig</option>
+            <option>Select Symbol Given Name</option>
+            <option>Select Symbol Given Mass</option>
+            <option>Select Symbol Given Number</option>
+            <option>Select Symbol Given ElectronConfig</option>
+            <option>Select Mass Given Name</option>
+            <option>Select Mass Given Symbol</option>
+            <option>Select Mass Given Number</option>
+            <option>Select Mass Given ElectronConfig</option>
+            <option>Select Number Given Name</option>
+            <option>Select Number Given Symbol</option>
+            <option>Select Number Given Mass</option>
+            <option>Select Number Given ElectronConfig</option>
+        </select>
+    </div>
+
+    <!-- QUESTIONS -->
+    <p class = "questions" id = "questions">Question<p>
+
+    <br>
+    <br>
+
+    <!-- ANSWER CHOICE BUTTONS -->
+	<div class = "answerButtons">
+		<button id = "answerButton1" class = "answerButton1" onclick = guessAnswer1()>Answer1</button><button id = "answerButton2" class = "answerButton2" onclick = guessAnswer2()>Answer2</button>
+        <br>
+		<button id = "answerButton3" class = "answerButton3" onclick = guessAnswer3()>Answer3</button><button id = "answerButton4" class = "answerButton4" onclick = guessAnswer4()>Answer4</button>
+	</div>
+    
+    <!-- RETRY BUTTON -->
+	<div class = "retryButton">
+		<button id = "retryButton" class = "retryButton" onclick = retry()>Retry?</button>
+	</div>
+
+</body>
+</html>

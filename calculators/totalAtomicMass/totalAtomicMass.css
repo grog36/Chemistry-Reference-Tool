@@ -1,0 +1,19 @@
+/* Gregory Ecklund */
+/* March 2022 */
+
+/* BACKGROUND COLOR */
+body {
+    background-color: aquamarine;
+}
+
+/* INPUTS */
+.inputs {
+    font-family: monospace;
+    text-align: left;
+    align-items: left;
+}
+
+/* OUTPUT */
+.output {
+    visibility: hidden;
+}

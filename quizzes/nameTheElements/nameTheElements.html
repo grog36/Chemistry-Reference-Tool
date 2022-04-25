@@ -1,0 +1,244 @@
+<!-- Gregory Ecklund -->
+<!-- March 2022 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name The Elements Quiz!</title>
+    <script src = "nameTheElements.js" defer></script>
+    <link href = "nameTheElements.css" rel = "stylesheet">
+</head>
+<body>
+    <!-- BACK BUTTONS -->
+    <a href = "../../periodicTable.html"><img class = "backButtons" src = "../../logo.png" title = "Back to Periodic Table"></a>
+    <a href = "../quizzes.html"><img class = "backButtons" src = "../quizzes.png" title = "Back to Quiz List"></a>
+
+    <!-- START BUTTON -->
+    <button onclick = start() id = "start" autofocus>Start!</button>
+
+    <!-- TEXT INPUT -->
+    <div class = "inputClass">
+        <input oninput = guess() id = "input" autocomplete = "off">
+    </div>
+
+    <!-- WIN/LOSE TEXT -->
+    <div class = "textClass">
+        <p id = "text">placeholder</p>
+    </div>
+
+    <!-- PERIODIC TABLE -->
+    <div class = "table">
+
+        <table class = "pTable">
+            <tr class = "row1">
+                <td id = "hydrogenSquare" class = "reactiveNonMetal"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td id = "heliumSquare" class = "nobleGas"></td>
+            </tr>
+            <tr class = "row2">
+                <td id = "lithiumSquare" class = "alkaliMetal"></td>
+                <td id = "berylliumSquare" class = "alkalineEarthMetal"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td id = "boronSquare" class = "metalloid"></td>
+                <td id = "carbonSquare" class = "reactiveNonMetal"></td>
+                <td id = "nitrogenSquare" class = "reactiveNonMetal"></td>
+                <td id = "oxygenSquare" class = "reactiveNonMetal"></td>
+                <td id = "fluorineSquare" class = "reactiveNonMetal"></td>
+                <td id = "neonSquare" class = "nobleGas"></td>
+            </tr>
+            <tr class = "row3">
+                <td id = "sodiumSquare" class = "alkaliMetal"></td>
+                <td id = "magnesiumSquare" class = "alkalineEarthMetal"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td id = "aluminiumSquare" class = "postTransitionMetal"></td>
+                <td id = "siliconSquare" class = "metalloid"></td>
+                <td id = "phosphorusSquare" class = "reactiveNonMetal"></td>
+                <td id = "sulfurSquare" class = "reactiveNonMetal"></td>
+                <td id = "chlorineSquare" class = "reactiveNonMetal"></td>
+                <td id = "argonSquare" class = "nobleGas"></td>
+            </tr>
+            <tr class = "row4">
+                <td id = "potassiumSquare" class = "alkaliMetal"></td>
+                <td id = "calciumSquare" class = "alkalineEarthMetal"></td>
+                <td id = "scandiumSquare" class = "transitionMetal"></td>
+                <td id = "titaniumSquare" class = "transitionMetal"></td>
+                <td id = "vanadiumSquare" class = "transitionMetal"></td>
+                <td id = "chromiumSquare" class = "transitionMetal"></td>
+                <td id = "manganeseSquare" class = "transitionMetal"></td>
+                <td id = "ironSquare" class = "transitionMetal"></td>
+                <td id = "cobaltSquare" class = "transitionMetal"></td>
+                <td id = "nickelSquare" class = "transitionMetal"></td>
+                <td id = "copperSquare" class = "transitionMetal"></td>
+                <td id = "zincSquare" class = "transitionMetal"></td>
+                <td id = "galliumSquare" class = "postTransitionMetal"></td>
+                <td id = "germaniumSquare" class = "metalloid"></td>
+                <td id = "arsenicSquare" class = "metalloid"></td>
+                <td id = "seleniumSquare" class = "reactiveNonMetal"></td>
+                <td id = "bromineSquare" class = "reactiveNonMetal"></td>
+                <td id = "kryptonSquare" class = "nobleGas"></td>
+            </tr>
+            <tr class = "row5">
+                <td id = "rubidiumSquare" class = "alkaliMetal"></td>
+                <td id = "strontiumSquare" class = "alkalineEarthMetal"></td>
+                <td id = "yttriumSquare" class = "transitionMetal"></td>
+                <td id = "zirconiumSquare" class = "transitionMetal"></td>
+                <td id = "niobiumSquare" class = "transitionMetal"></td>
+                <td id = "molybdenumSquare" class = "transitionMetal"></td>
+                <td id = "technetiumSquare" class = "transitionMetal"></td>
+                <td id = "rutheniumSquare" class = "transitionMetal"></td>
+                <td id = "rhodiumSquare" class = "transitionMetal"></td>
+                <td id = "palladiumSquare" class = "transitionMetal"></td>
+                <td id = "silverSquare" class = "transitionMetal"></td>
+                <td id = "cadmiumSquare" class = "transitionMetal"></td>
+                <td id = "indiumSquare" class = "postTransitionMetal"></td>
+                <td id = "tinSquare" class = "postTransitionMetal"></td>
+                <td id = "antimonySquare" class = "metalloid"></td>
+                <td id = "telluriumSquare" class = "metalloid"></td>
+                <td id = "iodineSquare" class = "reactiveNonMetal"></td>
+                <td id = "xenonSquare" class = "nobleGas"></td>
+            </tr>
+            <tr class = "row6">
+                <td id = "cesiumSquare" class = "alkaliMetal"></td>
+                <td id = "bariumSquare" class = "alkalineEarthMetal"></td>
+                <td id = "lanthanumSquare" class = "lanthanide"></td>
+                <td id = "hafniumSquare" class = "transitionMetal"></td>
+                <td id = "tantalumSquare" class = "transitionMetal"></td>
+                <td id = "tungstenSquare" class = "transitionMetal"></td>
+                <td id = "rheniumSquare" class = "transitionMetal"></td>
+                <td id = "osmiumSquare" class = "transitionMetal"></td>
+                <td id = "iridiumSquare" class = "transitionMetal"></td>
+                <td id = "platinumSquare" class = "transitionMetal"></td>
+                <td id = "goldSquare" class = "transitionMetal"></td>
+                <td id = "mercurySquare" class = "transitionMetal"></td>
+                <td id = "thalliumSquare" class = "postTransitionMetal"></td>
+                <td id = "leadSquare" class = "postTransitionMetal"></td>
+                <td id = "bismuthSquare" class = "postTransitionMetal"></td>
+                <td id = "poloniumSquare" class = "postTransitionMetal"></td>
+                <td id = "astatineSquare" class = "metalloid"></td>
+                <td id = "radonSquare" class = "nobleGas"></td>
+            </tr>
+            <tr class = "row7">
+                <td id = "franciumSquare" class = "alkaliMetal"></td>
+                <td id = "radiumSquare" class = "alkalineEarthMetal"></td>
+                <td id = "actiniumSquare" class = "actinide"></td>
+                <td id = "rutherfordiumSquare" class = "transitionMetal"></td>
+                <td id = "dubniumSquare" class = "transitionMetal"></td>
+                <td id = "seaborgiumSquare" class = "transitionMetal"></td>
+                <td id = "bohriumSquare" class = "transitionMetal"></td>
+                <td id = "hassiumSquare" class = "transitionMetal"></td>
+                <td id = "meitneriumSquare" class = "unknown"></td>
+                <td id = "darmstadtiumSquare" class = "unknown"></td>
+                <td id = "roentgeniumSquare" class = "unknown"></td>
+                <td id = "coperniciumSquare" class = "unknown"></td>
+                <td id = "nihoniumSquare" class = "unknown"></td>
+                <td id = "fleroviumSquare" class = "unknown"></td>
+                <td id = "moscoviumSquare" class = "unknown"></td>
+                <td id = "livermoriumSquare" class = "unknown"></td>
+                <td id = "tennessineSquare" class = "unknown"></td>
+                <td id = "oganessonSquare" class = "unknown"></td>
+            </tr>
+            <tr class = "GAP">
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+            </tr>
+            <tr class = "lanthanidesRow">
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td id = "ceriumSquare" class = "lanthanide"></td>
+                <td id = "praseodymiumSquare" class = "lanthanide"></td>
+                <td id = "neodymiumSquare" class = "lanthanide"></td>
+                <td id = "promethiumSquare" class = "lanthanide"></td>
+                <td id = "samariumSquare" class = "lanthanide"></td>
+                <td id = "europiumSquare" class = "lanthanide"></td>
+                <td id = "gadoliniumSquare" class = "lanthanide"></td>
+                <td id = "terbiumSquare" class = "lanthanide"></td>
+                <td id = "dysprosiumSquare" class = "lanthanide"></td>
+                <td id = "holmiumSquare" class = "lanthanide"></td>
+                <td id = "erbiumSquare" class = "lanthanide"></td>
+                <td id = "thuliumSquare" class = "lanthanide"></td>
+                <td id = "ytterbiumSquare" class = "lanthanide"></td>
+                <td id = "lutetiumSquare" class = "lanthanide"></td>
+            </tr>
+            <tr class = "actinidesRow">
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td id = "thoriumSquare" class = "actinide"></td>
+                <td id = "protactiniumSquare" class = "actinide"></td>
+                <td id = "uraniumSquare" class = "actinide"></td>
+                <td id = "neptuniumSquare" class = "actinide"></td>
+                <td id = "plutoniumSquare" class = "actinide"></td>
+                <td id = "americiumSquare" class = "actinide"></td>
+                <td id = "curiumSquare" class = "actinide"></td>
+                <td id = "berkeliumSquare" class = "actinide"></td>
+                <td id = "californiumSquare" class = "actinide"></td>
+                <td id = "einsteiniumSquare" class = "actinide"></td>
+                <td id = "fermiumSquare" class = "actinide"></td>
+                <td id = "mendeleviumSquare" class = "actinide"></td>
+                <td id = "nobeliumSquare" class = "actinide"></td>
+                <td id = "lawrenciumSquare" class = "actinide"></td>
+            </tr>
+        </table>
+
+    </div>
+
+    <!-- TIMER -->
+    <div class = "timer">
+        <span><p id = "seconds">0</p><p id = "colon">:</p><p id = "minutes">0</p></span>
+    </div>
+
+</body>
+</html>

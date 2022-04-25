@@ -1,0 +1,126 @@
+/* Multi-Table Stuff */
+body {
+    background-color: pink;
+}
+table {
+    border-spacing: 0px;
+}
+.organicSubstancesLabels, .strongAcidsLabels, .strongBasesLabels, .metalLabels {
+    font-weight: bold;
+}
+
+/* Metal Table */
+.metalINFO {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    padding: 2px;
+    border-spacing: 0px;
+    margin: 0px;
+    text-align: center;
+    background-color: tan;
+}
+.metalTitle {
+    font-weight: 1000;
+    font-size: 20px;
+}
+
+/* Organic Substances Table */
+.NAME {
+    margin-bottom: 0px;
+    color: red;
+}
+.FORMULA {
+    margin-top: 0px;
+    font-size: 50%;
+    color: blue;
+}
+.organicSubstancesINFO {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    padding: 2px;
+    border-spacing: 0px;
+    margin: 0px;
+    text-align: center;
+    background-color :lightyellow;
+}
+.organicTitle {
+    font-weight: 1000;
+    font-size: 20px;
+}
+
+/* Inorganic Substances Table */
+.inorganicSubstancesINFO {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    padding: 2px;
+    border-spacing: 0px;
+    margin: 0px;
+    text-align: center;
+    background-color: lightgray;
+}
+.inorganicTitle {
+    font-weight: 1000;
+    font-size: 20px;
+}
+
+/* Polyatomics Table */
+.polyatomicsTable {
+    float: right;
+    margin-right: 425px;
+    margin-top: -1300px;
+}
+.polyTitle {
+    font-weight: 1000;
+    font-size: 20px;
+    text-align: center;
+}
+.polyatomicINFO {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    padding: 2px;
+    border-spacing: 0px;
+    margin: 0px;
+    text-align: left;
+    background-color: lightgreen;
+}
+
+
+/* Strong Acids & Bases Tables */
+.acidTitle {
+    font-weight: 1000;
+    font-size: 20px;
+}
+.baseTitle {
+    font-size: 20px;
+    font-weight: 1000;
+}
+.strongAcidsINFO {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    padding: 2px;
+    border-spacing: 0px;
+    margin: 0px;
+    text-align: center;
+    background-color: indianred;
+}
+.strongBasesINFO {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    padding: 2px;
+    border-spacing: 0px;
+    margin: 0px;
+    text-align: center;
+    background-color :lightskyblue;
+}
+.strongAcidsBasesTable {
+    display: flex;
+}
+.strongBasesTable {
+    margin-left: 20px;
+}

@@ -1,0 +1,21 @@
+body {
+    background-color:khaki;
+    font-size: 40px;
+}
+
+.tableElement {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    padding: 2px;
+    margin: 0px;
+    text-align: center;
+    background-color:greenyellow;
+}
+table {
+    border-spacing: 0px;
+}
+
+#conversionTable {
+    margin-top: 50px;
+}

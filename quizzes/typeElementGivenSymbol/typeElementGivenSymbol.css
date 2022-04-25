@@ -1,0 +1,90 @@
+body {
+    background-color: pink;
+}
+
+
+/* Back Buttons */
+.backButtons {
+    width: 100px;
+    height: 100px;
+    float: right;
+}
+
+
+/* TIPS */
+.tips {
+    display: flex;
+    float: right;
+    margin-top: 100px;
+    margin-right: -200px;
+    color: black;
+    font-weight: bolder;
+    visibility: hidden;
+}
+
+
+/* Start Button / Gamemode */
+.startButton > button {
+    background-color: springgreen;
+    padding: 14px;
+    font-size: 18px;
+}
+.startButton {
+    text-align: center;
+    align-content: center;
+}
+.gamemodeSwitch {
+    text-align: center;
+}
+.polyatomicSwitch {
+    text-align: center;
+}
+
+
+/* Timer */
+.minutes {
+    margin-top: -60px;
+    display: flex;
+    flex: right;
+    visibility: hidden;
+    text-align: right;
+    font-size: large;
+    font-weight: bolder;
+    color: blue;
+}
+.seconds {
+    display: flex;
+    flex: left;
+    visibility: hidden;
+    text-align: right;
+    font-size: large;
+    font-weight: bolder;
+    color: blue;
+}
+
+
+/* Questions */
+.questions {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 34px;
+    visibility: hidden;
+}
+
+
+/* Input */
+.answerInput {
+    text-align: center;
+    visibility: hidden;
+}
+
+
+/* Retry Button */
+.retryButton {
+    visibility: hidden;
+    text-align: center;
+}
+#retryButton {
+    font-size: 32px;
+    padding: 15px;
+}

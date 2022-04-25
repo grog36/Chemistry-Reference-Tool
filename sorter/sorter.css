@@ -1,0 +1,44 @@
+/* Gregory Ecklund */
+/* March 2022 */
+
+/* BACKGROUND COLOR */
+body {
+    background-color: thistle;
+}
+
+/* ELEMENT NAMES */
+.elementNames {
+    display: inline-block;
+    background-color:palegoldenrod;
+}
+
+/* ELEMENT INFO */
+.elementInfo {
+    display: inline-block;
+    margin-right: 10px;
+    background-color:palevioletred;
+}
+
+/* BOTH */
+.elements {
+    display: flex;
+    margin-left: 40%;
+}
+.elementInfo > p, .elementNames > p {
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    margin: 0px;
+    padding: 5px;
+}
+
+/* SETTINGS */
+.settings > label {
+    display: inline-block;
+    clear: left;
+    width: 120px;
+    text-align: left;
+}
+#orderSelect, #categorySelect {
+    width: 200px;
+}

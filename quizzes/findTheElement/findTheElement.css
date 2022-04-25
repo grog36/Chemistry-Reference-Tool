@@ -1,0 +1,128 @@
+/* Gregory Ecklund */
+/* March 2022 */
+
+/* ALL */
+body {
+    background-color: greenyellow;
+}
+
+/*TABLE */
+table {
+    border-spacing: 0px;
+    cursor: default;
+}
+td {
+    font-size: 16px;
+    border-style: solid;
+    border-color: black;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    font-weight: bolder;
+    border-width: 1px;
+}
+.atomicMass {
+    font-size: 10px;
+    margin: 0px;
+}
+.atomicNumber {
+    font-size: 10px;
+    margin: 0px;
+}
+.elementSymbol {
+    font-size: 14px;
+    margin: 0px;
+}
+.BLANKSPACE {
+    border-color: greenyellow;
+}
+.table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* BLUE STAIRS */
+#boronSquare {
+    border-bottom-color: blue;
+    border-bottom-width: 2px;
+}
+#tennessineSquare {
+    border-top-color: blue;
+    border-top-width: 2px;
+}
+#aluminiumSquare, #germaniumSquare, #antimonySquare, #poloniumSquare {
+    border-right-color: blue;
+    border-top-color: blue;
+    border-right-width: 2px;
+    border-top-width: 2px;
+}
+#siliconSquare, #arsenicSquare, #telluriumSquare, #astatineSquare {
+    border-left-color: blue;
+    border-bottom-color: blue;
+    border-left-width: 2px;
+    border-bottom-width: 2px;
+}
+
+/* ELEMENT CATEGORY COLORING */
+.reactiveNonMetal {
+    background-color: yellow;
+}
+.nobleGas {
+    background-color: #46BDC6
+}
+.postTransitionMetal {
+    background-color: #999999
+}
+.metalloid {
+    background-color: #93C47D
+}
+.transitionMetal {
+    background-color: #EAD1DC
+}
+.alkaliMetal {
+    background-color: #FFC90E;
+}
+.alkalineEarthMetal {
+    background-color: #F9CB9C
+}
+.lanthanide {
+    background-color: #d4aded
+}
+.actinide {
+    background-color: #bd919c
+}
+.unknown {
+    background-color: #D9D9D9
+}
+
+/* D-F BLOCK */
+#lanthanumSquare, #actiniumSquare {
+    border-right-color: goldenrod;
+    border-right-width: 3px;
+}
+#ceriumSquare, #thoriumSquare {
+    border-left-color: goldenrod;
+    border-left-width: 6px;
+}
+#hafniumSquare, #rutherfordiumSquare {
+    border-left-color: goldenrod;
+    border-left-width: 3px;
+}
+
+/* STATE AT STP COLORING */
+#bromineSquare, #mercurySquare, #coperniciumSquare {
+    color: blue;
+}
+#hydrogenSquare, #heliumSquare, #nitrogenSquare, #oxygenSquare, #fluorineSquare, #neonSquare {
+    color: red;
+}
+#chlorineSquare, #argonSquare, #kryptonSquare, #xenonSquare, #radonSquare, #fleroviumSquare {
+    color: red;
+}
+
+/* BACK BUTTONS */
+.backButtons {
+    float: right;
+    width: 100px;
+    height: 100px;
+}

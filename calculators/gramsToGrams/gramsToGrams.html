@@ -1,0 +1,169 @@
+<!-- Gregory Ecklund -->
+<!-- March 2022 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grams to Grams Calculator</title>
+    <script src = "gramsToGrams.js" defer></script>
+    <link href = "gramsToGrams.css" rel = "stylesheet">
+</head>
+<body>
+    <!-- BACK BUTTONS -->
+    <a href = "../../periodicTable.html" style = float:right;><img width = 100px height = 100px src = "../../logo.png" title = "Back to Periodic Table"></a>
+    <a href = "../calculators.html" style = float:right;><img width = 100px height = 100px src = "../calculator.png" title = "Back to Calculator List"></a>
+
+    <!-- TABLES -->
+    <div class = "tables">
+        <!-- TABLE 1 (REACTANT) -->
+        <div class = "table1">
+            <table id = "table1">
+                <caption class = "tableTITLE table1DATA">Compound 1</caption>
+                <th class = "table1DATA">
+                    <p>Element: </p>
+                </th>
+                <th class = "table1DATA">
+                    <p>Count: </p>
+                </th>
+                <tr>
+                    <td class = "table1DATA">
+                        <input autofocus id = "compound1Input1">
+                    </td>
+                    <td class = "table1DATA">
+                        <input id = "compound1Count1">
+                    </td>
+                </tr>
+                <tr>
+                    <td class = "table1DATA">
+                        <input id = "compound1Input2">
+                    </td>
+                    <td class = "table1DATA">
+                        <input id = "compound1Count2">
+                    </td>
+                </tr>  
+                <tr>
+                    <td class = "table1DATA">
+                        <input id = "compound1Input3">
+                    </td>
+                    <td class = "table1DATA">
+                        <input id = "compound1Count3">
+                    </td>
+                </tr>
+                <tr>
+                    <td class = "table1DATA">
+                        <input id = "compound1Input4">
+                    </td>
+                    <td class = "table1DATA">
+                        <input id = "compound1Count4">
+                    </td>
+                </tr>
+                <tr>
+                    <td class = "table1DATA">
+                        <input id = "compound1Input5">
+                    </td>
+                    <td class = "table1DATA">
+                        <input id = "compound1Count5">
+                    </td>
+                </tr>
+                <tr>
+                    <td class = "table1DATA">
+                        <p>Moles: </p>
+                    </td>
+                    <td class = "table1DATA">
+                        <input id = "compound1Moles">
+                    </td>
+                </tr>
+                <tr>
+                    <td class = "table1DATA">
+                        <p>Grams: </p>
+                    </td>
+                    <td class = "table1DATA">
+                        <input id = "compound1Grams">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+        <!-- TABLE 2 (PRODUCT) -->
+        <div class = "table2">
+            <table id = "table2">
+                <caption class = "tableTITLE table2DATA">Compund 2</caption>     
+                <th class = "table2DATA">
+                    <p>Element: </p>
+                </th>
+                <th class = "table2DATA">
+                    <p>Count: </p>
+                </th>
+                <tr>
+                    <td class = "table2DATA">
+                        <input id = "compound2Input1">
+                    </td>
+                    <td class = "table2DATA">
+                        <input id = "compound2Count1">
+                    </td>
+                </tr>
+                <tr>
+                    <td class = "table2DATA">
+                        <input id = "compound2Input2">
+                    </td>
+                    <td class = "table2DATA">
+                        <input id = "compound2Count2">
+                    </td>
+                </tr>
+                <tr>
+                    <td class = "table2DATA">
+                        <input id = "compound2Input3">
+                    </td>
+                    <td class = "table2DATA">
+                        <input id = "compound2Count3">
+                    </td>
+                </tr>
+                <tr>
+                    <td class = "table2DATA">
+                        <input id = "compound2Input4">
+                    </td>
+                    <td class = "table2DATA">
+                        <input id = "compound2Count4">
+                    </td>
+                </tr>
+                <tr>
+                    <td class = "table2DATA">
+                        <input id = "compound2Input5">
+                    </td>
+                    <td class = "table2DATA">
+                        <input id = "compound2Count5">
+                    </td>
+                </tr> 
+                <tr>
+                    <td class = "table2DATA">
+                        <p>Moles: </p>
+                    </td>
+                    <td class = "table2DATA">
+                        <input id = "compound2Moles">
+                    </td>
+                </tr>
+                <tr>
+                    <td class = "answer table2DATA">
+                        <p>Grams: </p>
+                    </td>
+                    <td class = "answer table2DATA">
+                        <p id = "compound2Grams"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class = "allClearButton">
+                        <button id = "allClearButton" onclick = location.reload()>CLEAR ALL</button>
+                    </td>
+                    <td class = "calculateButton">
+                        <button id = "calculateButton" onclick = calculate()>CALCULATE!</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>

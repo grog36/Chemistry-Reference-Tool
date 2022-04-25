@@ -1,0 +1,14 @@
+/* Gregory Ecklund */
+/* March 2022 */
+
+/* BG COLOR, FONT, & ALIGNMENT */
+body {
+    background-color:powderblue;
+    font-size: 32px;
+    text-align: center;
+}
+
+/* TEXT COLOR */
+#temperature, #totalAtomicMass, #gramsToGrams, #pvnrt {
+    color: red;
+}

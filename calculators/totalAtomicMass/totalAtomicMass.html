@@ -1,0 +1,58 @@
+<!-- Gregory Ecklund -->
+<!-- March 2022 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Total Atomic Mass Calculator</title>
+    <link href = "totalAtomicMass.css" rel = "stylesheet">
+    <script src = "totalAtomicMass.js" defer></script>
+</head>
+<body>
+    <!-- BACK BUTTONS -->
+    <a href = "../../periodicTable.html" style = float:right;><img width = 100px height = 100px src = "../../logo.png" title = "Back to Periodic Table"></a>
+    <a href = "../calculators.html" style = float:right;><img width = 100px height = 100px src = "../calculator.png" title = "Back to Calculator List"></a>
+    
+    <!-- COMPLETE DIV -->
+    <div style = float:left;>
+
+        <!-- TITLE -->
+        <h1>Total Atomic Mass Calculator</h1>
+    
+        <!-- DESCRIPTION -->
+        <h2>Input element or symbol and amount of atoms for each element</h2>
+
+        <!-- INPUTS -->
+        <div class = "inputs">
+            <label class = "elementInput">Element:</label><input id = "elementInput1" autocomplete = "off" autofocus><label class = "elementCount">Count:</label><input id = "elementCount1" autocomplete = "off">
+            <br>
+            <label class = "elementInput">Element:</label><input id = "elementInput2" autocomplete = "off"><label class = "elementCount">Count:</label><input id = "elementCount2" autocomplete = "off">
+            <br>
+            <label class = "elementInput">Element:</label><input id = "elementInput3" autocomplete = "off"><label class = "elementCount">Count:</label><input id = "elementCount3" autocomplete = "off">
+            <br>
+            <label class = "elementInput">Element:</label><input id = "elementInput4" autocomplete = "off"><label class = "elementCount">Count:</label><input id = "elementCount4" autocomplete = "off">
+            <br>
+            <label class = "elementInput">Element:</label><input id = "elementInput5" autocomplete = "off"><label class = "elementCount">Count:</label><input id = "elementCount5" autocomplete = "off">
+            <br>
+            <label class = "elementInput">Element:</label><input id = "elementInput6" autocomplete = "off"><label class = "elementCount">Count:</label><input id = "elementCount6" autocomplete = "off">
+            <br>
+            <label class = "elementInput">Element:</label><input id = "elementInput7" autocomplete = "off"><label class = "elementCount">Count:</label><input id = "elementCount7" autocomplete = "off">
+            <br>
+            <label class = "elementInput">Element:</label><input id = "elementInput8" autocomplete = "off"><label class = "elementCount">Count:</label><input id = "elementCount8" autocomplete = "off">
+            <br>
+            <br>
+        </div>
+
+        <!-- CALCULATE BUTTON -->
+        <button id = "calculateButton" onclick = totalAtomicMass()>Calculate</button>
+
+        <!-- OUTPUT TEXT -->
+        <p id = "output" class = "output">Output</p>
+        
+    </div>
+    
+</body>
+</html>

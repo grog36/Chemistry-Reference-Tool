@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src = 'typeElementGivenNumber.js' defer></script>
+    <link href = 'typeElementGivenNumber.css' rel = 'stylesheet'>
+    <title>Type Element Given Number</title>
+</head>
+<body>
+    <a href = "../../periodicTable.html"><img class = 'backButtons' src = "../../logo.png" title = "Back to Periodic Table"></a>
+    <a href = "../quizzes.html"><img class = 'backButtons' src = "../quizzes.png" title = "Back to Quiz List"></a>
+    
+    <div class = 'tips'>
+        <p id = 'tips'>Type "END" to end at anytime!</p>
+    </div>
+
+    <div class = "startButton">
+        <button id = 'startButton' onclick = start()>START!</button>
+    </div>
+
+    <div class = "timer">
+        <div class = "minutes">
+        <label id = "minutesLabel">Minutes: </label><p id = "minutes">0</p>
+        </div>
+        <div class = "seconds">
+        <label id = "secondsLabel">Seconds: </label><p class = "seconds" id = "seconds">0</p>
+        </div>
+    </div>
+
+    <br>
+    <p class = 'questions' id = 'questions'>placeholder</p>
+
+    <div class = 'answerInput'>
+        <input type = 'text' id = 'input' oninput = checkAnswer() autocomplete = "off">
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class = 'retryButton'>
+        <button onclick = retry() id = 'retryButton'>Retry?</button>
+    </div>
+</body>
+</html>

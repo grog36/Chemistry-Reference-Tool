@@ -1,0 +1,709 @@
+<!-- Gregory Ecklund -->
+<!-- March 2022 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find The Element Quiz</title>
+    <script src = "findTheElement.js" defer></script>
+    <link href = "findTheElement.css" rel = "stylesheet">
+</head>
+<body>
+    <!-- BACK BUTTONS -->
+    <a href = "../../periodicTable.html"><img class = 'backButtons' src = "../../logo.png" title = "Back to Periodic Table"></a>
+    <a href = "../quizzes.html"><img class = 'backButtons' src = "../quizzes.png" title = "Back to Quiz List"></a>
+    
+
+
+    <!-- PERIODIC TABLE -->
+    <table class = "table">
+        <tr class = "row1">
+            <td onclick = guessElement(1) id = "hydrogenSquare" class = "reactiveNonMetal">
+                <p class = "atomicNumber" id = "hydrogenAtomicNumber">1</p>
+                <p class = "elementSymbol" id = "hydrogenElementSymbol">H</p>
+                <p class = "atomicMass" id = "hydrogenAtomicMass">1.00797</p>
+            </td>
+            <td class = "BLANKSPACE"></td>
+            <td class = "BLANKSPACE"></td>
+            <td class = "BLANKSPACE"></td>
+            <td class = "BLANKSPACE"></td>
+            <td class = "BLANKSPACE"></td>
+            <td class = "BLANKSPACE"></td>
+            <td class = "BLANKSPACE"></td>
+            <td class = "BLANKSPACE"></td>
+            <td class = "BLANKSPACE"></td>
+            <td class = "BLANKSPACE"></td>
+            <td class = "BLANKSPACE"></td>
+            <td class = "BLANKSPACE"></td>
+            <td class = "BLANKSPACE"></td>
+            <td class = "BLANKSPACE"></td>
+            <td class = "BLANKSPACE"></td>
+            <td class = "BLANKSPACE"></td>
+            <td onclick = guessElement(2) id = "heliumSquare" class = "nobleGas">
+                <p class = "atomicNumber" id = "heliumAtomicNumber">2</p>
+                <p class = "elementSymbol" id = "heliumElementSymbol">He</p>
+                <p class = "atomicMass" id = "heliumAtomicMass">4.0026</p>
+            </td>
+        </tr>
+        <tr class = "row2">
+            <td onclick = guessElement(3) id = "lithiumSquare" class = "alkaliMetal">
+                <p class = "atomicNumber" id = "lithiumAtomicNumber">3</p>
+                <p class = "elementSymbol" id = "lithiumElementSymbol">Li</p>
+                <p class = "atomicMass" id = "lithiumAtomicMass">6.941</p>
+            </td>
+            <td onclick = guessElement(4) id = "berylliumSquare" class = "alkalineEarthMetal">
+                <p class = "atomicNumber" id = "berylliumAtomicNumber">4</p>
+                <p class = "elementSymbol" id = "berylliumElementSymbol">Be</p>
+                <p class = "atomicMass" id = "berylliumAtomicMass">9.01218</p>
+            </td>
+            <td class = "BLANKSPACE"></td>
+            <td class = "BLANKSPACE"></td>
+            <td class = "BLANKSPACE"></td>
+            <td class = "BLANKSPACE"></td>
+            <td class = "BLANKSPACE"></td>
+            <td class = "BLANKSPACE"></td>
+            <td class = "BLANKSPACE"></td>
+            <td class = "BLANKSPACE"></td>
+            <td class = "BLANKSPACE"></td>
+            <td class = "BLANKSPACE"></td>
+            <td onclick = guessElement(5) id = "boronSquare" class = "metalloid">
+                <p class = "atomicNumber" id = "boronAtomicNumber">5</p>
+                <p class = "elementSymbol" id = "boronElementSymbol">B</p>
+                <p class = "atomicMass" id = "boronAtomicMass">10.81</p>
+            </td>
+            <td onclick = guessElement(6) id = "carbonSquare" class = "reactiveNonMetal">
+                <p class = "atomicNumber" id = "carbonAtomicNumber">6</p>
+                <p class = "elementSymbol" id = "carbonElementSymbol">C</p>
+                <p class = "atomicMass" id = "carbonAtomicMass">12.011</p>
+            </td>
+            <td onclick = guessElement(7) id = "nitrogenSquare" class = "reactiveNonMetal">
+                <p class = "atomicNumber" id = "nitrogenAtomicNumber">7</p>
+                <p class = "elementSymbol" id = "nitrogenElementSymbol">N</p>
+                <p class = "atomicMass" id = "nitrogenAtomicMass">14.0067</p>
+            </td>
+            <td onclick = guessElement(8) id = "oxygenSquare" class = "reactiveNonMetal">
+                <p class = "atomicNumber" id = "oxygenAtomicNumber">8</p>
+                <p class = "elementSymbol" id = "oxygenElementSymbol">O</p>
+                <p class = "atomicMass" id = "oxygenAtomicMass">15.9994</p>
+            </td>
+            <td onclick = guessElement(9) id = "fluorineSquare" class = "reactiveNonMetal">
+                <p class = "atomicNumber" id = "fluorineAtomicNumber">9</p>
+                <p class = "elementSymbol" id = "fluorineElementSymbol">F</p>
+                <p class = "atomicMass" id = "fluorineAtomicMass">18.998403</p>
+            </td>
+            <td onclick = guessElement(10) id = "neonSquare" class = "nobleGas">
+                <p class = "atomicNumber" id = "neonAtomicNumber">10</p>
+                <p class = "elementSymbol" id = "neonElementSymbol">Ne</p>
+                <p class = "atomicMass" id = "neonAtomicMass">20.179</p>
+            </td>
+        </tr>
+        <tr class = "row3">
+            <td onclick = guessElement(11) id = "sodiumSquare" class = "alkaliMetal">
+                <p class = "atomicNumber" id = "sodiumAtomicNumber">11</p>
+                <p class = "elementSymbol" id = "sodiumElementSymbol">Na</p>
+                <p class = "atomicMass" id = "sodiumAtomicMass">22.98977</p>
+            </td>
+            <td onclick = guessElement(12) id = "magnesiumSquare" class = "alkalineEarthMetal">
+                <p class = "atomicNumber" id = "magnesiumAtomicNumber">12</p>
+                <p class = "elementSymbol" id = "magnesiumElementSymbol">Mg</p>
+                <p class = "atomicMass" id = "magnesiumAtomicMass">24.305</p>
+            </td>
+            <td class = "BLANKSPACE"></td>
+            <td class = "BLANKSPACE"></td>
+            <td class = "BLANKSPACE"></td>
+            <td class = "BLANKSPACE"></td>
+            <td class = "BLANKSPACE"></td>
+            <td class = "BLANKSPACE"></td>
+            <td class = "BLANKSPACE"></td>
+            <td class = "BLANKSPACE"></td>
+            <td class = "BLANKSPACE"></td>
+            <td class = "BLANKSPACE"></td>
+            <td onclick = guessElement(13) id = "aluminiumSquare" class = "postTransitionMetal">
+                <p class = "atomicNumber" id = "aluminiumAtomicNumber">13</p>
+                <p class = "elementSymbol" id = "aluminiumElementSymbol">Al</p>
+                <p class = "atomicMass" id = "aluminiumAtomicMass">26.98154</p>
+            </td>
+            <td onclick = guessElement(14) id = "siliconSquare" class = "metalloid">
+                <p class = "atomicNumber" id = "siliconAtomicNumber">14</p>
+                <p class = "elementSymbol" id = "siliconElementSymbol">Si</p>
+                <p class = "atomicMass" id = "siliconAtomicMass">28.0855</p>
+            </td>
+            <td onclick = guessElement(15) id = "phosphorusSquare" class = "reactiveNonMetal">
+                <p class = "atomicNumber" id = "phosphorusAtomicNumber">15</p>
+                <p class = "elementSymbol" id = "phosphorusElementSymbol">P</p>
+                <p class = "atomicMass" id = "phosphorusAtomicMass">30.97376</p>
+            </td>
+            <td onclick = guessElement(16) id = "sulfurSquare" class = "reactiveNonMetal">
+                <p class = "atomicNumber" id = "sulfurAtomicNumber">16</p>
+                <p class = "elementSymbol" id = "sulfurElementSymbol">S</p>
+                <p class = "atomicMass" id = "sulfurAtomicMass">32.06</p>
+            </td>
+            <td onclick = guessElement(17) id = "chlorineSquare" class = "reactiveNonMetal">
+                <p class = "atomicNumber" id = "chlorineAtomicNumber">17</p>
+                <p class = "elementSymbol" id = "chlorineElementSymbol">Cl</p>
+                <p class = "atomicMass" id = "chlorineAtomicMass">35.453</p>
+            </td>
+            <td onclick = guessElement(18) id = "argonSquare" class = "nobleGas">
+                <p class = "atomicNumber" id = "argonAtomicNumber">18</p>
+                <p class = "elementSymbol" id = "argonElementSymbol">Ar</p>
+                <p class = "atomicMass" id = "argonAtomicMass">39.948</p>
+            </td>
+        </tr>
+        <tr class = "row4">
+            <td onclick = guessElement(19) id = "potassiumSquare" class = "alkaliMetal">
+                <p class = "atomicNumber" id = "potassiumAtomicNumber">19</p>
+                <p class = "elementSymbol" id = "potassiumElementSymbol">K</p>
+                <p class = "atomicMass" id = "potassiumAtomicMass">39.0983</p>
+            </td>
+            <td onclick = guessElement(20) id = "calciumSquare" class = "alkalineEarthMetal">
+                <p class = "atomicNumber" id = "calciumAtomicNumber">20</p>
+                <p class = "elementSymbol" id = "calciumElementSymbol">Ca</p>
+                <p class = "atomicMass" id = "calciumAtomicMass">40.08</p>
+            </td>
+            <td onclick = guessElement(21) id = "scandiumSquare" class = "transitionMetal">
+                <p class = "atomicNumber" id = "scandiumAtomicNumber">21</p>
+                <p class = "elementSymbol" id = "scandiumElementSymbol">Sc</p>
+                <p class = "atomicMass" id = "scandiumAtomicMass">44.9559</p>
+            </td>
+            <td onclick = guessElement(22) id = "titaniumSquare" class = "transitionMetal">
+                <p class = "atomicNumber" id = "titaniumAtomicNumber">22</p>
+                <p class = "elementSymbol" id = "titaniumElementSymbol">Ti</p>
+                <p class = "atomicMass" id = "titaniumAtomicMass">47.9</p>
+            </td>
+            <td onclick = guessElement(23) id = "vanadiumSquare" class = "transitionMetal">
+                <p class = "atomicNumber" id = "vanadiumAtomicNumber">23</p>
+                <p class = "elementSymbol" id = "vanadiumElementSymbol">V</p>
+                <p class = "atomicMass" id = "vanadiumAtomicMass">50.9415</p>
+            </td>
+            <td onclick = guessElement(24) id = "chromiumSquare" class = "transitionMetal">
+                <p class = "atomicNumber" id = "chromiumAtomicNumber">24</p>
+                <p class = "elementSymbol" id = "chromiumElementSymbol">Cr</p>
+                <p class = "atomicMass" id = "chromiumAtomicMass">51.996</p>
+            </td>
+            <td onclick = guessElement(25) id = "manganeseSquare" class = "transitionMetal">
+                <p class = "atomicNumber" id = "manganeseAtomicNumber">25</p>
+                <p class = "elementSymbol" id = "manganeseElementSymbol">Mn</p>
+                <p class = "atomicMass" id = "manganeseAtomicMass">54.938</p>
+            </td>
+            <td onclick = guessElement(26) id = "ironSquare" class = "transitionMetal">
+                <p class = "atomicNumber" id = "ironAtomicNumber">26</p>
+                <p class = "elementSymbol" id = "ironElementSymbol">Fe</p>
+                <p class = "atomicMass" id = "ironAtomicMass">55.847</p>
+            </td>
+            <td onclick = guessElement(27) id = "cobaltSquare" class = "transitionMetal">
+                <p class = "atomicNumber" id = "cobaltAtomicNumber">27</p>
+                <p class = "elementSymbol" id = "cobaltElementSymbol">Co</p>
+                <p class = "atomicMass" id = "cobaltAtomicMass">58.9332</p>
+            </td>
+            <td onclick = guessElement(28) id = "nickelSquare" class = "transitionMetal">
+                <p class = "atomicNumber" id = "nickelAtomicNumber">28</p>
+                <p class = "elementSymbol" id = "nickelElementSymbol">Ni</p>
+                <p class = "atomicMass" id = "nickelAtomicMass">58.7</p>
+            </td>
+            <td onclick = guessElement(29) id = "copperSquare" class = "transitionMetal">
+                <p class = "atomicNumber" id = "copperAtomicNumber">29</p>
+                <p class = "elementSymbol" id = "copperElementSymbol">Cu</p>
+                <p class = "atomicMass" id = "copperAtomicMass">63.546</p>
+            </td>
+            <td onclick = guessElement(30) id = "zincSquare" class = "transitionMetal">
+                <p class = "atomicNumber" id = "zincAtomicNumber">30</p>
+                <p class = "elementSymbol" id = "zincElementSymbol">Zn</p>
+                <p class = "atomicMass" id = "zincAtomicMass">65.38</p>
+            </td>
+            <td onclick = guessElement(31) id = "galliumSquare" class = "postTransitionMetal">
+                <p class = "atomicNumber" id = "galliumAtomicNumber">31</p>
+                <p class = "elementSymbol" id = "galliumElementSymbol">Ga</p>
+                <p class = "atomicMass" id = "galliumAtomicMass">69.72</p>
+            </td>
+            <td onclick = guessElement(32) id = "germaniumSquare" class = "metalloid">
+                <p class = "atomicNumber" id = "germaniumAtomicNumber">32</p>
+                <p class = "elementSymbol" id = "germaniumElementSymbol">Ge</p>
+                <p class = "atomicMass" id = "germaniumAtomicMass">72.59</p>
+            </td>
+            <td onclick = guessElement(33) id = "arsenicSquare" class = "metalloid">
+                <p class = "atomicNumber" id = "arsenicAtomicNumber">33</p>
+                <p class = "elementSymbol" id = "arsenicElementSymbol">As</p>
+                <p class = "atomicMass" id = "arsenicAtomicMass">74.9216</p>
+            </td>
+            <td onclick = guessElement(34) id = "seleniumSquare" class = "reactiveNonMetal">
+                <p class = "atomicNumber" id = "seleniumAtomicNumber">34</p>
+                <p class = "elementSymbol" id = "seleniumElementSymbol">Se</p>
+                <p class = "atomicMass" id = "seleniumAtomicMass">78.96</p>
+            </td>
+            <td onclick = guessElement(35) id = "bromineSquare" class = "reactiveNonMetal">
+                <p class = "atomicNumber" id = "bromineAtomicNumber">35</p>
+                <p class = "elementSymbol" id = "bromineElementSymbol">Br</p>
+                <p class = "atomicMass" id = "bromineAtomicMass">79.904</p>
+            </td>
+            <td onclick = guessElement(36) id = "kryptonSquare" class = "nobleGas">
+                <p class = "atomicNumber" id = "kryptonAtomicNumber">36</p>
+                <p class = "elementSymbol" id = "kryptonElementSymbol">Kr</p>
+                <p class = "atomicMass" id = "kryptonAtomicMass">83.8</p>
+            </td>
+        </tr>
+        <tr class = "row5">
+            <td onclick = guessElement(37) id = "rubidiumSquare" class = "alkaliMetal">
+                <p class = "atomicNumber" id = "rubidiumAtomicNumber">37</p>
+                <p class = "elementSymbol" id = "rubidiumElementSymbol">Rb</p>
+                <p class = "atomicMass" id = "rubidiumAtomicMass">85.4678</p>
+            </td>
+            <td onclick = guessElement(38) id = "strontiumSquare" class = "alkalineEarthMetal">
+                <p class = "atomicNumber" id = "strontiumAtomicNumber">38</p>
+                <p class = "elementSymbol" id = "strontiumElementSymbol">Sr</p>
+                <p class = "atomicMass" id = "strontiumAtomicMass">87.62</p>
+            </td>
+            <td onclick = guessElement(39) id = "yttriumSquare" class = "transitionMetal">
+                <p class = "atomicNumber" id = "yttriumAtomicNumber">39</p>
+                <p class = "elementSymbol" id = "yttriumElementSymbol">Y</p>
+                <p class = "atomicMass" id = "yttriumAtomicMass">88.9059</p>
+            </td>
+            <td onclick = guessElement(40) id = "zirconiumSquare" class = "transitionMetal">
+                <p class = "atomicNumber" id = "zirconiumAtomicNumber">40</p>
+                <p class = "elementSymbol" id = "zirconiumElementSymbol">Zr</p>
+                <p class = "atomicMass" id = "zirconiumAtomicMass">91.22</p>
+            </td>
+            <td onclick = guessElement(41) id = "niobiumSquare" class = "transitionMetal">
+                <p class = "atomicNumber" id = "niobiumAtomicNumber">41</p>
+                <p class = "elementSymbol" id = "niobiumElementSymbol">Nb</p>
+                <p class = "atomicMass" id = "niobiumAtomicMass">92.9064</p>
+            </td>
+            <td onclick = guessElement(42) id = "molybdenumSquare" class = "transitionMetal">
+                <p class = "atomicNumber" id = "molybdenumAtomicNumber">42</p>
+                <p class = "elementSymbol" id = "molybdenumElementSymbol">Mo</p>
+                <p class = "atomicMass" id = "molybdenumAtomicMass">95.94</p>
+            </td>
+            <td onclick = guessElement(43) id = "technetiumSquare" class = "transitionMetal">
+                <p class = "atomicNumber" id = "technetiumAtomicNumber">43</p>
+                <p class = "elementSymbol" id = "technetiumElementSymbol">Tc</p>
+                <p class = "atomicMass" id = "technetiumAtomicMass">98</p>
+            </td>
+            <td onclick = guessElement(44) id = "rutheniumSquare" class = "transitionMetal">
+                <p class = "atomicNumber" id = "rutheniumAtomicNumber">44</p>
+                <p class = "elementSymbol" id = "rutheniumElementSymbol">Ru</p>
+                <p class = "atomicMass" id = "rutheniumAtomicMass">101.07</p>
+            </td>
+            <td onclick = guessElement(45) id = "rhodiumSquare" class = "transitionMetal">
+                <p class = "atomicNumber" id = "rhodiumAtomicNumber">45</p>
+                <p class = "elementSymbol" id = "rhodiumElementSymbol">Rh</p>
+                <p class = "atomicMass" id = "rhodiumAtomicMass">102.9055</p>
+            </td>
+            <td onclick = guessElement(46) id = "palladiumSquare" class = "transitionMetal">
+                <p class = "atomicNumber" id = "palladiumAtomicNumber">46</p>
+                <p class = "elementSymbol" id = "palladiumElementSymbol">Pd</p>
+                <p class = "atomicMass" id = "palladiumAtomicMass">106.4</p>
+            </td>
+            <td onclick = guessElement(47) id = "silverSquare" class = "transitionMetal">
+                <p class = "atomicNumber" id = "silverAtomicNumber">47</p>
+                <p class = "elementSymbol" id = "silverElementSymbol">Ag</p>
+                <p class = "atomicMass" id = "silverAtomicMass">107.868</p>
+            </td>
+            <td onclick = guessElement(48) id = "cadmiumSquare" class = "transitionMetal">
+                <p class = "atomicNumber" id = "cadmiumAtomicNumber">48</p>
+                <p class = "elementSymbol" id = "cadmiumElementSymbol">Cd</p>
+                <p class = "atomicMass" id = "cadmiumAtomicMass">112.41</p>
+            </td>
+            <td onclick = guessElement(49) id = "indiumSquare" class = "postTransitionMetal">
+                <p class = "atomicNumber" id = "indiumAtomicNumber">49</p>
+                <p class = "elementSymbol" id = "indiumElementSymbol">In</p>
+                <p class = "atomicMass" id = "indiumAtomicMass">114.82</p>
+            </td>
+            <td onclick = guessElement(50) id = "tinSquare" class = "postTransitionMetal">
+                <p class = "atomicNumber" id = "tinAtomicNumber">50</p>
+                <p class = "elementSymbol" id = "tinElementSymbol">Sn</p>
+                <p class = "atomicMass" id = "tinAtomicMass">118.69</p>
+            </td>
+            <td onclick = guessElement(51) id = "antimonySquare" class = "metalloid">
+                <p class = "atomicNumber" id = "antimonyAtomicNumber">51</p>
+                <p class = "elementSymbol" id = "antimonyElementSymbol">Sb</p>
+                <p class = "atomicMass" id = "antimonyAtomicMass">121.75</p>
+            </td>
+            <td onclick = guessElement(52) id = "telluriumSquare" class = "metalloid">
+                <p class = "atomicNumber" id = "telluriumAtomicNumber">52</p>
+                <p class = "elementSymbol" id = "telluriumElementSymbol">Te</p>
+                <p class = "atomicMass" id = "telluriumAtomicMass">127.6</p>
+            </td>
+            <td onclick = guessElement(53) id = "iodineSquare" class = "reactiveNonMetal">
+                <p class = "atomicNumber" id = "iodineAtomicNumber">53</p>
+                <p class = "elementSymbol" id = "iodineElementSymbol">I</p>
+                <p class = "atomicMass" id = "iodineAtomicMass">126.9045</p>
+            </td>
+            <td onclick = guessElement(54) id = "xenonSquare" class = "nobleGas">
+                <p class = "atomicNumber" id = "xenonAtomicNumber">55</p>
+                <p class = "elementSymbol" id = "xenonElementSymbol">Xe</p>
+                <p class = "atomicMass" id = "xenonAtomicMass">131.3</p>
+            </td>
+        </tr>
+        <tr class = "row6">
+            <td onclick = guessElement(55) id = "cesiumSquare" class = "alkaliMetal">
+                <p class = "atomicNumber" id = "cesiumAtomicNumber">55</p>
+                <p class = "elementSymbol" id = "cesiumElementSymbol">Cs</p>
+                <p class = "atomicMass" id = "cesiumAtomicMass">132.9054</p>
+            </td>
+            <td onclick = guessElement(56) id = "bariumSquare" class = "alkalineEarthMetal">
+                <p class = "atomicNumber" id = "bariumAtomicNumber">56</p>
+                <p class = "elementSymbol" id = "bariumElementSymbol">Ba</p>
+                <p class = "atomicMass" id = "bariumAtomicMass">137.33</p>
+            </td>
+            <td onclick = guessElement(57) id = "lanthanumSquare" class = "lanthanide">
+                <p class = "atomicNumber" id = "lanthanumAtomicNumber">57</p>
+                <p class = "elementSymbol" id = "lanthanumElementSymbol">La</p>
+                <p class = "atomicMass" id = "lanthanumAtomicMass">138.9055</p>
+            </td>
+            <td onclick = guessElement(72) id = "hafniumSquare" class = "transitionMetal">
+                <p class = "atomicNumber" id = "hafniumAtomicNumber">72</p>
+                <p class = "elementSymbol" id = "hafniumElementSymbol">Hf</p>
+                <p class = "atomicMass" id = "hafniumAtomicMass">178.49</p>
+            </td>
+            <td onclick = guessElement(73) id = "tantalumSquare" class = "transitionMetal">
+                <p class = "atomicNumber" id = "tantalumAtomicNumber">73</p>
+                <p class = "elementSymbol" id = "tantalumElementSymbol">Ta</p>
+                <p class = "atomicMass" id = "tantalumAtomicMass">180.9479</p>
+            </td>
+            <td onclick = guessElement(74) id = "tungstenSquare" class = "transitionMetal">
+                <p class = "atomicNumber" id = "tungstenAtomicNumber">74</p>
+                <p class = "elementSymbol" id = "tungstenElementSymbol">W</p>
+                <p class = "atomicMass" id = "tungstenAtomicMass">183.85</p>
+            </td>
+            <td onclick = guessElement(75) id = "rheniumSquare" class = "transitionMetal">
+                <p class = "atomicNumber" id = "rheniumAtomicNumber">75</p>
+                <p class = "elementSymbol" id = "rheniumElementSymbol">Re</p>
+                <p class = "atomicMass" id = "rheniumAtomicMass">186.207</p>
+            </td>
+            <td onclick = guessElement(76) id = "osmiumSquare" class = "transitionMetal">
+                <p class = "atomicNumber" id = "osmiumAtomicNumber">76</p>
+                <p class = "elementSymbol" id = "osmiumElementSymbol">Os</p>
+                <p class = "atomicMass" id = "osmiumAtomicMass">190.2</p>
+            </td>
+            <td onclick = guessElement(77) id = "iridiumSquare" class = "transitionMetal">
+                <p class = "atomicNumber" id = "iridiumAtomicNumber">77</p>
+                <p class = "elementSymbol" id = "iridiumElementSymbol">Ir</p>
+                <p class = "atomicMass" id = "iridiumAtomicMass">192.22</p>
+            </td>
+            <td onclick = guessElement(78) id = "platinumSquare" class = "transitionMetal">
+                <p class = "atomicNumber" id = "platinumAtomicNumber">78</p>
+                <p class = "elementSymbol" id = "platinumElementSymbol">Pt</p>
+                <p class = "atomicMass" id = "platinumAtomicMass">195.09</p>
+            </td>
+            <td onclick = guessElement(79) id = "goldSquare" class = "transitionMetal">
+                <p class = "atomicNumber" id = "goldAtomicNumber">79</p>
+                <p class = "elementSymbol" id = "goldElementSymbol">Au</p>
+                <p class = "atomicMass" id = "goldAtomicMass">196.9665</p>
+            </td>
+            <td onclick = guessElement(80) id = "mercurySquare" class = "transitionMetal">
+                <p class = "atomicNumber" id = "mercuryAtomicNumber">80</p>
+                <p class = "elementSymbol" id = "mercuryElementSymbol">Hg</p>
+                <p class = "atomicMass" id = "mercuryAtomicMass">200.59</p>
+            </td>
+            <td onclick = guessElement(81) id = "thalliumSquare" class = "postTransitionMetal">
+                <p class = "atomicNumber" id = "thalliumAtomicNumber">81</p>
+                <p class = "elementSymbol" id = "thalliumElementSymbol">Tl</p>
+                <p class = "atomicMass" id = "thalliumAtomicMass">204.37</p>
+            </td>
+            <td onclick = guessElement(82) id = "leadSquare" class = "postTransitionMetal">
+                <p class = "atomicNumber" id = "leadAtomicNumber">82</p>
+                <p class = "elementSymbol" id = "leadElementSymbol">Pb</p>
+                <p class = "atomicMass" id = "leadAtomicMass">207.2</p>
+            </td>
+            <td onclick = guessElement(83) id = "bismuthSquare" class = "postTransitionMetal">
+                <p class = "atomicNumber" id = "bismuthAtomicNumber">83</p>
+                <p class = "elementSymbol" id = "bismuthElementSymbol">Bi</p>
+                <p class = "atomicMass" id = "bismuthAtomicMass">208.9804</p>
+            </td>
+            <td onclick = guessElement(84) id = "poloniumSquare" class = "postTransitionMetal">
+                <p class = "atomicNumber" id = "poloniumAtomicNumber">84</p>
+                <p class = "elementSymbol" id = "poloniumElementSymbol">Po</p>
+                <p class = "atomicMass" id = "poloniumAtomicMass">209</p>
+            </td>
+            <td onclick = guessElement(85) id = "astatineSquare" class = "metalloid">
+                <p class = "atomicNumber" id = "astatineAtomicNumber">85</p>
+                <p class = "elementSymbol" id = "astatineElementSymbol">At</p>
+                <p class = "atomicMass" id = "astatineAtomicMass">210</p>
+            </td>
+            <td onclick = guessElement(86) id = "radonSquare" class = "nobleGas">
+                <p class = "atomicNumber" id = "radonAtomicNumber">86</p>
+                <p class = "elementSymbol" id = "radonElementSymbol">Rn</p>
+                <p class = "atomicMass" id = "radonAtomicMass">222</p>
+            </td>
+        </tr>
+        <tr class = "row7">
+            <td onclick = guessElement(87) id = "franciumSquare" class = "alkaliMetal">
+                <p class = "atomicNumber" id = "franciumAtomicNumber">87</p>
+                <p class = "elementSymbol" id = "franciumElementSymbol">Fr</p>
+                <p class = "atomicMass" id = "franciumAtomicMass">223</p>
+            </td>
+            <td onclick = guessElement(88) id = "radiumSquare" class = "alkalineEarthMetal">
+                <p class = "atomicNumber" id = "radiumAtomicNumber">88</p>
+                <p class = "elementSymbol" id = "radiumElementSymbol">Ra</p>
+                <p class = "atomicMass" id = "radiumAtomicMass">226.0254</p>
+            </td>
+            <td onclick = guessElement(89) id = "actiniumSquare" class = "actinide">
+                <p class = "atomicNumber" id = "actiniumAtomicNumber">89</p>
+                <p class = "elementSymbol" id = "actiniumElementSymbol">Ac</p>
+                <p class = "atomicMass" id = "actiniumAtomicMass">227.0278</p>
+            </td>
+            <td onclick = guessElement(104) id = "rutherfordiumSquare" class = "transitionMetal">
+                <p class = "atomicNumber" id = "rutherfordiumAtomicNumber">104</p>
+                <p class = "elementSymbol" id = "rutherfordiumElementSymbol">Rf</p>
+                <p class = "atomicMass" id = "rutherfordiumAtomicMass">261</p>
+            </td>
+            <td onclick = guessElement(105) id = "dubniumSquare" class = "transitionMetal">
+                <p class = "atomicNumber" id = "dubniumAtomicNumber">105</p>
+                <p class = "elementSymbol" id = "dubniumElementSymbol">Db</p>
+                <p class = "atomicMass" id = "dubniumAtomicMass">262</p>
+            </td>
+            <td onclick = guessElement(106) id = "seaborgiumSquare" class = "transitionMetal">
+                <p class = "atomicNumber" id = "seaborgiumAtomicNumber">106</p>
+                <p class = "elementSymbol" id = "seaborgiumElementSymbol">Sg</p>
+                <p class = "atomicMass" id = "seaborgiumAtomicMass">263</p>
+            </td>
+            <td onclick = guessElement(107) id = "bohriumSquare" class = "transitionMetal">
+                <p class = "atomicNumber" id = "bohriumAtomicNumber">107</p>
+                <p class = "elementSymbol" id = "bohriumElementSymbol">Bh</p>
+                <p class = "atomicMass" id = "bohriumAtomicMass">262</p>
+            </td>
+            <td onclick = guessElement(108) id = "hassiumSquare" class = "transitionMetal">
+                <p class = "atomicNumber" id = "hassiumAtomicNumber">108</p>
+                <p class = "elementSymbol" id = "hassiumElementSymbol">Hs</p>
+                <p class = "atomicMass" id = "hassiumAtomicMass">255</p>
+            </td>
+            <td onclick = guessElement(109) id = "meitneriumSquare" class = "unknown">
+                <p class = "atomicNumber" id = "meitneriumAtomicNumber">109</p>
+                <p class = "elementSymbol" id = "meitneriumElementSymbol">Mt</p>
+                <p class = "atomicMass" id = "meitneriumAtomicMass">256</p>
+            </td>
+            <td onclick = guessElement(110) id = "darmstadtiumSquare" class = "unknown">
+                <p class = "atomicNumber" id = "darmstadtiumAtomicNumber">110</p>
+                <p class = "elementSymbol" id = "darmstadtiumElementSymbol">Ds</p>
+                <p class = "atomicMass" id = "darmstadtiumAtomicMass">281</p>
+            </td>
+            <td onclick = guessElement(111) id = "roentgeniumSquare" class = "unknown">
+                <p class = "atomicNumber" id = "roentgeniumAtomicNumber">111</p>
+                <p class = "elementSymbol" id = "roentgeniumElementSymbol">Rg</p>
+                <p class = "atomicMass" id = "roentgeniumAtomicMass">282</p>
+            </td>
+            <td onclick = guessElement(112) id = "coperniciumSquare" class = "unknown">
+                <p class = "atomicNumber" id = "coperniciumAtomicNumber">112</p>
+                <p class = "elementSymbol" id = "coperniciumElementSymbol">Cn</p>
+                <p class = "atomicMass" id = "coperniciumAtomicMass">285</p>
+            </td>
+            <td onclick = guessElement(113) id = "nihoniumSquare" class = "unknown">
+                <p class = "atomicNumber" id = "nihoniumAtomicNumber">113</p>
+                <p class = "elementSymbol" id = "nihoniumElementSymbol">Nh</p>
+                <p class = "atomicMass" id = "nihoniumAtomicMass">286</p>
+            </td>
+            <td onclick = guessElement(114) id = "fleroviumSquare" class = "unknown">
+                <p class = "atomicNumber" id = "fleroviumAtomicNumber">114</p>
+                <p class = "elementSymbol" id = "fleroviumElementSymbol">Fl</p>
+                <p class = "atomicMass" id = "fleroviumAtomicMass">289</p>
+            </td>
+            <td onclick = guessElement(115) id = "moscoviumSquare" class = "unknown">
+                <p class = "atomicNumber" id = "moscoviumAtomicNumber">115</p>
+                <p class = "elementSymbol" id = "moscoviumElementSymbol">Mc</p>
+                <p class = "atomicMass" id = "moscoviumAtomicMass">290</p>
+            </td>
+            <td onclick = guessElement(116) id = "livermoriumSquare" class = "unknown">
+                <p class = "atomicNumber" id = "livermoriumAtomicNumber">116</p>
+                <p class = "elementSymbol" id = "livermoriumElementSymbol">Lv</p>
+                <p class = "atomicMass" id = "livermoriumAtomicMass">293</p>
+            </td>
+            <td onclick = guessElement(117) id = "tennessineSquare" class = "unknown">
+                <p class = "atomicNumber" id = "tennessineAtomicNumber">117</p>
+                <p class = "elementSymbol" id = "tennessineElementSymbol">Ts</p>
+                <p class = "atomicMass" id = "tennessineAtomicMass">294</p>
+            </td>
+            <td onclick = guessElement(118) id = "oganessonSquare" class = "unknown">
+                <p class = "atomicNumber" id = "oganessonAtomicNumber">118</p>
+                <p class = "elementSymbol" id = "oganessonElementSymbol">Og</p>
+                <p class = "atomicMass" id = "oganessonAtomicMass">294</p>
+            </td>
+        </tr>
+        <tr class = "GAP">
+            <td class = "BLANKSPACE"></td>
+            <td class = "BLANKSPACE"></td>
+            <td class = "BLANKSPACE"></td>
+            <td class = "BLANKSPACE"></td>
+            <td class = "BLANKSPACE"></td>
+            <td class = "BLANKSPACE"></td>
+            <td class = "BLANKSPACE"></td>
+            <td class = "BLANKSPACE"></td>
+            <td class = "BLANKSPACE"></td>
+            <td class = "BLANKSPACE"></td>
+            <td class = "BLANKSPACE"></td>
+            <td class = "BLANKSPACE"></td>
+            <td class = "BLANKSPACE"></td>
+            <td class = "BLANKSPACE"></td>
+            <td class = "BLANKSPACE"></td>
+            <td class = "BLANKSPACE"></td>
+            <td class = "BLANKSPACE"></td>
+            <td class = "BLANKSPACE"></td>
+        </tr>
+        <tr class = "fBlock1">
+            <td class = "BLANKSPACE"></td>
+            <td class = "BLANKSPACE"></td>
+            <td class = "BLANKSPACE"></td>
+            <td onclick = guessElement(58) id = "ceriumSquare" class = "lanthanide">
+                <p class = "atomicNumber" id = "ceriumAtomicNumber">58</p>
+                <p class = "elementSymbol" id = "ceriumElementSymbol">Ce</p>
+                <p class = "atomicMass" id = "ceriumAtomicMass">140.12</p>
+            </td>
+            <td onclick = guessElement(59) id = "praseodymiumSquare" class = "lanthanide">
+                <p class = "atomicNumber" id = "praseodymiumAtomicNumber">59</p>
+                <p class = "elementSymbol" id = "praseodymiumElementSymbol">Pr</p>
+                <p class = "atomicMass" id = "praseodymiumAtomicMass">140.0977</p>
+            </td>
+            <td onclick = guessElement(60) id = "neodymiumSquare" class = "lanthanide">
+                <p class = "atomicNumber" id = "neodymiumAtomicNumber">60</p>
+                <p class = "elementSymbol" id = "neodymiumElementSymbol">Nd</p>
+                <p class = "atomicMass" id = "neodymiumAtomicMass">144.24</p>
+            </td>
+            <td onclick = guessElement(61) id = "promethiumSquare" class = "lanthanide">
+                <p class = "atomicNumber" id = "promethiumAtomicNumber">61</p>
+                <p class = "elementSymbol" id = "promethiumElementSymbol">Pm</p>
+                <p class = "atomicMass" id = "promethiumAtomicMass">145</p>
+            </td>
+            <td onclick = guessElement(62) id = "samariumSquare" class = "lanthanide">
+                <p class = "atomicNumber" id = "samariumAtomicNumber">62</p>
+                <p class = "elementSymbol" id = "samariumElementSymbol">Sm</p>
+                <p class = "atomicMass" id = "samariumAtomicMass">150.4</p>
+            </td>
+            <td onclick = guessElement(63) id = "europiumSquare" class = "lanthanide">
+                <p class = "atomicNumber" id = "europiumAtomicNumber">63</p>
+                <p class = "elementSymbol" id = "europiumElementSymbol">Eu</p>
+                <p class = "atomicMass" id = "europiumAtomicMass">151.96</p>
+            </td>
+            <td onclick = guessElement(64) id = "gadoliniumSquare" class = "lanthanide">
+                <p class = "atomicNumber" id = "gadoliniumAtomicNumber">64</p>
+                <p class = "elementSymbol" id = "gadoliniumElementSymbol">Gd</p>
+                <p class = "atomicMass" id = "gadoliniumAtomicMass">157.25</p>
+            </td>
+            <td onclick = guessElement(65) id = "terbiumSquare" class = "lanthanide">
+                <p class = "atomicNumber" id = "terbiumAtomicNumber">65</p>
+                <p class = "elementSymbol" id = "terbiumElementSymbol">Tb</p>
+                <p class = "atomicMass" id = "terbiumAtomicMass">158.9254</p>
+            </td>
+            <td onclick = guessElement(66) id = "dysprosiumSquare" class = "lanthanide">
+                <p class = "atomicNumber" id = "dysprosiumAtomicNumber">66</p>
+                <p class = "elementSymbol" id = "dysprosiumElementSymbol">Dy</p>
+                <p class = "atomicMass" id = "dysprosiumAtomicMass">162.5</p>
+            </td>
+            <td onclick = guessElement(67) id = "holmiumSquare" class = "lanthanide">
+                <p class = "atomicNumber" id = "holmiumAtomicNumber">67</p>
+                <p class = "elementSymbol" id = "holmiumElementSymbol">Ho</p>
+                <p class = "atomicMass" id = "holmiumAtomicMass">164.9304</p>
+            </td>
+            <td onclick = guessElement(68) id = "erbiumSquare" class = "lanthanide">
+                <p class = "atomicNumber" id = "erbiumAtomicNumber">68</p>
+                <p class = "elementSymbol" id = "erbiumElementSymbol">Er</p>
+                <p class = "atomicMass" id = "erbiumAtomicMass">167.26</p>
+            </td>
+            <td onclick = guessElement(69) id = "thuliumSquare" class = "lanthanide">
+                <p class = "atomicNumber" id = "thuliumAtomicNumber">69</p>
+                <p class = "elementSymbol" id = "thuliumElementSymbol">Tm</p>
+                <p class = "atomicMass" id = "thuliumAtomicMass">168.9342</p>
+            </td>
+            <td onclick = guessElement(70) id = "ytterbiumSquare" class = "lanthanide">
+                <p class = "atomicNumber" id = "ytterbiumAtomicNumber">70</p>
+                <p class = "elementSymbol" id = "ytterbiumElementSymbol">Yb</p>
+                <p class = "atomicMass" id = "ytterbiumAtomicMass">173.04</p>
+            </td>
+            <td onclick = guessElement(71) id = "lutetiumSquare" class = "lanthanide">
+                <p class = "atomicNumber" id = "lutetiumAtomicNumber">71</p>
+                <p class = "elementSymbol" id = "lutetiumElementSymbol">Lu</p>
+                <p class = "atomicMass" id = "lutetiumAtomicMass">174.967</p>
+            </td>
+        </tr>
+        <tr class = "fBlock2">
+            <td class = "BLANKSPACE"></td>
+            <td class = "BLANKSPACE"></td>
+            <td class = "BLANKSPACE"></td>
+            <td onclick = guessElement(90) id = "thoriumSquare" class = "actinide">
+                <p class = "atomicNumber" id = "thoriumAtomicNumber">90</p>
+                <p class = "elementSymbol" id = "thoriumElementSymbol">Th</p>
+                <p class = "atomicMass" id = "thoriumAtomicMass">232.0381</p>
+            </td>
+            <td onclick = guessElement(91) id = "protactiniumSquare" class = "actinide">
+                <p class = "atomicNumber" id = "protactiniumAtomicNumber">91</p>
+                <p class = "elementSymbol" id = "protactiniumElementSymbol">Pa</p>
+                <p class = "atomicMass" id = "protactiniumAtomicMass">231.0359</p>
+            </td>
+            <td onclick = guessElement(92) id = "uraniumSquare" class = "actinide">
+                <p class = "atomicNumber" id = "uraniumAtomicNumber">92</p>
+                <p class = "elementSymbol" id = "uraniumElementSymbol">U</p>
+                <p class = "atomicMass" id = "uraniumAtomicMass">238.029</p>
+            </td>
+            <td onclick = guessElement(93) id = "neptuniumSquare" class = "actinide">
+                <p class = "atomicNumber" id = "neptuniumAtomicNumber">93</p>
+                <p class = "elementSymbol" id = "neptuniumElementSymbol">Np</p>
+                <p class = "atomicMass" id = "neptuniumAtomicMass">237.0482</p>
+            </td>
+            <td onclick = guessElement(94) id = "plutoniumSquare" class = "actinide">
+                <p class = "atomicNumber" id = "plutoniumAtomicNumber">94</p>
+                <p class = "elementSymbol" id = "plutoniumElementSymbol">Pu</p>
+                <p class = "atomicMass" id = "plutoniumAtomicMass">242</p>
+            </td>
+            <td onclick = guessElement(95) id = "americiumSquare" class = "actinide">
+                <p class = "atomicNumber" id = "americiumAtomicNumber">95</p>
+                <p class = "elementSymbol" id = "americiumElementSymbol">Am</p>
+                <p class = "atomicMass" id = "americiumAtomicMass">243</p>
+            </td>
+            <td onclick = guessElement(96) id = "curiumSquare" class = "actinide">
+                <p class = "atomicNumber" id = "curiumAtomicNumber">96</p>
+                <p class = "elementSymbol" id = "curiumElementSymbol">Cm</p>
+                <p class = "atomicMass" id = "curiumAtomicMass">247</p>
+            </td>
+            <td onclick = guessElement(97) id = "berkeliumSquare" class = "actinide">
+                <p class = "atomicNumber" id = "berkeliumAtomicNumber">97</p>
+                <p class = "elementSymbol" id = "berkeliumElementSymbol">Bk</p>
+                <p class = "atomicMass" id = "berkeliumAtomicMass">247</p>
+            </td>
+            <td onclick = guessElement(98) id = "californiumSquare" class = "actinide">
+                <p class = "atomicNumber" id = "californiumAtomicNumber">98</p>
+                <p class = "elementSymbol" id = "californiumElementSymbol">Cf</p>
+                <p class = "atomicMass" id = "californiumAtomicMass">251</p>
+            </td>
+            <td onclick = guessElement(99) id = "einsteiniumSquare" class = "actinide">
+                <p class = "atomicNumber" id = "einsteiniumAtomicNumber">99</p>
+                <p class = "elementSymbol" id = "einsteiniumElementSymbol">Es</p>
+                <p class = "atomicMass" id = "einsteiniumAtomicMass">252</p>
+            </td>
+            <td onclick = guessElement(100) id = "fermiumSquare" class = "actinide">
+                <p class = "atomicNumber" id = "fermiumAtomicNumber">100</p>
+                <p class = "elementSymbol" id = "fermiumElementSymbol">Fm</p>
+                <p class = "atomicMass" id = "fermiumAtomicMass">257</p>
+            </td>
+            <td onclick = guessElement(101) id = "mendeleviumSquare" class = "actinide">
+                <p class = "atomicNumber" id = "mendeleviumAtomicNumber">101</p>
+                <p class = "elementSymbol" id = "mendeleviumElementSymbol">Md</p>
+                <p class = "atomicMass" id = "mendeleviumAtomicMass">258</p>
+            </td>
+            <td onclick = guessElement(102) id = "nobeliumSquare" class = "actinide">
+                <p class = "atomicNumber" id = "nobeliumAtomicNumber">102</p>
+                <p class = "elementSymbol" id = "nobeliumElementSymbol">No</p>
+                <p class = "atomicMass" id = "nobeliumAtomicMass">250</p>
+            </td>
+            <td onclick = guessElement(103) id = "lawrenciumSquare" class = "actinide">
+                <p class = "atomicNumber" id = "lawrenciumAtomicNumber">103</p>
+                <p class = "elementSymbol" id = "lawrenciumElementSymbol">Lr</p>
+                <p class = "atomicMass" id = "lawrenciumAtomicMass">260</p>
+            </td>
+        </tr>
+    </table>
+
+    <!-- QUESTIONS -->
+    <p id = "questions" class = "questions">placeholder</p>
+
+    <select id = "gamemode">
+        <option>Find Element Given Name</option>
+        <option>Find Element Given Symbol</option>
+        <option>Find Element Given Atomic Number</option>
+        <option>Find Element Given Electron Configuration</option>
+    </select>
+
+    <button id = "startButton" onclick = start()>START</button>
+
+
+</body>
+</html>
