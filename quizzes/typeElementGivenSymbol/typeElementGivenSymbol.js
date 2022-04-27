@@ -1,5 +1,5 @@
-//Type Element Given Symbol
-//Gregory Ecklund (Feb 2022)
+//Gregory Ecklund
+//March 2022
 
 //Variable Declarations
 const timerList = [document.getElementById('minutesLabel'), document.getElementById('minutes'), document.getElementById('seconds'), document.getElementById('secondsLabel')]

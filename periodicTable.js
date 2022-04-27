@@ -1,5 +1,5 @@
-//Multiple Choice Questions
-//Gregory Ecklund (March 2022)
+//Gregory Ecklund
+//March 2022
 
 //DEFINE DATA & VARS
 const ELEMENTDATA = {

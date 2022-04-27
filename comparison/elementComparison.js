@@ -1,3 +1,6 @@
+//Gregory Ecklund
+//January 2022
+
 const ELEMENTDATA = {
     "hydrogen": {
         "name": "Hydrogen",
