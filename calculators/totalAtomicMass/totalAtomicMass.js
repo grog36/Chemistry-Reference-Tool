@@ -1,7 +1,7 @@
-//Multiple Choice Questions
-//Gregory Ecklund (March 2022)
+//Gregory Ecklund
+//August 2022
 
-//DEFINE CONSTANTS
+//Define Constants
 const ELEMENTINPUT1INPUT = document.getElementById("elementInput1")
 const ELEMENTINPUT2INPUT = document.getElementById("elementInput2")
 const ELEMENTINPUT3INPUT = document.getElementById("elementInput3")
@@ -259,9 +259,9 @@ const atomicWeightsWithElementSymbol = {
     "og": 294
 }
 
-//FINDS THE TOTAL ATOMIC MASS
+//Finds the total atomic mass of the inputted element
 function totalAtomicMass() {
-    //VARIABLE ASSIGNMENT
+    //Variable Assignment
     let elementInput1 = ELEMENTINPUT1INPUT.value.toLowerCase()
     let elementInput2 = ELEMENTINPUT2INPUT.value.toLowerCase()
     let elementInput3 = ELEMENTINPUT3INPUT.value.toLowerCase()
@@ -286,7 +286,7 @@ function totalAtomicMass() {
     let noFailures = true
     let total = 0
 
-    //CHECKS ELEMENTS AND ADDS TO ATOMIC MASS TOTAL LIST
+    //Checks elements and adds to atomic mass total list
     for (let i in inputList) {
         if (atomicWeightsWithElementName[inputList[i]] != undefined) {
             atomicMassTotalList.push(atomicWeightsWithElementName[inputList[i]] * countList[i])
@@ -302,12 +302,12 @@ function totalAtomicMass() {
         }
     }
 
-    //ITERATES THROUGH TOTAL ATOMIC MASS LIST TO FORM TOTAL
+    //Iterates through total atomic mass list to form total
     for (let i in atomicMassTotalList) {
         total += atomicMassTotalList[i]
     }
     
-    //CHECKS FOR FAILURES AND DISPLAYS
+    //Checks for failurs and displays it
     if (noFailures == true) {
         let result = `${total} grams per mole\n`
         output.style.visibility = "visible"
@@ -319,6 +319,12 @@ function totalAtomicMass() {
     }
 }
 
+/**
+ * Rounds a given number to a certain amount of decimal places
+ * @param {Number} number The number you wish to round
+ * @param {Number} decimalPlaces The amount of numbers after the decimal of the result
+ * @returns The final rounded number
+ */
 function round(number, decimalPlaces) {
     let current = number * (10 ** decimalPlaces)
     current = Math.round(current)
@@ -326,7 +332,7 @@ function round(number, decimalPlaces) {
     return current
 }
 
-//KEY PRESSED
+//Checks for key presses and does stuff
 document.addEventListener("keydown", keyIsPressed)
 function keyIsPressed(e) {
     switch (e.keyCode) {
@@ -348,6 +354,10 @@ function keyIsPressed(e) {
     }
 }
 
+/**
+ * Selects the element above the currently selected element on the webpage
+ * @param {String} currentElementId The ID of the currently selected element
+ */
 function selectAboveElement(currentElementId) {
     if (currentElementId.includes("elementCount")) {
         let number = parseInt(currentElementId.split("elementCount")[1])
@@ -364,6 +374,10 @@ function selectAboveElement(currentElementId) {
         }
     }
 }
+/**
+ * Selects the element below the currently selected element on the webpage
+ * @param {String} currentElementId The ID of the currently selected element
+ */
 function selectBelowElement(currentElementId) {
     if (currentElementId.includes("elementCount")) {
         let number = parseInt(currentElementId.split("elementCount")[1])
@@ -380,12 +394,20 @@ function selectBelowElement(currentElementId) {
         }
     }
 }
+/**
+ * Selects the element to the left of the currently selected element on the webpage
+ * @param {String} currentElementId The ID of the currently selected element
+ */
 function selectLeftElement(currentElementId) {
     if (currentElementId.includes("elementCount")) {
         let number = parseInt(currentElementId.split("elementCount")[1])
         document.getElementById(`elementInput${number}`).focus()
     }
 }
+/**
+ * Selects the element to the right of the currently selected element on the webpage
+ * @param {String} currentElementId The ID of the currently selected element
+ */
 function selectRightElement(currentElementId) {
     if (currentElementId.includes("elementInput")) {
         let number = parseInt(currentElementId.split("elementInput")[1])

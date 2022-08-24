@@ -1,7 +1,7 @@
-//Multiple Choice Questions
-//Gregory Ecklund (March 2022)
+//Gregory Ecklund
+//August 2022
 
-//DEFINE ATOMIC WEIGHTS
+//Define atomic weights
 const atomicWeightsWithElementName = {
     "hydrogen": 1.00797,
     "helium": 4.00260,
@@ -243,7 +243,7 @@ const atomicWeightsWithElementSymbol = {
     "og": 294
 }
 
-//CALCULATE FUNCTION
+//Calculates the grams to grams conversion
 function calculate() {
     let massList1 = []
     let massList2 = []
@@ -294,7 +294,7 @@ function calculate() {
     document.getElementById("compound2Grams").innerHTML = compound2Grams
 }
 
-//KEY PRESSED
+//Checks for Key Presses
 document.addEventListener("keydown", keyIsPressed)
 function keyIsPressed(e) {
     switch (e.keyCode) {
@@ -316,6 +316,10 @@ function keyIsPressed(e) {
             break
     }
 }
+/**
+ * Selects the element above the currently selected element on the webpage
+ * @param {String} currentElementId The ID of the currently selected element
+ */
 function selectAboveElement(currentElementId) {
     if (currentElementId.includes("compound1Input")) {
         let number = parseInt(currentElementId.split("compound1Input")[1])
@@ -355,6 +359,10 @@ function selectAboveElement(currentElementId) {
         document.getElementById("compound1Moles").focus()
     }
 }
+/**
+ * Selects the element below the currently selected element on the webpage
+ * @param {String} currentElementId The ID of the currently selected element
+ */
 function selectBelowElement(currentElementId) {
     if (currentElementId == "compound1Count5") {
         document.getElementById("compound1Moles").focus()
@@ -394,6 +402,10 @@ function selectBelowElement(currentElementId) {
         }
     }
 }
+/**
+ * Selects the element to the right of the currently selected element on the webpage
+ * @param {String} currentElementId The ID of the currently selected element
+ */
 function selectRightElement(currentElementId) {
     if (currentElementId.includes("compound1Input")) {
         let number = parseInt(currentElementId.split("compound1Input")[1])
@@ -411,6 +423,10 @@ function selectRightElement(currentElementId) {
         document.getElementById("compound2Moles").focus()
     }
 }
+/**
+ * Selects the element to the left of the currently selected element on the webpage
+ * @param {String} currentElementId The ID of the currently selected element
+ */
 function selectLeftElement(currentElementId) {
     if (currentElementId.includes("compound1Count")) {
         let number = parseInt(currentElementId.split("compound1Count")[1])

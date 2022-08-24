@@ -1,3 +1,4 @@
 # Chemistry-Reference-Tool
 
-**March 2022 Implementation**
+**August 2022 Implementation**
+**Author : Gregory Ecklund**

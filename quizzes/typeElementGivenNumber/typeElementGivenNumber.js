@@ -1,5 +1,5 @@
 //Gregory Ecklund
-//March 2022
+//August 2022
 
 //Variable Declarations
 const timerList = [document.getElementById('minutesLabel'), document.getElementById('minutes'), document.getElementById('seconds'), document.getElementById('secondsLabel')]
@@ -56,7 +56,7 @@ function checkAnswer() {
     }
 }
 
-//Winning Function
+//Displays Win Screen
 function youWin() {
     document.getElementById('input').style.visibility = 'hidden'
     document.getElementById('retryButton').style.visibility = 'visible'
@@ -73,21 +73,6 @@ function youWin() {
         document.getElementById('retryButton').style.backgroundColor = 'crimson'
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 //Retry Function
 function retry() {

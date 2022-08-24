@@ -1,17 +1,20 @@
 /* Gregory Ecklund */
-/* January 2022 */
+/* August 2022 */
 
+/* Body */
 body {
     background-color: gray;
     font-family: Verdana;
 }
 
+/* Element 1 */
 .element1 {
     display: flex;
     margin-left: 250px;
     float: left
 }
 
+/* Element 2 */
 .element2 {
     display: flex;
     justify-content: right;
@@ -19,6 +22,11 @@ body {
     float: right;
 }
 
+/* Both Element Grids */
+.comparisons {
+    clear: left;
+    margin-top: -75px;
+}
 .element1Labels > p, .element1Info > p, .element2Labels > p, .element2Info > p {
     font-size: 12px;
     border-width: 2px;
@@ -27,31 +35,23 @@ body {
     margin: 0;
     text-align: center;
 }
-
 .element1Labels, .element2Labels {
     color: black;
     background-color: limegreen;
 }
-
 .element1Info, .element2Info {
     color: black;
     background-color: turquoise;
 }
 
-#inputElement1, #inputElement2, #pressureSelect, #temperatureSelect {
-    width: 100px;
-    text-align: center;
-}
-
-.comparisons {
-    clear: left;
-    margin-top: -75px;
-}
-
+/* Settings */
 .settings > label {
     display: inline-block;
     clear: left;
     width: 120px;
     text-align: left;
 }
-
+#inputElement1, #inputElement2, #pressureSelect, #temperatureSelect {
+    width: 100px;
+    text-align: center;
+}

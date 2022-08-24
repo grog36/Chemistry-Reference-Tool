@@ -1,7 +1,7 @@
-//Multiple Choice Questions
-//Gregory Ecklund (March 2022)
+//Gregory Ecklund
+//August 2022
 
-//DEFINE DATA & VARS
+//Define data and variables
 const ELEMENTDATA = {
     "hydrogen": {
         "name": "Hydrogen",
@@ -3197,7 +3197,7 @@ let hasStarted = false
 var score = 0
 let guess = ""
 
-//START FUNCTION
+//Start Function
 function start() {
     category = document.getElementById("gamemode").value.split("Find Element Given ")[1].toLowerCase()
     document.getElementById("startButton").style.visibility = "hidden"
@@ -3213,7 +3213,7 @@ function start() {
     hasStarted = true
 }
 
-//ASSIGN QUESTIONS
+//Randomizes elements and adds them to a list of questions
 function assignQuestions(category) {
     let elementList = []
     for (let element in ELEMENTDATA) {
@@ -3229,6 +3229,10 @@ function assignQuestions(category) {
     questionList.splice(0, 1)
 }
 
+/**
+ * Guess an element where atomic number comes from which square is selected
+ * @param {Number} atomicNumber The atomic number of the guessed square on table
+ */
 function guessElement(atomicNumber) {
     if (hasStarted) {
         let iterator = 0;
@@ -3253,11 +3257,12 @@ function guessElement(atomicNumber) {
     }
 }
 
+//Displays the win screen
 function youWin() {
     document.getElementById("questions").innerHTML = "YOU WIN!"
 }
 
-
+//Shows the next question
 function nextQuestion() {
     document.getElementById(`${guess}AtomicNumber`).innerHTML = ELEMENTDATA[guess]["number"]
     document.getElementById(`${guess}ElementSymbol`).innerHTML = ELEMENTDATA[guess]["symbol"]
@@ -3274,7 +3279,7 @@ function nextQuestion() {
     }
 }
 
-//RANDOM NUMBER FUNCTION
+//Random Number Function
 function randomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1) ) + min
 }

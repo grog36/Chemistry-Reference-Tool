@@ -1,5 +1,5 @@
 /* Gregory Ecklund */
-/* March 2022 */
+/* August 2022 */
 
 /* BODY */
 body {
@@ -22,8 +22,8 @@ td {
     font-size: 16px;
     border-style: solid;
     border-color: black;
-    height: 40px;
-    width: 40px;
+    height: 60px;
+    width: 60px;
     text-align: center;
     font-weight: bolder;
     border-width: 1px

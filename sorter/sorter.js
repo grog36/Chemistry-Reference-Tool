@@ -1,5 +1,5 @@
 //Gregory Ecklund
-//March 2022
+//August 2022
 
 //CONSTANT & VAR ASSIGNMENT
 const ELEMENTDATA = {
@@ -3198,22 +3198,26 @@ var newList = []
 var tempList = []
 var nameList = []
 
-//SORTS ELEMENTS BY A GIVEN VALUE IN A CERTAIN ORDER
-function sortBy(value, order) {
+/**
+ * Sorts the elements by a given category and order
+ * @param {String} category The category to be sorted by
+ * @param {Number} order Ascending/Descending
+ */
+function sortBy(category, order) {
     newList = []
     tempList = []
     nameList = []
     for (let i = 0; i < 118; i++) {
         let currentElement = ELEMENTDATA[elementList[i].toLowerCase()]
-        if (currentElement[value] != "N/A") {
-            newList.push(currentElement[value])
+        if (currentElement[category] != "N/A") {
+            newList.push(currentElement[category])
         }
         else {
             tempList.push("N/A")
         }
     }
 
-    if (numberCategory.indexOf(value) != -1) {
+    if (numberCategory.indexOf(category) != -1) {
         if (order == "ascending") {
             newList.sort(function(a, b) {
                 return (a-b)
@@ -3239,7 +3243,7 @@ function sortBy(value, order) {
     for (let i = 0; i < 118; i++) {
         let isEqual = false
         for (let j = 0; j < 118; j++) {
-            currentData = ELEMENTDATA[elementList[j].toLowerCase()][value]
+            currentData = ELEMENTDATA[elementList[j].toLowerCase()][category]
             if (newList[i] == currentData && isEqual == false && nameList.indexOf(elementList[j]) == -1) {
                 nameList.push(elementList[j])
                 isEqual = true
@@ -3251,10 +3255,11 @@ function sortBy(value, order) {
 
 //Refresh Screen Function
 function refreshScreen() {
-    let order = document.getElementById('orderSelect').value.toLowerCase()
-    let categoryInput = document.getElementById('categorySelect').value.toLowerCase()
+    let order = document.getElementById('orderSelect').category.toLowerCase()
+    let categoryInput = document.getElementById('categorySelect').category.toLowerCase()
     let category = ""
 
+    //Grabs the category from the on-screen category input
     switch (categoryInput) {
         case "state at stp":
             category = "stateAtSTP"
@@ -3313,6 +3318,7 @@ function refreshScreen() {
     }
 
     sortBy(category, order)
+
     for (let i = 1; i < 119; i++) {
         document.getElementById(`element${i}Name`).innerHTML = nameList[i-1]
         document.getElementById(`element${i}Info`).innerHTML = newList[i-1]

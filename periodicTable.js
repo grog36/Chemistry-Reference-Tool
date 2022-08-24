@@ -1,5 +1,5 @@
 //Gregory Ecklund
-//March 2022
+//August 2022
 
 //DEFINE DATA & VARS
 const ELEMENTDATA = {
@@ -3196,7 +3196,7 @@ let currentElement = ""
 let currentElementHTML = ""
 variableAssignment()
 
-//ASSIGN VARS
+//ASSIGN VARS TO DOC-ELEMENTS
 function variableAssignment() {
     elementInfo1 = document.getElementById("elementInfo1")
     elementInfo2 = document.getElementById("elementInfo2")

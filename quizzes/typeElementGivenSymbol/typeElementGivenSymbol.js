@@ -1,5 +1,5 @@
 //Gregory Ecklund
-//March 2022
+//August 2022
 
 //Variable Declarations
 const timerList = [document.getElementById('minutesLabel'), document.getElementById('minutes'), document.getElementById('seconds'), document.getElementById('secondsLabel')]
@@ -39,7 +39,9 @@ function start() {
     
 }
 
+//Changes question on the screen
 function nextQuestion() {
+    //Checks if list is polyatomic ions or elements
     if (list == 'polyatomic') {
         if (remainingPolyatomicNames.length == 0) {
             youWin()
@@ -74,7 +76,7 @@ function nextQuestion() {
     }   
 }
 
-
+//Check a provided answer
 function checkAnswer() {
     if (list == 'polyatomic') {
         let input = document.getElementById('input').value
@@ -104,6 +106,7 @@ function checkAnswer() {
     
 }
 
+//Displays the "You Win!" screen
 function youWin() {
     document.getElementById('input').style.visibility = 'hidden'
     document.getElementById('retryButton').style.visibility = 'visible'
@@ -135,6 +138,7 @@ function youWin() {
     }
 }
 
+//Refreshes page when "retryButton" is pressed
 function retry() {
     location.reload()
 }

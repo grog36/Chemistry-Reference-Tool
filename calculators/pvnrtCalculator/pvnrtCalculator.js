@@ -1,9 +1,8 @@
 // Gregory Ecklund
-// March 2022
+// August 2022
 
-//VARS
+//Define Constants and Variables
 let solutionVariable = "Pressure"
-
 const UNITS = {
     "pressure": ["atm", "torr", "mmHg", "pasc", "kilopasc"],
     "volume": ["cm^3", "mL", "L", "m^3"],
@@ -11,7 +10,6 @@ const UNITS = {
     "temperature": ["Kelvin", "&#176Celsius", "&#176Fahrenheit"],
     "r": ["(L&timesatm)/(moles&timesKelvin)"]
 }
-
 const DATA = {
     "Pressure": 0,
     "PressureUnits": "",
@@ -25,6 +23,7 @@ const DATA = {
     "RUnits": ""
 }
 
+//Resets the "DATA" variable to default values
 function resetData() {
     DATA.Pressure = 0
     DATA.PressureUnits = ""

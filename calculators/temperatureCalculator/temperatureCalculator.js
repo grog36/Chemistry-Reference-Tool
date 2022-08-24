@@ -1,7 +1,7 @@
-//Multiple Choice Questions
-//Gregory Ecklund (March 2022)
+//Gregory Ecklund
+//August 2022
 
-//DEFINE CONSTANTS & VARS
+//Define constants and variables
 const INFO = document.getElementById("info")
 const INPUT = document.getElementById("input")
 const OUTPUT1 = document.getElementById("output1")
@@ -9,7 +9,7 @@ const OUTPUT2 = document.getElementById("output2")
 const LABEL = document.getElementById("label")
 var currentCalc = -1
 
-//CALCULATION FUNCTIONS
+//Defines calculation functions
 function calculateCelsiusFromFahrenheit(fahrenheit) {
     return ((parseFloat(fahrenheit) - 32) / 1.8)
 }
@@ -29,7 +29,7 @@ function calculateKelvinFromFahrenheit(fahrenheit) {
     return calculateKelvinFromCelsius(calculateCelsiusFromFahrenheit(fahrenheit))
 }
 
-//CHANGE THE SCREEN
+//Changes the screen display to update information
 function change() {
     OUTPUT1.style.visibility = "hidden"
     OUTPUT2.style.visibility = "hidden"
@@ -51,7 +51,7 @@ function change() {
     }
 }
 
-//CALCULATE USING HELPER FUNCTIONS ABOVE 
+//Calculates the temperature using the above helper functions
 function calculate() {
     if (currentCalc == 0) {
         let fahrenheit = INPUT.value
@@ -79,10 +79,10 @@ function calculate() {
     OUTPUT2.style.visibility = "visible"
 }
 
-//CHANGES SCREEN ON STARTUP
+//Changes the screen on startup
 change()
 
-//KEY PRESSES
+//Looks for key presses
 document.addEventListener("keypress", keyIsPressed)
 function keyIsPressed(e) {
     if (e.keyCode == 13) {  //Enter Is Pressed
