@@ -3255,8 +3255,8 @@ function sortBy(category, order) {
 
 //Refresh Screen Function
 function refreshScreen() {
-    let order = document.getElementById('orderSelect').category.toLowerCase()
-    let categoryInput = document.getElementById('categorySelect').category.toLowerCase()
+    let order = document.getElementById("orderSelect").value.toLowerCase()
+    let categoryInput = document.getElementById("categorySelect").value.toLowerCase()
     let category = ""
 
     //Grabs the category from the on-screen category input

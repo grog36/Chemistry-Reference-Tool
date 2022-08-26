@@ -3219,7 +3219,7 @@ function start() {
     document.getElementById("startButton").style.visibility = "hidden"
     document.getElementById("questions").style.visibility = "visible"
     document.getElementById("giveUpButton").style.visibility = "visible"
-    let input = document.getElementById("gamemode").value.replace(/\s/g, '').split("Select")[1].split("Given")
+    let input = document.getElementById("gamemode").value.replace(/\s/g, "").split("Select")[1].split("Given")
     document.getElementById("gamemode").style.visibility = "hidden"
     variableAssignment(input[1], input[0])
     nextQuestion()

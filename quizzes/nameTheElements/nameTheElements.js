@@ -3288,7 +3288,7 @@ function timer() {
             seconds = seconds - 60
         }
         document.getElementById("minutes").innerHTML = (TIME_LIMIT - minutes - 1) 
-        document.getElementById('seconds').innerHTML = (60 - seconds)
+        document.getElementById("seconds").innerHTML = (60 - seconds)
         timerContinue()
     }
     else {

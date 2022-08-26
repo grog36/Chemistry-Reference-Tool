@@ -2,7 +2,7 @@
 //August 2022
 
 //Variable Declarations
-const timerList = [document.getElementById('minutesLabel'), document.getElementById('minutes'), document.getElementById('seconds'), document.getElementById('secondsLabel')]
+const timerList = [document.getElementById("minutesLabel"), document.getElementById("minutes"), document.getElementById("seconds"), document.getElementById("secondsLabel")]
 var remainingElements = ["Hydrogen", "Helium", "Lithium", "Beryllium", "Boron", "Carbon", "Nitrogen", "Oxygen", "Fluorine", "Neon", "Sodium", "Magnesium", "Aluminium", "Silicon", "Phosphorus", "Sulfur", "Chlorine", "Argon", "Potassium", "Calcium", "Scandium", "Titanium", "Vanadium", "Chromium", "Manganese", "Iron", "Cobalt", "Nickel", "Copper", "Zinc", "Gallium", "Germanium", "Arsenic", "Selenium", "Bromine", "Krypton", "Rubidium", "Strontium", "Yttrium", "Zirconium", "Niobium", "Molybdenum", "Technetium", "Ruthenium", "Rhodium", "Palladium", "Silver", "Cadmium", "Indium", "Tin", "Antimony", "Tellurium", "Iodine", "Xenon", "Cesium", "Barium", "Lanthanum", "Cerium", "Praseodymium", "Neodymium", "Promethium", "Samarium", "Europium", "Gadolinium", "Terbium", "Dysprosium", "Holmium", "Erbium", "Thulium", "Ytterbium", "Lutetium", "Hafnium", "Tantalum", "Tungsten", "Rhenium", "Osmium", "Iridium", "Platinum", "Gold", "Mercury", "Thallium", "Lead", "Bismuth", "Polonium", "Astatine", "Radon", "Francium", "Radium", "Actinium", "Thorium", "Protactinium", "Uranium", "Neptunium", "Plutonium", "Americium", "Curium", "Berkelium", "Californium", "Einsteinium", "Fermium", "Mendelevium", "Nobelium", "Lawrencium", "Rutherfordium", "Dubnium", "Seaborgium", "Bohrium", "Hassium", "Meitnerium", "Darmstadtium", "Roentgenium", "Copernicium", "Nihonium", "Flerovium", "Moscovium", "Livermorium", "Tennessine", "Oganesson"]
 var remainingNumbers = []
 for (let i = 0; i < 118; i++) {
@@ -14,16 +14,16 @@ var score = 0
 
 //Startup function
 function start() {
-    document.getElementById('startButton').style.visibility = 'hidden'
+    document.getElementById("startButton").style.visibility = "hidden"
     for (let i in timerList) {
-        timerList[i].style.visibility = 'visible'
+        timerList[i].style.visibility = "visible"
     }
-    document.getElementById('questions').style.visibility = 'visible'
+    document.getElementById("questions").style.visibility = "visible"
     timerContinue()
     nextQuestion()
-    document.getElementById('input').style.visibility = 'visible'
-    document.getElementById('input').focus()
-    document.getElementById('tips').style.visibility = 'visible'
+    document.getElementById("input").style.visibility = "visible"
+    document.getElementById("input").focus()
+    document.getElementById("tips").style.visibility = "visible"
 }
 
 //Sets Up the Next Question
@@ -37,19 +37,19 @@ function nextQuestion() {
         currentElement = remainingElements[currentIndex]
         remainingElements.splice(currentIndex, 1)
         remainingNumbers.splice(currentIndex, 1)
-        document.getElementById('questions').innerHTML = currentNumber
-        document.getElementById('input').value = ''
+        document.getElementById("questions").innerHTML = currentNumber
+        document.getElementById("input").value = ""
     }
 }
 
 //Checks the Input for the Answer
 function checkAnswer() {
-    let input = document.getElementById('input').value
+    let input = document.getElementById("input").value
     if (input.toLowerCase() == currentElement.toLowerCase()) {
         score++
         nextQuestion()
     }
-    else if (input == 'END') {
+    else if (input == "END") {
         remainingElements = []
         remainingNumbers = []
         nextQuestion()
@@ -58,19 +58,19 @@ function checkAnswer() {
 
 //Displays Win Screen
 function youWin() {
-    document.getElementById('input').style.visibility = 'hidden'
-    document.getElementById('retryButton').style.visibility = 'visible'
-    document.getElementById('tips').style.visibility = 'hidden'
+    document.getElementById("input").style.visibility = "hidden"
+    document.getElementById("retryButton").style.visibility = "visible"
+    document.getElementById("tips").style.visibility = "hidden"
     stopTimer()
     if (score == 118) {
-        document.getElementById('questions').innerHTML = `YOU WIN! (${score} / 118)`
-        document.body.style.background = 'green'
-        document.getElementById('retryButton').style.backgroundColor = 'lightgreen'
+        document.getElementById("questions").innerHTML = `YOU WIN! (${score} / 118)`
+        document.body.style.background = "green"
+        document.getElementById("retryButton").style.backgroundColor = "lightgreen"
     }
     else {
-        document.getElementById('questions').innerHTML = `YOU LOSE! (${score} / 118)`
-        document.body.style.background = 'red'
-        document.getElementById('retryButton').style.backgroundColor = 'crimson'
+        document.getElementById("questions").innerHTML = `YOU LOSE! (${score} / 118)`
+        document.body.style.background = "red"
+        document.getElementById("retryButton").style.backgroundColor = "crimson"
     }
 }
 
@@ -89,8 +89,8 @@ function timer() {
         minutes = minutes + 1
         seconds = seconds - 60
     }
-    document.getElementById('minutes').innerHTML = minutes 
-    document.getElementById('seconds').innerHTML = seconds
+    document.getElementById("minutes").innerHTML = minutes 
+    document.getElementById("seconds").innerHTML = seconds
     timerContinue()
 }
 function timerContinue() {

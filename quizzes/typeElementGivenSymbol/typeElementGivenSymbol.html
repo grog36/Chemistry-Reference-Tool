@@ -8,21 +8,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Type Element Given Symbol</title>
-    <script src = 'typeElementGivenSymbol.js' defer></script>
-    <link href = 'typeElementGivenSymbol.css' rel = 'stylesheet'>
+    <script src = "./typeElementGivenSymbol.js" defer></script>
+    <link href = "./typeElementGivenSymbol.css" rel = "stylesheet">
 </head>
 <body>
     <!-- Back Buttons -->
-    <a href = "../../periodicTable.html"><img class = 'backButtons' src = "../../logo.png" title = "Back to Periodic Table"></a>
-    <a href = "../quizzes.html"><img class = 'backButtons' src = "../quizzes.png" title = "Back to Quiz List"></a>
+    <a href = "../../periodicTable.html"><img class = "backButtons" src = "../../logo.png" title = "Back to Periodic Table"></a>
+    <a href = "../quizzes.html"><img class = "backButtons" src = "../quizzes.png" title = "Back to Quiz List"></a>
     <!-- Tips -->
-    <div class = 'tips'>
-        <p id = 'tips'>Type "END" to end at anytime!</p>
+    <div class = "tips">
+        <p id = "tips">Type "END" to end at anytime!</p>
     </div>
 
     <!-- Start Button -->
     <div class = "startButton">
-        <button id = 'startButton' onclick = start()>START!</button>
+        <button id = "startButton" onclick = start()>START!</button>
     </div>
 
     <!-- Timer -->
@@ -36,21 +36,21 @@
     </div>
 
     <!-- Gamemode Modifiers -->
-    <div class = 'gamemodeSwitch'>
-        <label id = 'gamemodeLabel'>Endless</label>
-        <input id = 'gamemodeSwitch' type = 'checkbox'>
+    <div class = "gamemodeSwitch">
+        <label id = "gamemodeLabel">Endless</label>
+        <input id = "gamemodeSwitch" type = "checkbox">
         <br>
-        <label id = 'polyatomicLabel'>Polyatomic</label>
-        <input id = 'polyatomicSwitch' type = 'checkbox'>
+        <label id = "polyatomicLabel">Polyatomic</label>
+        <input id = "polyatomicSwitch" type = "checkbox">
     </div>
 
 
     <!-- Questions -->
-    <p class = 'questions' id = 'questions'>placeholder</p>
+    <p class = "questions" id = "questions">placeholder</p>
 
     <!-- Answer Input Bar -->
-    <div class = 'answerInput'>
-        <input type = 'text' id = 'input' oninput = checkAnswer() autocomplete = "off">
+    <div class = "answerInput">
+        <input type = "text" id = "input" oninput = checkAnswer() autocomplete = "off">
     </div>
 
     <br>
@@ -58,8 +58,8 @@
     <br>
 
     <!-- Retry Button -->
-    <div class = 'retryButton'>
-        <button onclick = retry() id = 'retryButton'>Retry?</button>
+    <div class = "retryButton">
+        <button onclick = retry() id = "retryButton">Retry?</button>
     </div>
 
 </body>

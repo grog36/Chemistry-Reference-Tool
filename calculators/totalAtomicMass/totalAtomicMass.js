@@ -279,7 +279,7 @@ function totalAtomicMass() {
     let elementCount7 = parseInt(ELEMENTCOUNT7INPUT.value)
     let elementCount8 = parseInt(ELEMENTCOUNT8INPUT.value)
     let output = document.getElementById("output")
-    output.style.color = 'magenta'
+    output.style.color = "magenta"
     let inputList = [elementInput1, elementInput2, elementInput3, elementInput4, elementInput5, elementInput6, elementInput7, elementInput8]
     let countList = [elementCount1, elementCount2, elementCount3, elementCount4, elementCount5, elementCount6, elementCount7, elementCount8]
     let atomicMassTotalList = []
@@ -296,7 +296,7 @@ function totalAtomicMass() {
         }
         else if (inputList[i] != "") {
             output.innerHTML = `${inputList[i]} is not a valid element. Please try again`
-            output.style.color = 'red'
+            output.style.color = "red"
             output.style.visibility = "visible"
             noFailures = false
         }

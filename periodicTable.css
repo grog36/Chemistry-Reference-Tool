@@ -145,7 +145,7 @@ td {
     margin-top: 100px;
     font-size: 20px;
 }
-#comparisonLink, #calculatorLink, #commonInfoLink, #quizzesLink, #sorterLink {
+#comparisonLink, #calculatorLink, #commonInfoLink, #quizzesLink, #sorterLink, #productsLink {
     border-width: 10px;
     border: solid;
     border-color: black;
