@@ -140,12 +140,12 @@ td {
 }
 
 /* LINKS */
-.links {
+.LINKS {
     margin-left: 75px;
     margin-top: 100px;
     font-size: 20px;
 }
-#comparisonLink, #calculatorLink, #commonInfoLink, #quizzesLink, #sorterLink, #productsLink {
+.LINKS > a {
     border-width: 10px;
     border: solid;
     border-color: black;

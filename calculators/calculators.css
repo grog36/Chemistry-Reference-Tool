@@ -9,6 +9,6 @@ body {
 }
 
 /* Text Color */
-#temperature, #totalAtomicMass, #gramsToGrams, #pvnrt, #solubility {
+.LINKS {
     color: red;
 }
