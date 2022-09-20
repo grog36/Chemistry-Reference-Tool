@@ -8,53 +8,22 @@ body {
 table {
     border-spacing: 0px;
 }
-.organicSubstancesLabels, .strongAcidsLabels, .strongBasesLabels, .metalLabels {
+.LABELS {
     font-weight: bold;
+}
+.TITLES {
+    font-size: 20px;
+    font-weight: 1000;
+}
+.BOTHCOLUMNS {
+    display: flex;
+}
+.RIGHTCOLUMN {
+    margin-left: 3%;
 }
 
 /* Metal Table */
-.metalINFO {
-    border-width: 1px;
-    border-style: solid;
-    border-color: black;
-    padding: 2px;
-    border-spacing: 0px;
-    margin: 0px;
-    text-align: center;
-    background-color: tan;
-}
-.metalTitle {
-    font-weight: 1000;
-    font-size: 20px;
-}
-
-/* Organic Substances Table */
-.NAME {
-    margin-bottom: 0px;
-    color: red;
-}
-.FORMULA {
-    margin-top: 0px;
-    font-size: 50%;
-    color: blue;
-}
-.organicSubstancesINFO {
-    border-width: 1px;
-    border-style: solid;
-    border-color: black;
-    padding: 2px;
-    border-spacing: 0px;
-    margin: 0px;
-    text-align: center;
-    background-color :lightyellow;
-}
-.organicTitle {
-    font-weight: 1000;
-    font-size: 20px;
-}
-
-/* Inorganic Substances Table */
-.inorganicSubstancesINFO {
+.metalsTable > table > tbody > tr > td, .metalsTable > table > caption {
     border-width: 1px;
     border-style: solid;
     border-color: black;
@@ -64,23 +33,47 @@ table {
     text-align: center;
     background-color: lightgray;
 }
-.inorganicTitle {
-    font-weight: 1000;
-    font-size: 20px;
+
+/* Organic Substances Table */
+.NAME {
+    margin-bottom: 0px;
+    color: red;
+}
+.FORMULA {
+    margin-top: 0px;
+    font-size: 70%;
+    color: blue;
+}
+.organicSubstancesTable > table > tbody > tr > td, .organicSubstancesTable > table > caption {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    padding: 2px;
+    border-spacing: 0px;
+    margin: 0px;
+    text-align: center;
+    background-color :tan;
+}
+
+/* Inorganic Substances Table */
+.inorganicSubstancesTable > table > caption, .inorganicSubstancesTable > table > tbody > tr > td {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    padding: 2px;
+    border-spacing: 0px;
+    margin: 0px;
+    text-align: center;
+    background-color: lightyellow;
 }
 
 /* Polyatomics Table */
-.polyatomicsTable {
+.polyatomicsTables {
     float: right;
     margin-right: 425px;
     margin-top: -1300px;
 }
-.polyTitle {
-    font-weight: 1000;
-    font-size: 20px;
-    text-align: center;
-}
-.polyatomicINFO {
+.polyatomicsTable > table > tbody > tr > td {
     border-width: 1px;
     border-style: solid;
     border-color: black;
@@ -90,28 +83,27 @@ table {
     text-align: left;
     background-color: lightgreen;
 }
-
-
-/* Strong Acids & Bases Tables */
-.acidTitle {
+.polyatomicsTable > table > caption {
     font-weight: 1000;
     font-size: 20px;
-}
-.baseTitle {
-    font-size: 20px;
-    font-weight: 1000;
-}
-.strongAcidsINFO {
+    text-align: center;
     border-width: 1px;
     border-style: solid;
     border-color: black;
-    padding: 2px;
+    padding:2px;
     border-spacing: 0px;
     margin: 0px;
-    text-align: center;
-    background-color: indianred;
+    background-color: lightgreen;
 }
-.strongBasesINFO {
+
+/* Strong Acids & Bases Tables */
+.strongAcidsBasesTable {
+    display: flex;
+}
+.strongBasesTable {
+    margin-left: 20px;
+}
+.strongBasesTable > tbody > tr > td, .strongBasesTable > caption {
     border-width: 1px;
     border-style: solid;
     border-color: black;
@@ -121,9 +113,25 @@ table {
     text-align: center;
     background-color :lightskyblue;
 }
-.strongAcidsBasesTable {
-    display: flex;
+.strongAcidsTable > tbody > tr > td, .strongAcidsTable > caption {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    padding: 2px;
+    border-spacing: 0px;
+    margin: 0px;
+    text-align: center;
+    background-color: indianred;
 }
-.strongBasesTable {
-    margin-left: 20px;
+
+/* Hydrocarbons Table */
+.hydrocarbonsTable > table > tbody > tr > td, .hydrocarbonsTable > table > caption {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    padding: 2px;
+    border-spacing: 0px;
+    margin: 0px;
+    text-align: center;
+    background-color:aquamarine;
 }
