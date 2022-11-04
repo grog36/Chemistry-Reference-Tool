@@ -15,10 +15,10 @@ table {
     font-size: 20px;
     font-weight: 1000;
 }
-.BOTHCOLUMNS {
+.ALLCOLUMNS {
     display: flex;
 }
-.RIGHTCOLUMN {
+.RIGHTCOLUMN, .CENTERCOLUMN {
     margin-left: 3%;
 }
 
@@ -27,7 +27,7 @@ table {
     border-width: 1px;
     border-style: solid;
     border-color: black;
-    padding: 2px;
+    padding: 3px;
     border-spacing: 0px;
     margin: 0px;
     text-align: center;
@@ -48,11 +48,11 @@ table {
     border-width: 1px;
     border-style: solid;
     border-color: black;
-    padding: 2px;
+    padding: 3px;
     border-spacing: 0px;
     margin: 0px;
     text-align: center;
-    background-color :tan;
+    background-color: tan;
 }
 
 /* Inorganic Substances Table */
@@ -60,7 +60,7 @@ table {
     border-width: 1px;
     border-style: solid;
     border-color: black;
-    padding: 2px;
+    padding: 3px;
     border-spacing: 0px;
     margin: 0px;
     text-align: center;
@@ -77,7 +77,7 @@ table {
     border-width: 1px;
     border-style: solid;
     border-color: black;
-    padding: 2px;
+    padding: 3px;
     border-spacing: 0px;
     margin: 0px;
     text-align: left;
@@ -90,38 +90,30 @@ table {
     border-width: 1px;
     border-style: solid;
     border-color: black;
-    padding:2px;
+    padding: 3px;
     border-spacing: 0px;
     margin: 0px;
     background-color: lightgreen;
 }
 
 /* Strong Acids & Bases Tables */
-.strongAcidsBasesTable {
-    display: flex;
-}
-.strongBasesTable {
-    margin-left: 20px;
-}
-.strongBasesTable > tbody > tr > td, .strongBasesTable > caption {
+.strongAcidsBasesTable > table > tbody > tr > td, .strongAcidsBasesTable > table > caption {
     border-width: 1px;
     border-style: solid;
     border-color: black;
-    padding: 2px;
+    padding: 3px;
     border-spacing: 0px;
     margin: 0px;
     text-align: center;
-    background-color :lightskyblue;
 }
-.strongAcidsTable > tbody > tr > td, .strongAcidsTable > caption {
-    border-width: 1px;
-    border-style: solid;
-    border-color: black;
-    padding: 2px;
-    border-spacing: 0px;
-    margin: 0px;
-    text-align: center;
+.strongAcidsBasesTable > table > caption {
+    background-color: rgb(170, 149, 171);
+}
+.ACID {
     background-color: indianred;
+}
+.BASE { 
+    background-color: lightskyblue;
 }
 
 /* Hydrocarbons Table */
@@ -129,9 +121,21 @@ table {
     border-width: 1px;
     border-style: solid;
     border-color: black;
-    padding: 2px;
+    padding: 3px;
     border-spacing: 0px;
     margin: 0px;
     text-align: center;
-    background-color:aquamarine;
+    background-color: aquamarine;
+}
+
+/* Alcohols Table */
+.alcoholsTable > table > tbody > tr > td, .alcoholsTable > table > caption {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    padding: 3px;
+    border-spacing: 0px;
+    margin: 0px;
+    text-align: center;
+    background-color: lightsalmon
 }
