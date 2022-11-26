@@ -7,6 +7,9 @@ body {
 }
 
 /*TABLE */
+.periodicTable {
+    float: left;
+}
 table {
     border-spacing: 0px;
     cursor: default;
@@ -121,7 +124,6 @@ td {
     display: flex;
     float: right;
     margin-right: 60px;
-    margin-top: -440px;
     font-size: 16px;
     font-family: arial;
     visibility: hidden;
@@ -139,20 +141,72 @@ td {
     background-color:darkgrey;
 }
 
-/* LINKS */
-.LINKS {
-    margin-left: 75px;
-    margin-top: 100px;
-    font-size: 20px;
-}
-.LINKS > a {
-    border-width: 10px;
-    border: solid;
-    border-color: black;
-    color: purple;
-    text-decoration: none;
-    margin: 5px;
-    padding: 5px;
+
+
+
+/* Navbar */
+.navbar {
+    overflow: hidden;
     background-color: lightblue;
+
+    font-size: 16px;
+    width: fit-content;
     font-weight: bold;
+    margin-bottom: 2%;
 }
+/* Navbar Elements */
+.navbar a {
+    float: left;
+    color: purple;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/* Navbar dropdowns */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+/* Navbar dropdown elements */
+.dropdown .dropdownLabel {
+    color: purple;
+    padding: 14px;
+    margin: 0px;
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+/* Change background-color on hover for all elements */
+.navbar a:hover, .dropdown:hover .dropdownLabel, .dropdownLinks a:hover {
+    background-color: tan;
+}
+/* Dropdown options */
+.dropdownLinks {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+}
+/* .dropdownLabel {
+    
+} */
+.dropdownLinks a {
+    float: none;
+    color: purple;
+    padding: 14px;
+    text-decoration: none;
+    text-align: left;
+    display: block;
+    background-color: lightblue;
+}
+/* On hover: display dropdown options */
+.dropdown:hover .dropdownLinks {
+    display: block;
+}
+
+

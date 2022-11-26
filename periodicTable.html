@@ -12,680 +12,713 @@
     <script src = "./periodicTable.js" defer></script>
 </head>
 <body>
+
+
+
+    <!-- NAVIGATION BAR -->
+    <div class = "navbar">
+        <a href = "./commonInfo/common.html">Common Information</a>
+        <a href = "./solubilityRules/solubilityRules.html">Solubility Rules</a>
+        <a href = "./predictingProducts/predictingProducts.html">Predicting Products</a>
+        <a href = "./sorter/sorter.html">Element Sorter</a>
+        <a href = "./comparison/elementComparison.html">Element Comparison</a>
+
+        <div class = "dropdown">
+            <button class = "dropdownLabel">Calculators</button>
+            <div class = "dropdownLinks">
+                <a href = "./calculators/gramsToGrams/gramsToGrams.html">Grams to Grams Calculator</a>
+                <a href = "./calculators/temperatureCalculator/temperatureCalculator.html">Temperature Calculator</a>
+                <a href = "./calculators/totalAtomicMass/totalAtomicMass.html">Total Atomic Mass Calculator</a>
+            </div>
+        </div>
+
+        <div class = "dropdown">
+            <a class = "dropdownLabel">Quizzes</a>
+            <div class = "dropdownLinks">
+                <a href = "./quizzes/multipleChoice/multipleChoice.html">Multiple Choice Quiz</a>
+                <a href = "./quizzes/nameTheElements/nameTheElements.html">Name the Elements Quiz</a>
+                <a href = "./quizzes/typeElementGivenNumber/typeElementGivenNumber.html">Type Element Given Number Quiz</a>
+                <a href = "./quizzes/typeElementGivenSymbol/typeElementGivenSymbol.html">Type Element Given Symbol Quiz</a>
+            </div>
+        </div>
+    </div>
+
     
     <!-- PERIODIC TABLE -->
-    <table class = "table">
-        <tr class = "row1">
-            <td onclick = onElementClick(1) id = "hydrogenSquare" class = "reactiveNonMetal">
-                <p class = "atomicNumber">1</p>
-                <p class = "elementSymbol">H</p>
-                <p class = "atomicMass">1.00797</p>
-            </td>
-            <td class = "BLANKSPACE"></td>
-            <td class = "BLANKSPACE"></td>
-            <td class = "BLANKSPACE"></td>
-            <td class = "BLANKSPACE"></td>
-            <td class = "BLANKSPACE"></td>
-            <td class = "BLANKSPACE"></td>
-            <td class = "BLANKSPACE"></td>
-            <td class = "BLANKSPACE"></td>
-            <td class = "BLANKSPACE"></td>
-            <td class = "BLANKSPACE"></td>
-            <td class = "BLANKSPACE"></td>
-            <td class = "BLANKSPACE"></td>
-            <td class = "BLANKSPACE"></td>
-            <td class = "BLANKSPACE"></td>
-            <td class = "BLANKSPACE"></td>
-            <td class = "BLANKSPACE"></td>
-            <td onclick = onElementClick(2) id = "heliumSquare" class = "nobleGas">
-                <p class = "atomicNumber">2</p>
-                <p class = "elementSymbol">He</p>
-                <p class = "atomicMass">4.0026</p>
-            </td>
-        </tr>
-        <tr class = "row2">
-            <td onclick = onElementClick(3) id = "lithiumSquare" class = "alkaliMetal">
-                <p class = "atomicNumber">3</p>
-                <p class = "elementSymbol">Li</p>
-                <p class = "atomicMass">6.941</p>
-            </td>
-            <td onclick = onElementClick(4) id = "berylliumSquare" class = "alkalineEarthMetal">
-                <p class = "atomicNumber">4</p>
-                <p class = "elementSymbol">Be</p>
-                <p class = "atomicMass">9.01218</p>
-            </td>
-            <td class = "BLANKSPACE"></td>
-            <td class = "BLANKSPACE"></td>
-            <td class = "BLANKSPACE"></td>
-            <td class = "BLANKSPACE"></td>
-            <td class = "BLANKSPACE"></td>
-            <td class = "BLANKSPACE"></td>
-            <td class = "BLANKSPACE"></td>
-            <td class = "BLANKSPACE"></td>
-            <td class = "BLANKSPACE"></td>
-            <td class = "BLANKSPACE"></td>
-            <td onclick = onElementClick(5) id = "boronSquare" class = "metalloid">
-                <p class = "atomicNumber">5</p>
-                <p class = "elementSymbol">B</p>
-                <p class = "atomicMass">10.81</p>
-            </td>
-            <td onclick = onElementClick(6) id = "carbonSquare" class = "reactiveNonMetal">
-                <p class = "atomicNumber">6</p>
-                <p class = "elementSymbol">C</p>
-                <p class = "atomicMass">12.011</p>
-            </td>
-            <td onclick = onElementClick(7) id = "nitrogenSquare" class = "reactiveNonMetal">
-                <p class = "atomicNumber">7</p>
-                <p class = "elementSymbol">N</p>
-                <p class = "atomicMass">14.0067</p>
-            </td>
-            <td onclick = onElementClick(8) id = "oxygenSquare" class = "reactiveNonMetal">
-                <p class = "atomicNumber">8</p>
-                <p class = "elementSymbol">O</p>
-                <p class = "atomicMass">15.9994</p>
-            </td>
-            <td onclick = onElementClick(9) id = "fluorineSquare" class = "reactiveNonMetal">
-                <p class = "atomicNumber">9</p>
-                <p class = "elementSymbol">F</p>
-                <p class = "atomicMass">18.998403</p>
-            </td>
-            <td onclick = onElementClick(10) id = "neonSquare" class = "nobleGas">
-                <p class = "atomicNumber">10</p>
-                <p class = "elementSymbol">Ne</p>
-                <p class = "atomicMass">20.179</p>
-            </td>
-        </tr>
-        <tr class = "row3">
-            <td onclick = onElementClick(11) id = "sodiumSquare" class = "alkaliMetal">
-                <p class = "atomicNumber">11</p>
-                <p class = "elementSymbol">Na</p>
-                <p class = "atomicMass">22.98977</p>
-            </td>
-            <td onclick = onElementClick(12) id = "magnesiumSquare" class = "alkalineEarthMetal">
-                <p class = "atomicNumber">12</p>
-                <p class = "elementSymbol">Mg</p>
-                <p class = "atomicMass">24.305</p>
-            </td>
-            <td class = "BLANKSPACE"></td>
-            <td class = "BLANKSPACE"></td>
-            <td class = "BLANKSPACE"></td>
-            <td class = "BLANKSPACE"></td>
-            <td class = "BLANKSPACE"></td>
-            <td class = "BLANKSPACE"></td>
-            <td class = "BLANKSPACE"></td>
-            <td class = "BLANKSPACE"></td>
-            <td class = "BLANKSPACE"></td>
-            <td class = "BLANKSPACE"></td>
-            <td onclick = onElementClick(13) id = "aluminiumSquare" class = "postTransitionMetal">
-                <p class = "atomicNumber">13</p>
-                <p class = "elementSymbol">Al</p>
-                <p class = "atomicMass">26.98154</p>
-            </td>
-            <td onclick = onElementClick(14) id = "siliconSquare" class = "metalloid">
-                <p class = "atomicNumber">14</p>
-                <p class = "elementSymbol">Si</p>
-                <p class = "atomicMass">28.0855</p>
-            </td>
-            <td onclick = onElementClick(15) id = "phosphorusSquare" class = "reactiveNonMetal">
-                <p class = "atomicNumber">15</p>
-                <p class = "elementSymbol">P</p>
-                <p class = "atomicMass">30.97376</p>
-            </td>
-            <td onclick = onElementClick(16) id = "sulfurSquare" class = "reactiveNonMetal">
-                <p class = "atomicNumber">16</p>
-                <p class = "elementSymbol">S</p>
-                <p class = "atomicMass">32.06</p>
-            </td>
-            <td onclick = onElementClick(17) id = "chlorineSquare" class = "reactiveNonMetal">
-                <p class = "atomicNumber">17</p>
-                <p class = "elementSymbol">Cl</p>
-                <p class = "atomicMass">35.453</p>
-            </td>
-            <td onclick = onElementClick(18) id = "argonSquare" class = "nobleGas">
-                <p class = "atomicNumber">18</p>
-                <p class = "elementSymbol">Ar</p>
-                <p class = "atomicMass">39.948</p>
-            </td>
-        </tr>
-        <tr class = "row4">
-            <td onclick = onElementClick(19) id = "potassiumSquare" class = "alkaliMetal">
-                <p class = "atomicNumber">19</p>
-                <p class = "elementSymbol">K</p>
-                <p class = "atomicMass">39.0983</p>
-            </td>
-            <td onclick = onElementClick(20) id = "calciumSquare" class = "alkalineEarthMetal">
-                <p class = "atomicNumber">20</p>
-                <p class = "elementSymbol">Ca</p>
-                <p class = "atomicMass">40.08</p>
-            </td>
-            <td onclick = onElementClick(21) id = "scandiumSquare" class = "transitionMetal">
-                <p class = "atomicNumber">21</p>
-                <p class = "elementSymbol">Sc</p>
-                <p class = "atomicMass">44.9559</p>
-            </td>
-            <td onclick = onElementClick(22) id = "titaniumSquare" class = "transitionMetal">
-                <p class = "atomicNumber">22</p>
-                <p class = "elementSymbol">Ti</p>
-                <p class = "atomicMass">47.9</p>
-            </td>
-            <td onclick = onElementClick(23) id = "vanadiumSquare" class = "transitionMetal">
-                <p class = "atomicNumber">23</p>
-                <p class = "elementSymbol">V</p>
-                <p class = "atomicMass">50.9415</p>
-            </td>
-            <td onclick = onElementClick(24) id = "chromiumSquare" class = "transitionMetal">
-                <p class = "atomicNumber">24</p>
-                <p class = "elementSymbol">Cr</p>
-                <p class = "atomicMass">51.996</p>
-            </td>
-            <td onclick = onElementClick(25) id = "manganeseSquare" class = "transitionMetal">
-                <p class = "atomicNumber">25</p>
-                <p class = "elementSymbol">Mn</p>
-                <p class = "atomicMass">54.938</p>
-            </td>
-            <td onclick = onElementClick(26) id = "ironSquare" class = "transitionMetal">
-                <p class = "atomicNumber">26</p>
-                <p class = "elementSymbol">Fe</p>
-                <p class = "atomicMass">55.847</p>
-            </td>
-            <td onclick = onElementClick(27) id = "cobaltSquare" class = "transitionMetal">
-                <p class = "atomicNumber">27</p>
-                <p class = "elementSymbol">Co</p>
-                <p class = "atomicMass">58.9332</p>
-            </td>
-            <td onclick = onElementClick(28) id = "nickelSquare" class = "transitionMetal">
-                <p class = "atomicNumber">28</p>
-                <p class = "elementSymbol">Ni</p>
-                <p class = "atomicMass">58.7</p>
-            </td>
-            <td onclick = onElementClick(29) id = "copperSquare" class = "transitionMetal">
-                <p class = "atomicNumber">29</p>
-                <p class = "elementSymbol">Cu</p>
-                <p class = "atomicMass">63.546</p>
-            </td>
-            <td onclick = onElementClick(30) id = "zincSquare" class = "transitionMetal">
-                <p class = "atomicNumber">30</p>
-                <p class = "elementSymbol">Zn</p>
-                <p class = "atomicMass">65.38</p>
-            </td>
-            <td onclick = onElementClick(31) id = "galliumSquare" class = "postTransitionMetal">
-                <p class = "atomicNumber">31</p>
-                <p class = "elementSymbol">Ga</p>
-                <p class = "atomicMass">69.72</p>
-            </td>
-            <td onclick = onElementClick(32) id = "germaniumSquare" class = "metalloid">
-                <p class = "atomicNumber">32</p>
-                <p class = "elementSymbol">Ge</p>
-                <p class = "atomicMass">72.59</p>
-            </td>
-            <td onclick = onElementClick(33) id = "arsenicSquare" class = "metalloid">
-                <p class = "atomicNumber">33</p>
-                <p class = "elementSymbol">As</p>
-                <p class = "atomicMass">74.9216</p>
-            </td>
-            <td onclick = onElementClick(34) id = "seleniumSquare" class = "reactiveNonMetal">
-                <p class = "atomicNumber">34</p>
-                <p class = "elementSymbol">Se</p>
-                <p class = "atomicMass">78.96</p>
-            </td>
-            <td onclick = onElementClick(35) id = "bromineSquare" class = "reactiveNonMetal">
-                <p class = "atomicNumber">35</p>
-                <p class = "elementSymbol">Br</p>
-                <p class = "atomicMass">79.904</p>
-            </td>
-            <td onclick = onElementClick(36) id = "kryptonSquare" class = "nobleGas">
-                <p class = "atomicNumber">36</p>
-                <p class = "elementSymbol">Kr</p>
-                <p class = "atomicMass">83.8</p>
-            </td>
-        </tr>
-        <tr class = "row5">
-            <td onclick = onElementClick(37) id = "rubidiumSquare" class = "alkaliMetal">
-                <p class = "atomicNumber">37</p>
-                <p class = "elementSymbol">Rb</p>
-                <p class = "atomicMass">85.4678</p>
-            </td>
-            <td onclick = onElementClick(38) id = "strontiumSquare" class = "alkalineEarthMetal">
-                <p class = "atomicNumber">38</p>
-                <p class = "elementSymbol">Sr</p>
-                <p class = "atomicMass">87.62</p>
-            </td>
-            <td onclick = onElementClick(39) id = "yttriumSquare" class = "transitionMetal">
-                <p class = "atomicNumber">39</p>
-                <p class = "elementSymbol">Y</p>
-                <p class = "atomicMass">88.9059</p>
-            </td>
-            <td onclick = onElementClick(40) id = "zirconiumSquare" class = "transitionMetal">
-                <p class = "atomicNumber">40</p>
-                <p class = "elementSymbol">Zr</p>
-                <p class = "atomicMass">91.22</p>
-            </td>
-            <td onclick = onElementClick(41) id = "niobiumSquare" class = "transitionMetal">
-                <p class = "atomicNumber">41</p>
-                <p class = "elementSymbol">Nb</p>
-                <p class = "atomicMass">92.9064</p>
-            </td>
-            <td onclick = onElementClick(42) id = "molybdenumSquare" class = "transitionMetal">
-                <p class = "atomicNumber">42</p>
-                <p class = "elementSymbol">Mo</p>
-                <p class = "atomicMass">95.94</p>
-            </td>
-            <td onclick = onElementClick(43) id = "technetiumSquare" class = "transitionMetal">
-                <p class = "atomicNumber">43</p>
-                <p class = "elementSymbol">Tc</p>
-                <p class = "atomicMass">98</p>
-            </td>
-            <td onclick = onElementClick(44) id = "rutheniumSquare" class = "transitionMetal">
-                <p class = "atomicNumber">44</p>
-                <p class = "elementSymbol">Ru</p>
-                <p class = "atomicMass">101.07</p>
-            </td>
-            <td onclick = onElementClick(45) id = "rhodiumSquare" class = "transitionMetal">
-                <p class = "atomicNumber">45</p>
-                <p class = "elementSymbol">Rh</p>
-                <p class = "atomicMass">102.9055</p>
-            </td>
-            <td onclick = onElementClick(46) id = "palladiumSquare" class = "transitionMetal">
-                <p class = "atomicNumber">46</p>
-                <p class = "elementSymbol">Pd</p>
-                <p class = "atomicMass">106.4</p>
-            </td>
-            <td onclick = onElementClick(47) id = "silverSquare" class = "transitionMetal">
-                <p class = "atomicNumber">47</p>
-                <p class = "elementSymbol">Ag</p>
-                <p class = "atomicMass">107.868</p>
-            </td>
-            <td onclick = onElementClick(48) id = "cadmiumSquare" class = "transitionMetal">
-                <p class = "atomicNumber">48</p>
-                <p class = "elementSymbol">Cd</p>
-                <p class = "atomicMass">112.41</p>
-            </td>
-            <td onclick = onElementClick(49) id = "indiumSquare" class = "postTransitionMetal">
-                <p class = "atomicNumber">49</p>
-                <p class = "elementSymbol">In</p>
-                <p class = "atomicMass">114.82</p>
-            </td>
-            <td onclick = onElementClick(50) id = "tinSquare" class = "postTransitionMetal">
-                <p class = "atomicNumber">50</p>
-                <p class = "elementSymbol">Sn</p>
-                <p class = "atomicMass">118.69</p>
-            </td>
-            <td onclick = onElementClick(51) id = "antimonySquare" class = "metalloid">
-                <p class = "atomicNumber">51</p>
-                <p class = "elementSymbol">Sb</p>
-                <p class = "atomicMass">121.75</p>
-            </td>
-            <td onclick = onElementClick(52) id = "telluriumSquare" class = "metalloid">
-                <p class = "atomicNumber">52</p>
-                <p class = "elementSymbol">Te</p>
-                <p class = "atomicMass">127.6</p>
-            </td>
-            <td onclick = onElementClick(53) id = "iodineSquare" class = "reactiveNonMetal">
-                <p class = "atomicNumber">53</p>
-                <p class = "elementSymbol">I</p>
-                <p class = "atomicMass">126.9045</p>
-            </td>
-            <td onclick = onElementClick(54) id = "xenonSquare" class = "nobleGas">
-                <p class = "atomicNumber">55</p>
-                <p class = "elementSymbol">Xe</p>
-                <p class = "atomicMass">131.3</p>
-            </td>
-        </tr>
-        <tr class = "row6">
-            <td onclick = onElementClick(55) id = "cesiumSquare" class = "alkaliMetal">
-                <p class = "atomicNumber">55</p>
-                <p class = "elementSymbol">Cs</p>
-                <p class = "atomicMass">132.9054</p>
-            </td>
-            <td onclick = onElementClick(56) id = "bariumSquare" class = "alkalineEarthMetal">
-                <p class = "atomicNumber">56</p>
-                <p class = "elementSymbol">Ba</p>
-                <p class = "atomicMass">137.33</p>
-            </td>
-            <td onclick = onElementClick(57) id = "lanthanumSquare" class = "lanthanide">
-                <p class = "atomicNumber">57</p>
-                <p class = "elementSymbol">La</p>
-                <p class = "atomicMass">138.9055</p>
-            </td>
-            <td onclick = onElementClick(72) id = "hafniumSquare" class = "transitionMetal">
-                <p class = "atomicNumber">72</p>
-                <p class = "elementSymbol">Hf</p>
-                <p class = "atomicMass">178.49</p>
-            </td>
-            <td onclick = onElementClick(73) id = "tantalumSquare" class = "transitionMetal">
-                <p class = "atomicNumber">73</p>
-                <p class = "elementSymbol">Ta</p>
-                <p class = "atomicMass">180.9479</p>
-            </td>
-            <td onclick = onElementClick(74) id = "tungstenSquare" class = "transitionMetal">
-                <p class = "atomicNumber">74</p>
-                <p class = "elementSymbol">W</p>
-                <p class = "atomicMass">183.85</p>
-            </td>
-            <td onclick = onElementClick(75) id = "rheniumSquare" class = "transitionMetal">
-                <p class = "atomicNumber">75</p>
-                <p class = "elementSymbol">Re</p>
-                <p class = "atomicMass">186.207</p>
-            </td>
-            <td onclick = onElementClick(76) id = "osmiumSquare" class = "transitionMetal">
-                <p class = "atomicNumber">76</p>
-                <p class = "elementSymbol">Os</p>
-                <p class = "atomicMass">190.2</p>
-            </td>
-            <td onclick = onElementClick(77) id = "iridiumSquare" class = "transitionMetal">
-                <p class = "atomicNumber">77</p>
-                <p class = "elementSymbol">Ir</p>
-                <p class = "atomicMass">192.22</p>
-            </td>
-            <td onclick = onElementClick(78) id = "platinumSquare" class = "transitionMetal">
-                <p class = "atomicNumber">78</p>
-                <p class = "elementSymbol">Pt</p>
-                <p class = "atomicMass">195.09</p>
-            </td>
-            <td onclick = onElementClick(79) id = "goldSquare" class = "transitionMetal">
-                <p class = "atomicNumber">79</p>
-                <p class = "elementSymbol">Au</p>
-                <p class = "atomicMass">196.9665</p>
-            </td>
-            <td onclick = onElementClick(80) id = "mercurySquare" class = "transitionMetal">
-                <p class = "atomicNumber">80</p>
-                <p class = "elementSymbol">Hg</p>
-                <p class = "atomicMass">200.59</p>
-            </td>
-            <td onclick = onElementClick(81) id = "thalliumSquare" class = "postTransitionMetal">
-                <p class = "atomicNumber">81</p>
-                <p class = "elementSymbol">Tl</p>
-                <p class = "atomicMass">204.37</p>
-            </td>
-            <td onclick = onElementClick(82) id = "leadSquare" class = "postTransitionMetal">
-                <p class = "atomicNumber">82</p>
-                <p class = "elementSymbol">Pb</p>
-                <p class = "atomicMass">207.2</p>
-            </td>
-            <td onclick = onElementClick(83) id = "bismuthSquare" class = "postTransitionMetal">
-                <p class = "atomicNumber">83</p>
-                <p class = "elementSymbol">Bi</p>
-                <p class = "atomicMass">208.9804</p>
-            </td>
-            <td onclick = onElementClick(84) id = "poloniumSquare" class = "postTransitionMetal">
-                <p class = "atomicNumber">84</p>
-                <p class = "elementSymbol">Po</p>
-                <p class = "atomicMass">209</p>
-            </td>
-            <td onclick = onElementClick(85) id = "astatineSquare" class = "metalloid">
-                <p class = "atomicNumber">85</p>
-                <p class = "elementSymbol">At</p>
-                <p class = "atomicMass">210</p>
-            </td>
-            <td onclick = onElementClick(86) id = "radonSquare" class = "nobleGas">
-                <p class = "atomicNumber">86</p>
-                <p class = "elementSymbol">Rn</p>
-                <p class = "atomicMass">222</p>
-            </td>
-        </tr>
-        <tr class = "row7">
-            <td onclick = onElementClick(87) id = "franciumSquare" class = "alkaliMetal">
-                <p class = "atomicNumber">87</p>
-                <p class = "elementSymbol">Fr</p>
-                <p class = "atomicMass">223</p>
-            </td>
-            <td onclick = onElementClick(88) id = "radiumSquare" class = "alkalineEarthMetal">
-                <p class = "atomicNumber">88</p>
-                <p class = "elementSymbol">Ra</p>
-                <p class = "atomicMass">226.0254</p>
-            </td>
-            <td onclick = onElementClick(89) id = "actiniumSquare" class = "actinide">
-                <p class = "atomicNumber">89</p>
-                <p class = "elementSymbol">Ac</p>
-                <p class = "atomicMass">227.0278</p>
-            </td>
-            <td onclick = onElementClick(104) id = "rutherfordiumSquare" class = "transitionMetal">
-                <p class = "atomicNumber">104</p>
-                <p class = "elementSymbol">Rf</p>
-                <p class = "atomicMass">261</p>
-            </td>
-            <td onclick = onElementClick(105) id = "dubniumSquare" class = "transitionMetal">
-                <p class = "atomicNumber">105</p>
-                <p class = "elementSymbol">Db</p>
-                <p class = "atomicMass">262</p>
-            </td>
-            <td onclick = onElementClick(106) id = "seaborgiumSquare" class = "transitionMetal">
-                <p class = "atomicNumber">106</p>
-                <p class = "elementSymbol">Sg</p>
-                <p class = "atomicMass">263</p>
-            </td>
-            <td onclick = onElementClick(107) id = "bohriumSquare" class = "transitionMetal">
-                <p class = "atomicNumber">107</p>
-                <p class = "elementSymbol">Bh</p>
-                <p class = "atomicMass">262</p>
-            </td>
-            <td onclick = onElementClick(108) id = "hassiumSquare" class = "transitionMetal">
-                <p class = "atomicNumber">108</p>
-                <p class = "elementSymbol">Hs</p>
-                <p class = "atomicMass">255</p>
-            </td>
-            <td onclick = onElementClick(109) id = "meitneriumSquare" class = "unknown">
-                <p class = "atomicNumber">109</p>
-                <p class = "elementSymbol">Mt</p>
-                <p class = "atomicMass">256</p>
-            </td>
-            <td onclick = onElementClick(110) id = "darmstadtiumSquare" class = "unknown">
-                <p class = "atomicNumber">110</p>
-                <p class = "elementSymbol">Ds</p>
-                <p class = "atomicMass">281</p>
-            </td>
-            <td onclick = onElementClick(111) id = "roentgeniumSquare" class = "unknown">
-                <p class = "atomicNumber">111</p>
-                <p class = "elementSymbol">Rg</p>
-                <p class = "atomicMass">282</p>
-            </td>
-            <td onclick = onElementClick(112) id = "coperniciumSquare" class = "unknown">
-                <p class = "atomicNumber">112</p>
-                <p class = "elementSymbol">Cn</p>
-                <p class = "atomicMass">285</p>
-            </td>
-            <td onclick = onElementClick(113) id = "nihoniumSquare" class = "unknown">
-                <p class = "atomicNumber">113</p>
-                <p class = "elementSymbol">Nh</p>
-                <p class = "atomicMass">286</p>
-            </td>
-            <td onclick = onElementClick(114) id = "fleroviumSquare" class = "unknown">
-                <p class = "atomicNumber">114</p>
-                <p class = "elementSymbol">Fl</p>
-                <p class = "atomicMass">289</p>
-            </td>
-            <td onclick = onElementClick(115) id = "moscoviumSquare" class = "unknown">
-                <p class = "atomicNumber">115</p>
-                <p class = "elementSymbol">Mc</p>
-                <p class = "atomicMass">290</p>
-            </td>
-            <td onclick = onElementClick(116) id = "livermoriumSquare" class = "unknown">
-                <p class = "atomicNumber">116</p>
-                <p class = "elementSymbol">Lv</p>
-                <p class = "atomicMass">293</p>
-            </td>
-            <td onclick = onElementClick(117) id = "tennessineSquare" class = "unknown">
-                <p class = "atomicNumber">117</p>
-                <p class = "elementSymbol">Ts</p>
-                <p class = "atomicMass">294</p>
-            </td>
-            <td onclick = onElementClick(118) id = "oganessonSquare" class = "unknown">
-                <p class = "atomicNumber">118</p>
-                <p class = "elementSymbol">Og</p>
-                <p class = "atomicMass">294</p>
-            </td>
-        </tr>
-        <tr class = "GAP">
-            <td class = "BLANKSPACE"></td>
-            <td class = "BLANKSPACE"></td>
-            <td class = "BLANKSPACE"></td>
-            <td class = "BLANKSPACE"></td>
-            <td class = "BLANKSPACE"></td>
-            <td class = "BLANKSPACE"></td>
-            <td class = "BLANKSPACE"></td>
-            <td class = "BLANKSPACE"></td>
-            <td class = "BLANKSPACE"></td>
-            <td class = "BLANKSPACE"></td>
-            <td class = "BLANKSPACE"></td>
-            <td class = "BLANKSPACE"></td>
-            <td class = "BLANKSPACE"></td>
-            <td class = "BLANKSPACE"></td>
-            <td class = "BLANKSPACE"></td>
-            <td class = "BLANKSPACE"></td>
-            <td class = "BLANKSPACE"></td>
-            <td class = "BLANKSPACE"></td>
-        </tr>
-        <tr class = "fBlock1">
-            <td class = "BLANKSPACE"></td>
-            <td class = "BLANKSPACE"></td>
-            <td class = "BLANKSPACE"></td>
-            <td onclick = onElementClick(58) id = "ceriumSquare" class = "lanthanide">
-                <p class = "atomicNumber">58</p>
-                <p class = "elementSymbol">Ce</p>
-                <p class = "atomicMass">140.12</p>
-            </td>
-            <td onclick = onElementClick(59) id = "praseodymiumSquare" class = "lanthanide">
-                <p class = "atomicNumber">59</p>
-                <p class = "elementSymbol">Pr</p>
-                <p class = "atomicMass">140.0977</p>
-            </td>
-            <td onclick = onElementClick(60) id = "neodymiumSquare" class = "lanthanide">
-                <p class = "atomicNumber">60</p>
-                <p class = "elementSymbol">Nd</p>
-                <p class = "atomicMass">144.24</p>
-            </td>
-            <td onclick = onElementClick(61) id = "promethiumSquare" class = "lanthanide">
-                <p class = "atomicNumber">61</p>
-                <p class = "elementSymbol">Pm</p>
-                <p class = "atomicMass">145</p>
-            </td>
-            <td onclick = onElementClick(62) id = "samariumSquare" class = "lanthanide">
-                <p class = "atomicNumber">62</p>
-                <p class = "elementSymbol">Sm</p>
-                <p class = "atomicMass">150.4</p>
-            </td>
-            <td onclick = onElementClick(63) id = "europiumSquare" class = "lanthanide">
-                <p class = "atomicNumber">63</p>
-                <p class = "elementSymbol">Eu</p>
-                <p class = "atomicMass">151.96</p>
-            </td>
-            <td onclick = onElementClick(64) id = "gadoliniumSquare" class = "lanthanide">
-                <p class = "atomicNumber">64</p>
-                <p class = "elementSymbol">Gd</p>
-                <p class = "atomicMass">157.25</p>
-            </td>
-            <td onclick = onElementClick(65) id = "terbiumSquare" class = "lanthanide">
-                <p class = "atomicNumber">65</p>
-                <p class = "elementSymbol">Tb</p>
-                <p class = "atomicMass">158.9254</p>
-            </td>
-            <td onclick = onElementClick(66) id = "dysprosiumSquare" class = "lanthanide">
-                <p class = "atomicNumber">66</p>
-                <p class = "elementSymbol">Dy</p>
-                <p class = "atomicMass">162.5</p>
-            </td>
-            <td onclick = onElementClick(67) id = "holmiumSquare" class = "lanthanide">
-                <p class = "atomicNumber">67</p>
-                <p class = "elementSymbol">Ho</p>
-                <p class = "atomicMass">164.9304</p>
-            </td>
-            <td onclick = onElementClick(68) id = "erbiumSquare" class = "lanthanide">
-                <p class = "atomicNumber">68</p>
-                <p class = "elementSymbol">Er</p>
-                <p class = "atomicMass">167.26</p>
-            </td>
-            <td onclick = onElementClick(69) id = "thuliumSquare" class = "lanthanide">
-                <p class = "atomicNumber">69</p>
-                <p class = "elementSymbol">Tm</p>
-                <p class = "atomicMass">168.9342</p>
-            </td>
-            <td onclick = onElementClick(70) id = "ytterbiumSquare" class = "lanthanide">
-                <p class = "atomicNumber">70</p>
-                <p class = "elementSymbol">Yb</p>
-                <p class = "atomicMass">173.04</p>
-            </td>
-            <td onclick = onElementClick(71) id = "lutetiumSquare" class = "lanthanide">
-                <p class = "atomicNumber">71</p>
-                <p class = "elementSymbol">Lu</p>
-                <p class = "atomicMass">174.967</p>
-            </td>
-        </tr>
-        <tr class = "fBlock2">
-            <td class = "BLANKSPACE"></td>
-            <td class = "BLANKSPACE"></td>
-            <td class = "BLANKSPACE"></td>
-            <td onclick = onElementClick(90) id = "thoriumSquare" class = "actinide">
-                <p class = "atomicNumber">90</p>
-                <p class = "elementSymbol">Th</p>
-                <p class = "atomicMass">232.0381</p>
-            </td>
-            <td onclick = onElementClick(91) id = "protactiniumSquare" class = "actinide">
-                <p class = "atomicNumber">91</p>
-                <p class = "elementSymbol">Pa</p>
-                <p class = "atomicMass">231.0359</p>
-            </td>
-            <td onclick = onElementClick(92) id = "uraniumSquare" class = "actinide">
-                <p class = "atomicNumber">92</p>
-                <p class = "elementSymbol">U</p>
-                <p class = "atomicMass">238.029</p>
-            </td>
-            <td onclick = onElementClick(93) id = "neptuniumSquare" class = "actinide">
-                <p class = "atomicNumber">93</p>
-                <p class = "elementSymbol">Np</p>
-                <p class = "atomicMass">237.0482</p>
-            </td>
-            <td onclick = onElementClick(94) id = "plutoniumSquare" class = "actinide">
-                <p class = "atomicNumber">94</p>
-                <p class = "elementSymbol">Pu</p>
-                <p class = "atomicMass">242</p>
-            </td>
-            <td onclick = onElementClick(95) id = "americiumSquare" class = "actinide">
-                <p class = "atomicNumber">95</p>
-                <p class = "elementSymbol">Am</p>
-                <p class = "atomicMass">243</p>
-            </td>
-            <td onclick = onElementClick(96) id = "curiumSquare" class = "actinide">
-                <p class = "atomicNumber">96</p>
-                <p class = "elementSymbol">Cm</p>
-                <p class = "atomicMass">247</p>
-            </td>
-            <td onclick = onElementClick(97) id = "berkeliumSquare" class = "actinide">
-                <p class = "atomicNumber">97</p>
-                <p class = "elementSymbol">Bk</p>
-                <p class = "atomicMass">247</p>
-            </td>
-            <td onclick = onElementClick(98) id = "californiumSquare" class = "actinide">
-                <p class = "atomicNumber">98</p>
-                <p class = "elementSymbol">Cf</p>
-                <p class = "atomicMass">251</p>
-            </td>
-            <td onclick = onElementClick(99) id = "einsteiniumSquare" class = "actinide">
-                <p class = "atomicNumber">99</p>
-                <p class = "elementSymbol">Es</p>
-                <p class = "atomicMass">252</p>
-            </td>
-            <td onclick = onElementClick(100) id = "fermiumSquare" class = "actinide">
-                <p class = "atomicNumber">100</p>
-                <p class = "elementSymbol">Fm</p>
-                <p class = "atomicMass">257</p>
-            </td>
-            <td onclick = onElementClick(101) id = "mendeleviumSquare" class = "actinide">
-                <p class = "atomicNumber">101</p>
-                <p class = "elementSymbol">Md</p>
-                <p class = "atomicMass">258</p>
-            </td>
-            <td onclick = onElementClick(102) id = "nobeliumSquare" class = "actinide">
-                <p class = "atomicNumber">102</p>
-                <p class = "elementSymbol">No</p>
-                <p class = "atomicMass">250</p>
-            </td>
-            <td onclick = onElementClick(103) id = "lawrenciumSquare" class = "actinide">
-                <p class = "atomicNumber">103</p>
-                <p class = "elementSymbol">Lr</p>
-                <p class = "atomicMass">260</p>
-            </td>
-        </tr>
-    </table>
+    <div class = "periodicTable">
+        <table class = "table">
+            <tr class = "row1">
+                <td onclick = onElementClick(1) id = "hydrogenSquare" class = "reactiveNonMetal">
+                    <p class = "atomicNumber">1</p>
+                    <p class = "elementSymbol">H</p>
+                    <p class = "atomicMass">1.00797</p>
+                </td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td onclick = onElementClick(2) id = "heliumSquare" class = "nobleGas">
+                    <p class = "atomicNumber">2</p>
+                    <p class = "elementSymbol">He</p>
+                    <p class = "atomicMass">4.0026</p>
+                </td>
+            </tr>
+            <tr class = "row2">
+                <td onclick = onElementClick(3) id = "lithiumSquare" class = "alkaliMetal">
+                    <p class = "atomicNumber">3</p>
+                    <p class = "elementSymbol">Li</p>
+                    <p class = "atomicMass">6.941</p>
+                </td>
+                <td onclick = onElementClick(4) id = "berylliumSquare" class = "alkalineEarthMetal">
+                    <p class = "atomicNumber">4</p>
+                    <p class = "elementSymbol">Be</p>
+                    <p class = "atomicMass">9.01218</p>
+                </td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td onclick = onElementClick(5) id = "boronSquare" class = "metalloid">
+                    <p class = "atomicNumber">5</p>
+                    <p class = "elementSymbol">B</p>
+                    <p class = "atomicMass">10.81</p>
+                </td>
+                <td onclick = onElementClick(6) id = "carbonSquare" class = "reactiveNonMetal">
+                    <p class = "atomicNumber">6</p>
+                    <p class = "elementSymbol">C</p>
+                    <p class = "atomicMass">12.011</p>
+                </td>
+                <td onclick = onElementClick(7) id = "nitrogenSquare" class = "reactiveNonMetal">
+                    <p class = "atomicNumber">7</p>
+                    <p class = "elementSymbol">N</p>
+                    <p class = "atomicMass">14.0067</p>
+                </td>
+                <td onclick = onElementClick(8) id = "oxygenSquare" class = "reactiveNonMetal">
+                    <p class = "atomicNumber">8</p>
+                    <p class = "elementSymbol">O</p>
+                    <p class = "atomicMass">15.9994</p>
+                </td>
+                <td onclick = onElementClick(9) id = "fluorineSquare" class = "reactiveNonMetal">
+                    <p class = "atomicNumber">9</p>
+                    <p class = "elementSymbol">F</p>
+                    <p class = "atomicMass">18.998403</p>
+                </td>
+                <td onclick = onElementClick(10) id = "neonSquare" class = "nobleGas">
+                    <p class = "atomicNumber">10</p>
+                    <p class = "elementSymbol">Ne</p>
+                    <p class = "atomicMass">20.179</p>
+                </td>
+            </tr>
+            <tr class = "row3">
+                <td onclick = onElementClick(11) id = "sodiumSquare" class = "alkaliMetal">
+                    <p class = "atomicNumber">11</p>
+                    <p class = "elementSymbol">Na</p>
+                    <p class = "atomicMass">22.98977</p>
+                </td>
+                <td onclick = onElementClick(12) id = "magnesiumSquare" class = "alkalineEarthMetal">
+                    <p class = "atomicNumber">12</p>
+                    <p class = "elementSymbol">Mg</p>
+                    <p class = "atomicMass">24.305</p>
+                </td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td onclick = onElementClick(13) id = "aluminiumSquare" class = "postTransitionMetal">
+                    <p class = "atomicNumber">13</p>
+                    <p class = "elementSymbol">Al</p>
+                    <p class = "atomicMass">26.98154</p>
+                </td>
+                <td onclick = onElementClick(14) id = "siliconSquare" class = "metalloid">
+                    <p class = "atomicNumber">14</p>
+                    <p class = "elementSymbol">Si</p>
+                    <p class = "atomicMass">28.0855</p>
+                </td>
+                <td onclick = onElementClick(15) id = "phosphorusSquare" class = "reactiveNonMetal">
+                    <p class = "atomicNumber">15</p>
+                    <p class = "elementSymbol">P</p>
+                    <p class = "atomicMass">30.97376</p>
+                </td>
+                <td onclick = onElementClick(16) id = "sulfurSquare" class = "reactiveNonMetal">
+                    <p class = "atomicNumber">16</p>
+                    <p class = "elementSymbol">S</p>
+                    <p class = "atomicMass">32.06</p>
+                </td>
+                <td onclick = onElementClick(17) id = "chlorineSquare" class = "reactiveNonMetal">
+                    <p class = "atomicNumber">17</p>
+                    <p class = "elementSymbol">Cl</p>
+                    <p class = "atomicMass">35.453</p>
+                </td>
+                <td onclick = onElementClick(18) id = "argonSquare" class = "nobleGas">
+                    <p class = "atomicNumber">18</p>
+                    <p class = "elementSymbol">Ar</p>
+                    <p class = "atomicMass">39.948</p>
+                </td>
+            </tr>
+            <tr class = "row4">
+                <td onclick = onElementClick(19) id = "potassiumSquare" class = "alkaliMetal">
+                    <p class = "atomicNumber">19</p>
+                    <p class = "elementSymbol">K</p>
+                    <p class = "atomicMass">39.0983</p>
+                </td>
+                <td onclick = onElementClick(20) id = "calciumSquare" class = "alkalineEarthMetal">
+                    <p class = "atomicNumber">20</p>
+                    <p class = "elementSymbol">Ca</p>
+                    <p class = "atomicMass">40.08</p>
+                </td>
+                <td onclick = onElementClick(21) id = "scandiumSquare" class = "transitionMetal">
+                    <p class = "atomicNumber">21</p>
+                    <p class = "elementSymbol">Sc</p>
+                    <p class = "atomicMass">44.9559</p>
+                </td>
+                <td onclick = onElementClick(22) id = "titaniumSquare" class = "transitionMetal">
+                    <p class = "atomicNumber">22</p>
+                    <p class = "elementSymbol">Ti</p>
+                    <p class = "atomicMass">47.9</p>
+                </td>
+                <td onclick = onElementClick(23) id = "vanadiumSquare" class = "transitionMetal">
+                    <p class = "atomicNumber">23</p>
+                    <p class = "elementSymbol">V</p>
+                    <p class = "atomicMass">50.9415</p>
+                </td>
+                <td onclick = onElementClick(24) id = "chromiumSquare" class = "transitionMetal">
+                    <p class = "atomicNumber">24</p>
+                    <p class = "elementSymbol">Cr</p>
+                    <p class = "atomicMass">51.996</p>
+                </td>
+                <td onclick = onElementClick(25) id = "manganeseSquare" class = "transitionMetal">
+                    <p class = "atomicNumber">25</p>
+                    <p class = "elementSymbol">Mn</p>
+                    <p class = "atomicMass">54.938</p>
+                </td>
+                <td onclick = onElementClick(26) id = "ironSquare" class = "transitionMetal">
+                    <p class = "atomicNumber">26</p>
+                    <p class = "elementSymbol">Fe</p>
+                    <p class = "atomicMass">55.847</p>
+                </td>
+                <td onclick = onElementClick(27) id = "cobaltSquare" class = "transitionMetal">
+                    <p class = "atomicNumber">27</p>
+                    <p class = "elementSymbol">Co</p>
+                    <p class = "atomicMass">58.9332</p>
+                </td>
+                <td onclick = onElementClick(28) id = "nickelSquare" class = "transitionMetal">
+                    <p class = "atomicNumber">28</p>
+                    <p class = "elementSymbol">Ni</p>
+                    <p class = "atomicMass">58.7</p>
+                </td>
+                <td onclick = onElementClick(29) id = "copperSquare" class = "transitionMetal">
+                    <p class = "atomicNumber">29</p>
+                    <p class = "elementSymbol">Cu</p>
+                    <p class = "atomicMass">63.546</p>
+                </td>
+                <td onclick = onElementClick(30) id = "zincSquare" class = "transitionMetal">
+                    <p class = "atomicNumber">30</p>
+                    <p class = "elementSymbol">Zn</p>
+                    <p class = "atomicMass">65.38</p>
+                </td>
+                <td onclick = onElementClick(31) id = "galliumSquare" class = "postTransitionMetal">
+                    <p class = "atomicNumber">31</p>
+                    <p class = "elementSymbol">Ga</p>
+                    <p class = "atomicMass">69.72</p>
+                </td>
+                <td onclick = onElementClick(32) id = "germaniumSquare" class = "metalloid">
+                    <p class = "atomicNumber">32</p>
+                    <p class = "elementSymbol">Ge</p>
+                    <p class = "atomicMass">72.59</p>
+                </td>
+                <td onclick = onElementClick(33) id = "arsenicSquare" class = "metalloid">
+                    <p class = "atomicNumber">33</p>
+                    <p class = "elementSymbol">As</p>
+                    <p class = "atomicMass">74.9216</p>
+                </td>
+                <td onclick = onElementClick(34) id = "seleniumSquare" class = "reactiveNonMetal">
+                    <p class = "atomicNumber">34</p>
+                    <p class = "elementSymbol">Se</p>
+                    <p class = "atomicMass">78.96</p>
+                </td>
+                <td onclick = onElementClick(35) id = "bromineSquare" class = "reactiveNonMetal">
+                    <p class = "atomicNumber">35</p>
+                    <p class = "elementSymbol">Br</p>
+                    <p class = "atomicMass">79.904</p>
+                </td>
+                <td onclick = onElementClick(36) id = "kryptonSquare" class = "nobleGas">
+                    <p class = "atomicNumber">36</p>
+                    <p class = "elementSymbol">Kr</p>
+                    <p class = "atomicMass">83.8</p>
+                </td>
+            </tr>
+            <tr class = "row5">
+                <td onclick = onElementClick(37) id = "rubidiumSquare" class = "alkaliMetal">
+                    <p class = "atomicNumber">37</p>
+                    <p class = "elementSymbol">Rb</p>
+                    <p class = "atomicMass">85.4678</p>
+                </td>
+                <td onclick = onElementClick(38) id = "strontiumSquare" class = "alkalineEarthMetal">
+                    <p class = "atomicNumber">38</p>
+                    <p class = "elementSymbol">Sr</p>
+                    <p class = "atomicMass">87.62</p>
+                </td>
+                <td onclick = onElementClick(39) id = "yttriumSquare" class = "transitionMetal">
+                    <p class = "atomicNumber">39</p>
+                    <p class = "elementSymbol">Y</p>
+                    <p class = "atomicMass">88.9059</p>
+                </td>
+                <td onclick = onElementClick(40) id = "zirconiumSquare" class = "transitionMetal">
+                    <p class = "atomicNumber">40</p>
+                    <p class = "elementSymbol">Zr</p>
+                    <p class = "atomicMass">91.22</p>
+                </td>
+                <td onclick = onElementClick(41) id = "niobiumSquare" class = "transitionMetal">
+                    <p class = "atomicNumber">41</p>
+                    <p class = "elementSymbol">Nb</p>
+                    <p class = "atomicMass">92.9064</p>
+                </td>
+                <td onclick = onElementClick(42) id = "molybdenumSquare" class = "transitionMetal">
+                    <p class = "atomicNumber">42</p>
+                    <p class = "elementSymbol">Mo</p>
+                    <p class = "atomicMass">95.94</p>
+                </td>
+                <td onclick = onElementClick(43) id = "technetiumSquare" class = "transitionMetal">
+                    <p class = "atomicNumber">43</p>
+                    <p class = "elementSymbol">Tc</p>
+                    <p class = "atomicMass">98</p>
+                </td>
+                <td onclick = onElementClick(44) id = "rutheniumSquare" class = "transitionMetal">
+                    <p class = "atomicNumber">44</p>
+                    <p class = "elementSymbol">Ru</p>
+                    <p class = "atomicMass">101.07</p>
+                </td>
+                <td onclick = onElementClick(45) id = "rhodiumSquare" class = "transitionMetal">
+                    <p class = "atomicNumber">45</p>
+                    <p class = "elementSymbol">Rh</p>
+                    <p class = "atomicMass">102.9055</p>
+                </td>
+                <td onclick = onElementClick(46) id = "palladiumSquare" class = "transitionMetal">
+                    <p class = "atomicNumber">46</p>
+                    <p class = "elementSymbol">Pd</p>
+                    <p class = "atomicMass">106.4</p>
+                </td>
+                <td onclick = onElementClick(47) id = "silverSquare" class = "transitionMetal">
+                    <p class = "atomicNumber">47</p>
+                    <p class = "elementSymbol">Ag</p>
+                    <p class = "atomicMass">107.868</p>
+                </td>
+                <td onclick = onElementClick(48) id = "cadmiumSquare" class = "transitionMetal">
+                    <p class = "atomicNumber">48</p>
+                    <p class = "elementSymbol">Cd</p>
+                    <p class = "atomicMass">112.41</p>
+                </td>
+                <td onclick = onElementClick(49) id = "indiumSquare" class = "postTransitionMetal">
+                    <p class = "atomicNumber">49</p>
+                    <p class = "elementSymbol">In</p>
+                    <p class = "atomicMass">114.82</p>
+                </td>
+                <td onclick = onElementClick(50) id = "tinSquare" class = "postTransitionMetal">
+                    <p class = "atomicNumber">50</p>
+                    <p class = "elementSymbol">Sn</p>
+                    <p class = "atomicMass">118.69</p>
+                </td>
+                <td onclick = onElementClick(51) id = "antimonySquare" class = "metalloid">
+                    <p class = "atomicNumber">51</p>
+                    <p class = "elementSymbol">Sb</p>
+                    <p class = "atomicMass">121.75</p>
+                </td>
+                <td onclick = onElementClick(52) id = "telluriumSquare" class = "metalloid">
+                    <p class = "atomicNumber">52</p>
+                    <p class = "elementSymbol">Te</p>
+                    <p class = "atomicMass">127.6</p>
+                </td>
+                <td onclick = onElementClick(53) id = "iodineSquare" class = "reactiveNonMetal">
+                    <p class = "atomicNumber">53</p>
+                    <p class = "elementSymbol">I</p>
+                    <p class = "atomicMass">126.9045</p>
+                </td>
+                <td onclick = onElementClick(54) id = "xenonSquare" class = "nobleGas">
+                    <p class = "atomicNumber">55</p>
+                    <p class = "elementSymbol">Xe</p>
+                    <p class = "atomicMass">131.3</p>
+                </td>
+            </tr>
+            <tr class = "row6">
+                <td onclick = onElementClick(55) id = "cesiumSquare" class = "alkaliMetal">
+                    <p class = "atomicNumber">55</p>
+                    <p class = "elementSymbol">Cs</p>
+                    <p class = "atomicMass">132.9054</p>
+                </td>
+                <td onclick = onElementClick(56) id = "bariumSquare" class = "alkalineEarthMetal">
+                    <p class = "atomicNumber">56</p>
+                    <p class = "elementSymbol">Ba</p>
+                    <p class = "atomicMass">137.33</p>
+                </td>
+                <td onclick = onElementClick(57) id = "lanthanumSquare" class = "lanthanide">
+                    <p class = "atomicNumber">57</p>
+                    <p class = "elementSymbol">La</p>
+                    <p class = "atomicMass">138.9055</p>
+                </td>
+                <td onclick = onElementClick(72) id = "hafniumSquare" class = "transitionMetal">
+                    <p class = "atomicNumber">72</p>
+                    <p class = "elementSymbol">Hf</p>
+                    <p class = "atomicMass">178.49</p>
+                </td>
+                <td onclick = onElementClick(73) id = "tantalumSquare" class = "transitionMetal">
+                    <p class = "atomicNumber">73</p>
+                    <p class = "elementSymbol">Ta</p>
+                    <p class = "atomicMass">180.9479</p>
+                </td>
+                <td onclick = onElementClick(74) id = "tungstenSquare" class = "transitionMetal">
+                    <p class = "atomicNumber">74</p>
+                    <p class = "elementSymbol">W</p>
+                    <p class = "atomicMass">183.85</p>
+                </td>
+                <td onclick = onElementClick(75) id = "rheniumSquare" class = "transitionMetal">
+                    <p class = "atomicNumber">75</p>
+                    <p class = "elementSymbol">Re</p>
+                    <p class = "atomicMass">186.207</p>
+                </td>
+                <td onclick = onElementClick(76) id = "osmiumSquare" class = "transitionMetal">
+                    <p class = "atomicNumber">76</p>
+                    <p class = "elementSymbol">Os</p>
+                    <p class = "atomicMass">190.2</p>
+                </td>
+                <td onclick = onElementClick(77) id = "iridiumSquare" class = "transitionMetal">
+                    <p class = "atomicNumber">77</p>
+                    <p class = "elementSymbol">Ir</p>
+                    <p class = "atomicMass">192.22</p>
+                </td>
+                <td onclick = onElementClick(78) id = "platinumSquare" class = "transitionMetal">
+                    <p class = "atomicNumber">78</p>
+                    <p class = "elementSymbol">Pt</p>
+                    <p class = "atomicMass">195.09</p>
+                </td>
+                <td onclick = onElementClick(79) id = "goldSquare" class = "transitionMetal">
+                    <p class = "atomicNumber">79</p>
+                    <p class = "elementSymbol">Au</p>
+                    <p class = "atomicMass">196.9665</p>
+                </td>
+                <td onclick = onElementClick(80) id = "mercurySquare" class = "transitionMetal">
+                    <p class = "atomicNumber">80</p>
+                    <p class = "elementSymbol">Hg</p>
+                    <p class = "atomicMass">200.59</p>
+                </td>
+                <td onclick = onElementClick(81) id = "thalliumSquare" class = "postTransitionMetal">
+                    <p class = "atomicNumber">81</p>
+                    <p class = "elementSymbol">Tl</p>
+                    <p class = "atomicMass">204.37</p>
+                </td>
+                <td onclick = onElementClick(82) id = "leadSquare" class = "postTransitionMetal">
+                    <p class = "atomicNumber">82</p>
+                    <p class = "elementSymbol">Pb</p>
+                    <p class = "atomicMass">207.2</p>
+                </td>
+                <td onclick = onElementClick(83) id = "bismuthSquare" class = "postTransitionMetal">
+                    <p class = "atomicNumber">83</p>
+                    <p class = "elementSymbol">Bi</p>
+                    <p class = "atomicMass">208.9804</p>
+                </td>
+                <td onclick = onElementClick(84) id = "poloniumSquare" class = "postTransitionMetal">
+                    <p class = "atomicNumber">84</p>
+                    <p class = "elementSymbol">Po</p>
+                    <p class = "atomicMass">209</p>
+                </td>
+                <td onclick = onElementClick(85) id = "astatineSquare" class = "metalloid">
+                    <p class = "atomicNumber">85</p>
+                    <p class = "elementSymbol">At</p>
+                    <p class = "atomicMass">210</p>
+                </td>
+                <td onclick = onElementClick(86) id = "radonSquare" class = "nobleGas">
+                    <p class = "atomicNumber">86</p>
+                    <p class = "elementSymbol">Rn</p>
+                    <p class = "atomicMass">222</p>
+                </td>
+            </tr>
+            <tr class = "row7">
+                <td onclick = onElementClick(87) id = "franciumSquare" class = "alkaliMetal">
+                    <p class = "atomicNumber">87</p>
+                    <p class = "elementSymbol">Fr</p>
+                    <p class = "atomicMass">223</p>
+                </td>
+                <td onclick = onElementClick(88) id = "radiumSquare" class = "alkalineEarthMetal">
+                    <p class = "atomicNumber">88</p>
+                    <p class = "elementSymbol">Ra</p>
+                    <p class = "atomicMass">226.0254</p>
+                </td>
+                <td onclick = onElementClick(89) id = "actiniumSquare" class = "actinide">
+                    <p class = "atomicNumber">89</p>
+                    <p class = "elementSymbol">Ac</p>
+                    <p class = "atomicMass">227.0278</p>
+                </td>
+                <td onclick = onElementClick(104) id = "rutherfordiumSquare" class = "transitionMetal">
+                    <p class = "atomicNumber">104</p>
+                    <p class = "elementSymbol">Rf</p>
+                    <p class = "atomicMass">261</p>
+                </td>
+                <td onclick = onElementClick(105) id = "dubniumSquare" class = "transitionMetal">
+                    <p class = "atomicNumber">105</p>
+                    <p class = "elementSymbol">Db</p>
+                    <p class = "atomicMass">262</p>
+                </td>
+                <td onclick = onElementClick(106) id = "seaborgiumSquare" class = "transitionMetal">
+                    <p class = "atomicNumber">106</p>
+                    <p class = "elementSymbol">Sg</p>
+                    <p class = "atomicMass">263</p>
+                </td>
+                <td onclick = onElementClick(107) id = "bohriumSquare" class = "transitionMetal">
+                    <p class = "atomicNumber">107</p>
+                    <p class = "elementSymbol">Bh</p>
+                    <p class = "atomicMass">262</p>
+                </td>
+                <td onclick = onElementClick(108) id = "hassiumSquare" class = "transitionMetal">
+                    <p class = "atomicNumber">108</p>
+                    <p class = "elementSymbol">Hs</p>
+                    <p class = "atomicMass">255</p>
+                </td>
+                <td onclick = onElementClick(109) id = "meitneriumSquare" class = "unknown">
+                    <p class = "atomicNumber">109</p>
+                    <p class = "elementSymbol">Mt</p>
+                    <p class = "atomicMass">256</p>
+                </td>
+                <td onclick = onElementClick(110) id = "darmstadtiumSquare" class = "unknown">
+                    <p class = "atomicNumber">110</p>
+                    <p class = "elementSymbol">Ds</p>
+                    <p class = "atomicMass">281</p>
+                </td>
+                <td onclick = onElementClick(111) id = "roentgeniumSquare" class = "unknown">
+                    <p class = "atomicNumber">111</p>
+                    <p class = "elementSymbol">Rg</p>
+                    <p class = "atomicMass">282</p>
+                </td>
+                <td onclick = onElementClick(112) id = "coperniciumSquare" class = "unknown">
+                    <p class = "atomicNumber">112</p>
+                    <p class = "elementSymbol">Cn</p>
+                    <p class = "atomicMass">285</p>
+                </td>
+                <td onclick = onElementClick(113) id = "nihoniumSquare" class = "unknown">
+                    <p class = "atomicNumber">113</p>
+                    <p class = "elementSymbol">Nh</p>
+                    <p class = "atomicMass">286</p>
+                </td>
+                <td onclick = onElementClick(114) id = "fleroviumSquare" class = "unknown">
+                    <p class = "atomicNumber">114</p>
+                    <p class = "elementSymbol">Fl</p>
+                    <p class = "atomicMass">289</p>
+                </td>
+                <td onclick = onElementClick(115) id = "moscoviumSquare" class = "unknown">
+                    <p class = "atomicNumber">115</p>
+                    <p class = "elementSymbol">Mc</p>
+                    <p class = "atomicMass">290</p>
+                </td>
+                <td onclick = onElementClick(116) id = "livermoriumSquare" class = "unknown">
+                    <p class = "atomicNumber">116</p>
+                    <p class = "elementSymbol">Lv</p>
+                    <p class = "atomicMass">293</p>
+                </td>
+                <td onclick = onElementClick(117) id = "tennessineSquare" class = "unknown">
+                    <p class = "atomicNumber">117</p>
+                    <p class = "elementSymbol">Ts</p>
+                    <p class = "atomicMass">294</p>
+                </td>
+                <td onclick = onElementClick(118) id = "oganessonSquare" class = "unknown">
+                    <p class = "atomicNumber">118</p>
+                    <p class = "elementSymbol">Og</p>
+                    <p class = "atomicMass">294</p>
+                </td>
+            </tr>
+            <tr class = "GAP">
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+            </tr>
+            <tr class = "fBlock1">
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td onclick = onElementClick(58) id = "ceriumSquare" class = "lanthanide">
+                    <p class = "atomicNumber">58</p>
+                    <p class = "elementSymbol">Ce</p>
+                    <p class = "atomicMass">140.12</p>
+                </td>
+                <td onclick = onElementClick(59) id = "praseodymiumSquare" class = "lanthanide">
+                    <p class = "atomicNumber">59</p>
+                    <p class = "elementSymbol">Pr</p>
+                    <p class = "atomicMass">140.0977</p>
+                </td>
+                <td onclick = onElementClick(60) id = "neodymiumSquare" class = "lanthanide">
+                    <p class = "atomicNumber">60</p>
+                    <p class = "elementSymbol">Nd</p>
+                    <p class = "atomicMass">144.24</p>
+                </td>
+                <td onclick = onElementClick(61) id = "promethiumSquare" class = "lanthanide">
+                    <p class = "atomicNumber">61</p>
+                    <p class = "elementSymbol">Pm</p>
+                    <p class = "atomicMass">145</p>
+                </td>
+                <td onclick = onElementClick(62) id = "samariumSquare" class = "lanthanide">
+                    <p class = "atomicNumber">62</p>
+                    <p class = "elementSymbol">Sm</p>
+                    <p class = "atomicMass">150.4</p>
+                </td>
+                <td onclick = onElementClick(63) id = "europiumSquare" class = "lanthanide">
+                    <p class = "atomicNumber">63</p>
+                    <p class = "elementSymbol">Eu</p>
+                    <p class = "atomicMass">151.96</p>
+                </td>
+                <td onclick = onElementClick(64) id = "gadoliniumSquare" class = "lanthanide">
+                    <p class = "atomicNumber">64</p>
+                    <p class = "elementSymbol">Gd</p>
+                    <p class = "atomicMass">157.25</p>
+                </td>
+                <td onclick = onElementClick(65) id = "terbiumSquare" class = "lanthanide">
+                    <p class = "atomicNumber">65</p>
+                    <p class = "elementSymbol">Tb</p>
+                    <p class = "atomicMass">158.9254</p>
+                </td>
+                <td onclick = onElementClick(66) id = "dysprosiumSquare" class = "lanthanide">
+                    <p class = "atomicNumber">66</p>
+                    <p class = "elementSymbol">Dy</p>
+                    <p class = "atomicMass">162.5</p>
+                </td>
+                <td onclick = onElementClick(67) id = "holmiumSquare" class = "lanthanide">
+                    <p class = "atomicNumber">67</p>
+                    <p class = "elementSymbol">Ho</p>
+                    <p class = "atomicMass">164.9304</p>
+                </td>
+                <td onclick = onElementClick(68) id = "erbiumSquare" class = "lanthanide">
+                    <p class = "atomicNumber">68</p>
+                    <p class = "elementSymbol">Er</p>
+                    <p class = "atomicMass">167.26</p>
+                </td>
+                <td onclick = onElementClick(69) id = "thuliumSquare" class = "lanthanide">
+                    <p class = "atomicNumber">69</p>
+                    <p class = "elementSymbol">Tm</p>
+                    <p class = "atomicMass">168.9342</p>
+                </td>
+                <td onclick = onElementClick(70) id = "ytterbiumSquare" class = "lanthanide">
+                    <p class = "atomicNumber">70</p>
+                    <p class = "elementSymbol">Yb</p>
+                    <p class = "atomicMass">173.04</p>
+                </td>
+                <td onclick = onElementClick(71) id = "lutetiumSquare" class = "lanthanide">
+                    <p class = "atomicNumber">71</p>
+                    <p class = "elementSymbol">Lu</p>
+                    <p class = "atomicMass">174.967</p>
+                </td>
+            </tr>
+            <tr class = "fBlock2">
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td class = "BLANKSPACE"></td>
+                <td onclick = onElementClick(90) id = "thoriumSquare" class = "actinide">
+                    <p class = "atomicNumber">90</p>
+                    <p class = "elementSymbol">Th</p>
+                    <p class = "atomicMass">232.0381</p>
+                </td>
+                <td onclick = onElementClick(91) id = "protactiniumSquare" class = "actinide">
+                    <p class = "atomicNumber">91</p>
+                    <p class = "elementSymbol">Pa</p>
+                    <p class = "atomicMass">231.0359</p>
+                </td>
+                <td onclick = onElementClick(92) id = "uraniumSquare" class = "actinide">
+                    <p class = "atomicNumber">92</p>
+                    <p class = "elementSymbol">U</p>
+                    <p class = "atomicMass">238.029</p>
+                </td>
+                <td onclick = onElementClick(93) id = "neptuniumSquare" class = "actinide">
+                    <p class = "atomicNumber">93</p>
+                    <p class = "elementSymbol">Np</p>
+                    <p class = "atomicMass">237.0482</p>
+                </td>
+                <td onclick = onElementClick(94) id = "plutoniumSquare" class = "actinide">
+                    <p class = "atomicNumber">94</p>
+                    <p class = "elementSymbol">Pu</p>
+                    <p class = "atomicMass">242</p>
+                </td>
+                <td onclick = onElementClick(95) id = "americiumSquare" class = "actinide">
+                    <p class = "atomicNumber">95</p>
+                    <p class = "elementSymbol">Am</p>
+                    <p class = "atomicMass">243</p>
+                </td>
+                <td onclick = onElementClick(96) id = "curiumSquare" class = "actinide">
+                    <p class = "atomicNumber">96</p>
+                    <p class = "elementSymbol">Cm</p>
+                    <p class = "atomicMass">247</p>
+                </td>
+                <td onclick = onElementClick(97) id = "berkeliumSquare" class = "actinide">
+                    <p class = "atomicNumber">97</p>
+                    <p class = "elementSymbol">Bk</p>
+                    <p class = "atomicMass">247</p>
+                </td>
+                <td onclick = onElementClick(98) id = "californiumSquare" class = "actinide">
+                    <p class = "atomicNumber">98</p>
+                    <p class = "elementSymbol">Cf</p>
+                    <p class = "atomicMass">251</p>
+                </td>
+                <td onclick = onElementClick(99) id = "einsteiniumSquare" class = "actinide">
+                    <p class = "atomicNumber">99</p>
+                    <p class = "elementSymbol">Es</p>
+                    <p class = "atomicMass">252</p>
+                </td>
+                <td onclick = onElementClick(100) id = "fermiumSquare" class = "actinide">
+                    <p class = "atomicNumber">100</p>
+                    <p class = "elementSymbol">Fm</p>
+                    <p class = "atomicMass">257</p>
+                </td>
+                <td onclick = onElementClick(101) id = "mendeleviumSquare" class = "actinide">
+                    <p class = "atomicNumber">101</p>
+                    <p class = "elementSymbol">Md</p>
+                    <p class = "atomicMass">258</p>
+                </td>
+                <td onclick = onElementClick(102) id = "nobeliumSquare" class = "actinide">
+                    <p class = "atomicNumber">102</p>
+                    <p class = "elementSymbol">No</p>
+                    <p class = "atomicMass">250</p>
+                </td>
+                <td onclick = onElementClick(103) id = "lawrenciumSquare" class = "actinide">
+                    <p class = "atomicNumber">103</p>
+                    <p class = "elementSymbol">Lr</p>
+                    <p class = "atomicMass">260</p>
+                </td>
+            </tr>
+        </table>
+    </div>
 
     <!-- DISPLAY ELEMENT DATA-->
     <div id = "elementData" class = "elementData">
@@ -745,16 +778,5 @@
 
     </div>
 
-    <!-- LINKS -->
-    <div class = "LINKS">
-        <a href = "./comparison/elementComparison.html">Comparison</a>
-        <a href = "./calculators/calculators.html">Calculators</a>
-        <a href = "./commonInfo/common.html">Common Information</a>
-        <a href = "./quizzes/quizzes.html">Quizzes</a>
-        <a href = "./sorter/sorter.html">Element Sorter</a>
-        <a href = "./predictingProducts/predictingProducts.html">Predicting Products</a>
-        <a href = "./solubilityRules/solubilityRules.html">Solubility Rules</a>
-    </div>
-    
 </body>
 </html>
