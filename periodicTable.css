@@ -147,24 +147,16 @@ td {
 /* Navbar */
 .navbar {
     overflow: hidden;
-    background-color: lightblue;
-
-    font-size: 16px;
-    width: fit-content;
-    font-weight: bold;
-    margin-bottom: 2%;
+    background-color: #333;
 }
 /* Navbar Elements */
 .navbar a {
     float: left;
-    color: purple;
+    font-size: 16px;
+    color: white;
     text-align: center;
-    padding: 14px;
+    padding: 14px 16px;
     text-decoration: none;
-
-    border-color: black;
-    border-style: solid;
-    border-width: 1px;
 }
 
 /* Navbar dropdowns */
@@ -174,36 +166,43 @@ td {
 }
 /* Navbar dropdown elements */
 .dropdown .dropdownLabel {
-    color: purple;
-    padding: 14px;
-    margin: 0px;
-
-    border-style: solid;
-    border-width: 1px;
-    border-color: black;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones? */
+    margin: 0; /* Also important for same reasons? */
 }
-/* Change background-color on hover for all elements */
-.navbar a:hover, .dropdown:hover .dropdownLabel, .dropdownLinks a:hover {
+/* Change background color for dropdowns */
+.navbar a:hover, .dropdown:hover .dropdownLabel {
     background-color: tan;
 }
-/* Dropdown options */
+/* Dropdown Options */
 .dropdownLinks {
     display: none;
     position: absolute;
+    background-color: #f9f9f9;
     min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
-/* .dropdownLabel {
-    
-} */
 .dropdownLinks a {
     float: none;
-    color: purple;
-    padding: 14px;
+    color: black;
+    padding: 12px 16px;
     text-decoration: none;
-    text-align: left;
     display: block;
-    background-color: lightblue;
+    text-align: left;
 }
+
+/* Adds grey color on hover */
+.dropdownLinks a:hover {
+    background-color: #ddd;
+}
+
+
 /* On hover: display dropdown options */
 .dropdown:hover .dropdownLinks {
     display: block;
