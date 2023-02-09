@@ -1,10 +1,56 @@
 /* Gregory Ecklund */
 /* August 2022 */
 
+/* Background Color */
 body {
     background-color:olivedrab
 }
-
+/* Font Size Change */
 #key {
     font-size: 20px;
+}
+
+/* Navbar */
+.navbar {
+    overflow: hidden;
+    margin-bottom: 2%;
+}
+/* Navbar Elements */
+.navbar a {
+    float: left;
+    text-decoration: none;
+}
+/* Navbar Dropdown Containers */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+/* Change Background Color on Hover */
+.navbar a:hover, .dropdown:hover .dropdownLabel {
+    background-color: lightgreen;
+}
+/* Dropdown Div */
+.dropdownLinks {
+    display: none;
+    position: absolute;
+}
+/* Dropdown Options */
+.dropdownLinks a {
+    float: none;
+    display: block;
+}
+/* Display Dropdown Options on Hover */
+.dropdown:hover .dropdownLinks {
+    display: block;
+}
+/* Background Color and Border */
+.navbar a, .dropdownLabel {
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    background-color: lightskyblue;
+    padding: 15px;
+    font-size: 16px;
+    color: black;
+    text-align: left;
 }

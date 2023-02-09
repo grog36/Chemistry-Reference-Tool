@@ -6,13 +6,6 @@ body {
     background-color: pink;
 }
 
-/* BACK BUTTONS */
-.backButtons {
-    float: right;
-    width: 100px;
-    height: 100px;
-}
-
 /* QUESTIONS */
 .questions {
     text-align: center;
@@ -30,7 +23,6 @@ body {
     background-color: springgreen;
     padding: 14px;
     font-size: 18px;
-    margin-right: -200px;
 }
 
 /* RETRY BUTTON */
@@ -81,16 +73,13 @@ body {
 
 /* GIVE UP BUTTON */
 .giveUp {
-    display: flex;
     float: right;
-    margin-top: 110px;
-    margin-right: -140px;
     visibility: hidden;
 }
 #giveUpButton {
     background-color: aquamarine;
     padding: 10px;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 /* GAMEMODE OPTIONS */
@@ -99,4 +88,49 @@ body {
 }
 #gamemode {
     padding: 5px;
+}
+
+/* Navbar */
+.navbar {
+    overflow: hidden;
+    margin-bottom: 2%;
+}
+/* Navbar Elements */
+.navbar a {
+    float: left;
+    text-decoration: none;
+}
+/* Navbar Dropdown Containers */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+/* Change Background Color on Hover */
+.navbar a:hover, .dropdown:hover .dropdownLabel {
+    background-color: lightgreen;
+}
+/* Dropdown Div */
+.dropdownLinks {
+    display: none;
+    position: absolute;
+}
+/* Dropdown Options */
+.dropdownLinks a {
+    float: none;
+    display: block;
+}
+/* Display Dropdown Options on Hover */
+.dropdown:hover .dropdownLinks {
+    display: block;
+}
+/* Background Color and Border */
+.navbar a, .dropdownLabel {
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    background-color: lightskyblue;
+    padding: 15px;
+    font-size: 16px;
+    color: black;
+    text-align: left;
 }

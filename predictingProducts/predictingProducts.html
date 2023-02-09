@@ -2,89 +2,114 @@
 <!-- August 2022 -->
 
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Predicting Products</title>
-        <link href = "./predictingProducts.css" rel = "stylesheet">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predicting Products</title>
+    <link href = "./predictingProducts.css" rel = "stylesheet">
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <div class = "navbar">
+        <a href = "../periodicTable.html">Home</a>
+        <a href = "../commonInfo/common.html">Common Information</a>
+        <a href = "../solubilityRules/solubilityRules.html">Solubility Rules</a>
+        <a href = "../predictingProducts/predictingProducts.html">Predicting Products</a>
+        <a href = "../sorter/sorter.html">Element Sorter</a>
+        <a href = "../comparison/elementComparison.html">Element Comparison</a>
 
-    <body>
-        <!-- BACK BUTTON -->
-        <a href = "../periodicTable.html" style = "float:right;"><img width = "100px" height = "100px" src = "../logo.png" title = "Back to Periodic Table"></a>
-        
-        <!-- Title -->
-        <h1>Predicting Products</h1>
+        <div class = "dropdown">
+            <button class = "dropdownLabel">Calculators</button>
+            <div class = "dropdownLinks">
+                <a href = "../calculators/gramsToGrams/gramsToGrams.html">Grams to Grams Calculator</a>
+                <a href = "../calculators/temperatureCalculator/temperatureCalculator.html">Temperature Calculator</a>
+                <a href = "../calculators/totalAtomicMass/totalAtomicMass.html">Total Atomic Mass Calculator</a>
+            </div>
+        </div>
 
-        <!-- Key -->
-        <p id = "key">KEY: <strong>M</strong> = Metal ; <strong>NM</strong> = Nonmetal</p>
+        <div class = "dropdown">
+            <button class = "dropdownLabel">Quizzes</button>
+            <div class = "dropdownLinks">
+                <a href = "../quizzes/multipleChoice/multipleChoice.html">Multiple Choice Quiz</a>
+                <a href = "../quizzes/nameTheElements/nameTheElements.html">Name the Elements Quiz</a>
+                <a href = "../quizzes/typeElementGivenNumber/typeElementGivenNumber.html">Type Element Given Number Quiz</a>
+                <a href = "../quizzes/typeElementGivenSymbol/typeElementGivenSymbol.html">Type Element Given Symbol Quiz</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Title -->
+    <h1>Predicting Products</h1>
 
-        <!-- Numbered List (Labels) -->
-        <ol>
-            <!-- Synthesis -->
-            <li>
-                <!-- Inner Label -->
-                <h3>SYNTHESIS:</h3>
+    <!-- Key -->
+    <p id = "key">KEY: <strong>M</strong> = Metal ; <strong>NM</strong> = Nonmetal</p>
 
-                <!-- Unordered List (Possibilities) -->
-                <ul>
-                    <li>Formation of binary compound: <strong>A + B -> AB</strong></li>
-                    <li>Metal oxide and water: <strong>MO + H<sub>2</sub>O -> base</strong></li>
-                    <li>Nonmetal oxide and water: <strong>(NM)O + H<sub>2</sub>O -> acid</strong></li>
-                </ul>
-            </li>
-            <!-- Decomposition -->
-            <li>
-                <!-- Inner Label -->
-                <h3>DECOMPOSITION:</h3>
+    <!-- Numbered List (Labels) -->
+    <ol>
+        <!-- Synthesis -->
+        <li>
+            <!-- Inner Label -->
+            <h3>SYNTHESIS:</h3>
 
-                <!-- Unordered List (Possibilities) -->
-                <ul>
-                    <li>Binary compounds: <strong>AB -> A + B</strong></li>
-                    <li>Metallic carbonates: <strong>MCO<sub>3</sub> -> MO + CO<sub>2</sub></strong></li>
-                    <li>Metallic hydrogen carbonates: <strong>MHCO<sub>3</sub> -> MCO<sub>3</sub></strong>
-                     (s) <strong>+ H<sub>2</sub>O </strong>(l) + <strong>CO<sub>2</sub></strong> (g)
-                    </li>
-                    <li>Metallic hydroxides: <strong>MOH -> MO + H<sub>2</sub>O</strong></li>
-                    <li>Metallic chlorates: <strong>MClO<sub>3</sub> -> MCl + O<sub>2</sub></strong></li>
-                    <li>Oxyacids decompose to nonmetal oxides and water: <strong>acid -> (NM)O + H<sub>2</sub>O</strong></li>
-                </ul>
-            </li>
-            <!-- Single Replacement -->
-            <li>
-                <!-- Inner Label -->
-                <h3>SINGLE REPLACEMENT:</h3>
+            <!-- Unordered List (Possibilities) -->
+            <ul>
+                <li>Formation of binary compound: <strong>A + B -> AB</strong></li>
+                <li>Metal oxide and water: <strong>MO + H<sub>2</sub>O -> base</strong></li>
+                <li>Nonmetal oxide and water: <strong>(NM)O + H<sub>2</sub>O -> acid</strong></li>
+            </ul>
+        </li>
+        <!-- Decomposition -->
+        <li>
+            <!-- Inner Label -->
+            <h3>DECOMPOSITION:</h3>
 
-                <!-- Unordered List (Possibilities) -->
-                <ul>
-                    <li>Metal-Metal replacement: <strong>A + BC -> AC + B</strong></li>
-                    <li>Active metal replaces H from water: <strong>M + H<sub>2</sub>O -> MOH + H<sub>2</sub></strong></li>
-                    <li>Active metal replaces H from acid: <strong>M + HX -> MX + H<sub>2</sub></strong></li>
-                    <li>Halide-Halide replacement: <strong>D + BC -> BD + C</strong></li>
-                </ul>
-            </li>
-            <!-- Double Replacement -->
-            <li>
-                <!-- Inner Label -->
-                <h3>DOUBLE REPLACEMENT: AB + CD -> AD + CB</h3>
+            <!-- Unordered List (Possibilities) -->
+            <ul>
+                <li>Binary compounds: <strong>AB -> A + B</strong></li>
+                <li>Metallic carbonates: <strong>MCO<sub>3</sub> -> MO + CO<sub>2</sub></strong></li>
+                <li>Metallic hydrogen carbonates: <strong>MHCO<sub>3</sub> -> MCO<sub>3</sub></strong>
+                    (s) <strong>+ H<sub>2</sub>O </strong>(l) + <strong>CO<sub>2</sub></strong> (g)
+                </li>
+                <li>Metallic hydroxides: <strong>MOH -> MO + H<sub>2</sub>O</strong></li>
+                <li>Metallic chlorates: <strong>MClO<sub>3</sub> -> MCl + O<sub>2</sub></strong></li>
+                <li>Oxyacids decompose to nonmetal oxides and water: <strong>acid -> (NM)O + H<sub>2</sub>O</strong></li>
+            </ul>
+        </li>
+        <!-- Single Replacement -->
+        <li>
+            <!-- Inner Label -->
+            <h3>SINGLE REPLACEMENT:</h3>
 
-                <!-- Unordered List (Possibilities) -->
-                <ul>
-                    <li>Formation of a precipitate from solution</li>
-                    <li>Acid-Base neutralization</li>
-                </ul>
-            </li>
-            <!-- Combustion Reaction -->
-            <li>
-                <!-- Inner Label -->
-                <h3>COMBUSTION REACTION:</h3>
+            <!-- Unordered List (Possibilities) -->
+            <ul>
+                <li>Metal-Metal replacement: <strong>A + BC -> AC + B</strong></li>
+                <li>Active metal replaces H from water: <strong>M + H<sub>2</sub>O -> MOH + H<sub>2</sub></strong></li>
+                <li>Active metal replaces H from acid: <strong>M + HX -> MX + H<sub>2</sub></strong></li>
+                <li>Halide-Halide replacement: <strong>D + BC -> BD + C</strong></li>
+            </ul>
+        </li>
+        <!-- Double Replacement -->
+        <li>
+            <!-- Inner Label -->
+            <h3>DOUBLE REPLACEMENT: AB + CD -> AD + CB</h3>
 
-                <ul>
-                    <li>Hydrocarbon + oxygen -> carbon dioxide + water</li>
-                </ul>
-            </li>
-        </ol>
-        
-    </body>
+            <!-- Unordered List (Possibilities) -->
+            <ul>
+                <li>Formation of a precipitate from solution</li>
+                <li>Acid-Base neutralization</li>
+            </ul>
+        </li>
+        <!-- Combustion Reaction -->
+        <li>
+            <!-- Inner Label -->
+            <h3>COMBUSTION REACTION:</h3>
+
+            <ul>
+                <li>Hydrocarbon + oxygen -> carbon dioxide + water</li>
+            </ul>
+        </li>
+    </ol>
+    
+</body>
 </html>

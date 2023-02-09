@@ -2,37 +2,62 @@
 <!-- August 2022 -->
 
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Solubility Calculator</title>
-        <link href = "./solubilityRules.css" rel = "stylesheet">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solubility Calculator</title>
+    <link href = "./solubilityRules.css" rel = "stylesheet">
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <div class = "navbar">
+        <a href = "../periodicTable.html">Home</a>
+        <a href = "../commonInfo/common.html">Common Information</a>
+        <a href = "../solubilityRules/solubilityRules.html">Solubility Rules</a>
+        <a href = "../predictingProducts/predictingProducts.html">Predicting Products</a>
+        <a href = "../sorter/sorter.html">Element Sorter</a>
+        <a href = "../comparison/elementComparison.html">Element Comparison</a>
 
-    <body>
-        <!-- BACK BUTTONS -->
-        <a href = "../periodicTable.html" style = "float:right;"><img width = "100px" height = "100px" src = "../logo.png" title = "Back to Periodic Table"></a>
+        <div class = "dropdown">
+            <button class = "dropdownLabel">Calculators</button>
+            <div class = "dropdownLinks">
+                <a href = "../calculators/gramsToGrams/gramsToGrams.html">Grams to Grams Calculator</a>
+                <a href = "../calculators/temperatureCalculator/temperatureCalculator.html">Temperature Calculator</a>
+                <a href = "../calculators/totalAtomicMass/totalAtomicMass.html">Total Atomic Mass Calculator</a>
+            </div>
+        </div>
 
-        <!-- Title -->
-        <h1>Solubility Rules:</h1>
+        <div class = "dropdown">
+            <button class = "dropdownLabel">Quizzes</button>
+            <div class = "dropdownLinks">
+                <a href = "../quizzes/multipleChoice/multipleChoice.html">Multiple Choice Quiz</a>
+                <a href = "../quizzes/nameTheElements/nameTheElements.html">Name the Elements Quiz</a>
+                <a href = "../quizzes/typeElementGivenNumber/typeElementGivenNumber.html">Type Element Given Number Quiz</a>
+                <a href = "../quizzes/typeElementGivenSymbol/typeElementGivenSymbol.html">Type Element Given Symbol Quiz</a>
+            </div>
+        </div>
+    </div>
 
-        <!-- Soluble Label -->
-        <h3>Soluble:</h3>
-        <ul>
-            <li>All Nitrates, Acetates, Ammonium, and Group 1 salts</li>
-            <li>All Chlorides, Bromides, and Iodides, except Silver, Lead, and Mercury(I)</li>
-            <li>All Fluorides except Group 2, Lead(II), and Iron(III)</li>
-            <li>All Sulfates except Calcium, Strontium, Barium, Mercury, Lead(II), and Silver</li>
-        </ul>
+    <!-- Title -->
+    <h1>Solubility Rules:</h1>
 
-        <!-- Insoluble -->
-        <h3>Insoluble ( >= 0.10M)</h3>
-        <ul>
-            <li>All Carbonates and Phosphates except Group 1 and Ammonium</li>
-            <li>All Hydroxides except Group 1, Strontium, Barium, and Ammonium</li>
-            <li>All sulfides except Group 1, Group 2, and Ammonium</li>
-            <li>All Oxides except Group 1</li>
-        </ul>
-    </body>
+    <!-- Soluble Label -->
+    <h3>Soluble:</h3>
+    <ul>
+        <li>All Nitrates, Acetates, Ammonium, and Group 1 salts</li>
+        <li>All Chlorides, Bromides, and Iodides, except Silver, Lead, and Mercury(I)</li>
+        <li>All Fluorides except Group 2, Lead(II), and Iron(III)</li>
+        <li>All Sulfates except Calcium, Strontium, Barium, Mercury, Lead(II), and Silver</li>
+    </ul>
+
+    <!-- Insoluble -->
+    <h3>Insoluble ( >= 0.10M)</h3>
+    <ul>
+        <li>All Carbonates and Phosphates except Group 1 and Ammonium</li>
+        <li>All Hydroxides except Group 1, Strontium, Barium, and Ammonium</li>
+        <li>All sulfides except Group 1, Group 2, and Ammonium</li>
+        <li>All Oxides except Group 1</li>
+    </ul>
+</body>
 </html>

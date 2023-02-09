@@ -12,9 +12,34 @@
     <link href = "./nameTheElements.css" rel = "stylesheet">
 </head>
 <body>
-    <!-- Back Buttons -->
-    <a href = "../../periodicTable.html"><img class = "backButtons" src = "../../logo.png" title = "Back to Periodic Table"></a>
-    <a href = "../quizzes.html"><img class = "backButtons" src = "../quizzes.png" title = "Back to Quiz List"></a>
+    <!-- NAVIGATION BAR -->
+    <div class = "navbar">
+        <a href = "../../periodicTable.html">Home</a>
+        <a href = "../../commonInfo/common.html">Common Information</a>
+        <a href = "../../solubilityRules/solubilityRules.html">Solubility Rules</a>
+        <a href = "../../predictingProducts/predictingProducts.html">Predicting Products</a>
+        <a href = "../../sorter/sorter.html">Element Sorter</a>
+        <a href = "../../comparison/elementComparison.html">Element Comparison</a>
+
+        <div class = "dropdown">
+            <button class = "dropdownLabel">Calculators</button>
+            <div class = "dropdownLinks">
+                <a href = "../../calculators/gramsToGrams/gramsToGrams.html">Grams to Grams Calculator</a>
+                <a href = "../../calculators/temperatureCalculator/temperatureCalculator.html">Temperature Calculator</a>
+                <a href = "../../calculators/totalAtomicMass/totalAtomicMass.html">Total Atomic Mass Calculator</a>
+            </div>
+        </div>
+
+        <div class = "dropdown">
+            <button class = "dropdownLabel">Quizzes</button>
+            <div class = "dropdownLinks">
+                <a href = "../multipleChoice/multipleChoice.html">Multiple Choice Quiz</a>
+                <a href = "../nameTheElements/nameTheElements.html">Name the Elements Quiz</a>
+                <a href = "../typeElementGivenNumber/typeElementGivenNumber.html">Type Element Given Number Quiz</a>
+                <a href = "../typeElementGivenSymbol/typeElementGivenSymbol.html">Type Element Given Symbol Quiz</a>
+            </div>
+        </div>
+    </div>
 
     <!-- START BUTTON -->
     <button onclick = start() id = "start" autofocus>Start!</button>

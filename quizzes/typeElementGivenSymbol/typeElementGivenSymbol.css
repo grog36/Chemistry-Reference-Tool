@@ -5,15 +5,6 @@ body {
     background-color: pink;
 }
 
-
-/* Back Buttons */
-.backButtons {
-    width: 100px;
-    height: 100px;
-    float: right;
-}
-
-
 /* TIPS */
 .tips {
     display: flex;
@@ -24,7 +15,6 @@ body {
     font-weight: bolder;
     visibility: hidden;
 }
-
 
 /* Start Button / Gamemode */
 .startButton > button {
@@ -42,7 +32,6 @@ body {
 .polyatomicSwitch {
     text-align: center;
 }
-
 
 /* Timer */
 .minutes {
@@ -65,7 +54,6 @@ body {
     color: blue;
 }
 
-
 /* Questions */
 .questions {
     text-align: center;
@@ -74,13 +62,11 @@ body {
     visibility: hidden;
 }
 
-
 /* Input */
 .answerInput {
     text-align: center;
     visibility: hidden;
 }
-
 
 /* Retry Button */
 .retryButton {
@@ -90,4 +76,49 @@ body {
 #retryButton {
     font-size: 32px;
     padding: 15px;
+}
+
+/* Navbar */
+.navbar {
+    overflow: hidden;
+    margin-bottom: 2%;
+}
+/* Navbar Elements */
+.navbar a {
+    float: left;
+    text-decoration: none;
+}
+/* Navbar Dropdown Containers */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+/* Change Background Color on Hover */
+.navbar a:hover, .dropdown:hover .dropdownLabel {
+    background-color: lightgreen;
+}
+/* Dropdown Div */
+.dropdownLinks {
+    display: none;
+    position: absolute;
+}
+/* Dropdown Options */
+.dropdownLinks a {
+    float: none;
+    display: block;
+}
+/* Display Dropdown Options on Hover */
+.dropdown:hover .dropdownLinks {
+    display: block;
+}
+/* Background Color and Border */
+.navbar a, .dropdownLabel {
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    background-color: lightskyblue;
+    padding: 15px;
+    font-size: 16px;
+    color: black;
+    text-align: left;
 }
