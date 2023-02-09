@@ -3,7 +3,7 @@
 
 /* ALL */
 body {
-    background-color: greenyellow;
+    background-color: tan;
 }
 
 /*TABLE */
@@ -37,7 +37,7 @@ td {
     margin: 0px;
 }
 .BLANKSPACE {
-    border-color: greenyellow;
+    border-color: tan;
 }
 
 /* BLUE STAIRS */
@@ -135,7 +135,7 @@ td {
     padding: 2px;
 }
 .elementDataLabels {
-    background-color: tan;
+    background-color: greenyellow;
 }
 .elementDataInfo {
     background-color:darkgrey;
@@ -147,65 +147,44 @@ td {
 /* Navbar */
 .navbar {
     overflow: hidden;
-    background-color: #333;
+    margin-bottom: 2%;
 }
 /* Navbar Elements */
 .navbar a {
     float: left;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
 }
-
-/* Navbar dropdowns */
+/* Navbar Dropdown Containers */
 .dropdown {
     float: left;
     overflow: hidden;
 }
-/* Navbar dropdown elements */
-.dropdown .dropdownLabel {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit; /* Important for vertical align on mobile phones? */
-    margin: 0; /* Also important for same reasons? */
-}
-/* Change background color for dropdowns */
+/* Change Background Color on Hover */
 .navbar a:hover, .dropdown:hover .dropdownLabel {
-    background-color: tan;
+    background-color: lightgreen;
 }
-/* Dropdown Options */
+/* Dropdown Div */
 .dropdownLinks {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
 }
+/* Dropdown Options */
 .dropdownLinks a {
     float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
     display: block;
-    text-align: left;
 }
-
-/* Adds grey color on hover */
-.dropdownLinks a:hover {
-    background-color: #ddd;
-}
-
-
-/* On hover: display dropdown options */
+/* Display Dropdown Options on Hover */
 .dropdown:hover .dropdownLinks {
     display: block;
 }
-
-
+/* Background Color and Border */
+.navbar a, .dropdownLabel {
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    background-color: lightskyblue;
+    padding: 15px;
+    font-size: 16px;
+    color: black;
+    text-align: left;
+}
