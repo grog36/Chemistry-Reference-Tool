@@ -7,12 +7,10 @@ body {
 
 /* TIPS */
 .tips {
-    display: flex;
     float: right;
-    margin-top: 100px;
-    margin-right: -200px;
     color: black;
     font-weight: bolder;
+    font-size: 24px;
     visibility: hidden;
 }
 
