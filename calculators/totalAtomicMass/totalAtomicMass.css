@@ -1,19 +1,19 @@
 /* Gregory Ecklund */
-/* August 2022 */
+/* February 2023 */
 
-/* BACKGROUND COLOR */
+/* Background Color */
 body {
     background-color: aquamarine;
 }
 
-/* INPUTS */
+/* Inputs */
 .inputs {
     font-family: monospace;
     text-align: left;
     align-items: left;
 }
 
-/* OUTPUT */
+/* Output */
 .output {
     visibility: hidden;
 }

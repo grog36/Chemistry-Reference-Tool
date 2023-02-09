@@ -1,12 +1,12 @@
 /* Gregory Ecklund */
-/* August 2022 */
+/* February 2023 */
 
-/* BODY */
+/* Background Color */
 body {
     background-color: pink;
 }
 
-/* QUESTIONS */
+/* Questions */
 .questions {
     text-align: center;
     color:black;
@@ -15,7 +15,7 @@ body {
     visibility: hidden;
 }
 
-/* START BUTTON */
+/* Start Button */
 .startButton {
     text-align: center;
 }
@@ -25,7 +25,7 @@ body {
     font-size: 18px;
 }
 
-/* RETRY BUTTON */
+/* Retry Button */
 .retryButton {
     visibility: hidden;
     text-align: center;
@@ -37,7 +37,7 @@ body {
     padding: 14px;
 }
 
-/* ANSWER BUTTONS */
+/* Answer Buttons */
 .answerButtons {
     visibility: hidden;
     text-align: center;
@@ -50,7 +50,7 @@ body {
     color: darkslategrey; 
 }
 
-/* TIMER */
+/* Timer */
 .minutes {
     margin-top: -60px;
     display: flex;
@@ -71,7 +71,7 @@ body {
     color: blue;
 }
 
-/* GIVE UP BUTTON */
+/* Give-Up Button */
 .giveUp {
     float: right;
     visibility: hidden;
@@ -82,7 +82,7 @@ body {
     font-size: 24px;
 }
 
-/* GAMEMODE OPTIONS */
+/* Gamemode Options */
 .options {
     text-align: center;
 }

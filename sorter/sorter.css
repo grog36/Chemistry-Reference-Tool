@@ -1,25 +1,25 @@
 /* Gregory Ecklund */
-/* August 2022 */
+/* February 2023 */
 
-/* BACKGROUND COLOR */
+/* Background Color */
 body {
     background-color: thistle;
 }
 
-/* ELEMENT NAMES */
+/* Element Names */
 .elementNames {
     display: inline-block;
     background-color:palegoldenrod;
 }
 
-/* ELEMENT INFO */
+/* Element Info */
 .elementInfo {
     display: inline-block;
     margin-right: 10px;
     background-color:palevioletred;
 }
 
-/* BOTH */
+/* Both */
 .elements {
     display: flex;
     margin-left: 40%;
@@ -32,7 +32,7 @@ body {
     padding: 5px;
 }
 
-/* SETTINGS */
+/* Settings */
 .settings > label {
     display: inline-block;
     clear: left;

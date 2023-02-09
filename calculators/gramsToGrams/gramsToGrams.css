@@ -1,12 +1,12 @@
 /* Gregory Ecklund */
-/* August 2022 */
+/* February 2023 */
 
-/* BACKGROUND COLOR */
+/* Background Color */
 body {
     background-color: aliceblue;
 }
 
-/* TABLE 1 */
+/* Table 1 */
 .table1 > table {
     float: left;
     border-spacing: 0px;
@@ -15,7 +15,19 @@ body {
     background-color: lime;
 }
 
-/* BOTH TABLES */
+/* Table 2 */
+.table2 > table {
+    float: right;
+    border-spacing: 0px;
+}
+.table2DATA {
+    background-color: turquoise;
+}
+.answer {
+    background-color: gold;
+}
+
+/* Both Tables */
 .tables {
     display: flex;
 }
@@ -32,19 +44,7 @@ body {
     font-weight: bold;
 }
 
-/* TABLE 2 */
-.table2 > table {
-    float: right;
-    border-spacing: 0px;
-}
-.table2DATA {
-    background-color: turquoise;
-}
-.answer {
-    background-color: gold;
-}
-
-/* CALCULATE BUTTON */
+/* Calculate Button */
 #calculateButton {
     font-size: 20px;
     text-align: center;
@@ -53,7 +53,7 @@ body {
     text-align: center;
 }
 
-/* ALL CLEAR BUTTON */
+/* All Clear Button */
 #allClearButton {
     font-size: 15px;
 }

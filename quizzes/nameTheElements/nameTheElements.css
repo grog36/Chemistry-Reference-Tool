@@ -1,19 +1,12 @@
 /* Gregory Ecklund */
-/* August 2022 */
+/* February 2023 */
 
-/* BODY */
+/* Background Color */
 body {
     background-color: lime;
 }
 
-/* BACK BUTTONS */
-.backButtons {
-    float: right;
-    width: 100px;
-    height: 100px;
-}
-
-/*TABLE */
+/* Table */
 table {
     border-spacing: 0px;
     cursor: default;
@@ -36,7 +29,7 @@ td {
     margin-right: 30%;
 }
 
-/* BLUE STAIRS */
+/* Blue Staircase */
 #boronSquare {
     border-bottom-color: blue;
     border-bottom-width: 2px;
@@ -58,7 +51,7 @@ td {
     border-bottom-width: 2px;
 }
 
-/* ELEMENT CATEGORY COLORING */
+/* Element Category Coloring */
 .reactiveNonMetal {
     background-color: yellow;
 }
@@ -90,7 +83,7 @@ td {
     background-color: #D9D9D9
 }
 
-/* D-F BLOCK */
+/* D-F Block */
 #lanthanumSquare, #actiniumSquare {
     border-right-color: goldenrod;
     border-right-width: 3px;
@@ -104,7 +97,7 @@ td {
     border-left-width: 3px;
 }
 
-/* TIMER */
+/* Timer */
 #seconds {
     float: right;
 }
@@ -124,7 +117,7 @@ td {
     visibility: hidden;
 }
 
-/* START BUTTON */
+/* Start Button */
 #start {
     align-content: center;
     padding-left: 7px;
@@ -133,7 +126,7 @@ td {
     padding-top: 5px;
 }
 
-/* TEXT INPUT */
+/* Text Input */
 .inputClass {
     text-align: center;
     margin-right: 30%;
@@ -143,7 +136,7 @@ td {
     visibility: hidden;
 }
 
-/* WIN/LOSE TEXT */
+/* Win/Lose Text */
 .textClass {
     text-align: center;
     margin-right: 30%;
